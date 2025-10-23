@@ -1,5 +1,5 @@
 ---
-title: Hub Dev
+title: Hub.dev
 description: Notas, finanças quantitativas e IA.
 enableToc: false
 ---
