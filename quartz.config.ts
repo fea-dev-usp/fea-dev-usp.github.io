@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Hub - FEA.dev",
+    pageTitle: "FEA.dev",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
