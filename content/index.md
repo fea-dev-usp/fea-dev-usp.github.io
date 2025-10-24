@@ -7,14 +7,14 @@ enableToc: false
 # Bem-vindo!
 
 > [!info] O que é o Hub?
-> É uma iniciativa de **acervo público** de materiais técnicos, produzidos internamente na entidade — **artigos, tutoriais e projetos autorais**.  
-> Produzido por **membros da FEA.dev**, com o objetivo de divulgar parte do nosso trabalho e **compartilhar conhecimento** com a comunidade.
+> É uma iniciativa de **acervo público** de materiais técnicos, produzidos internamente na entidade — artigos, tutoriais e projetos autorais.  
+> Produzido pelos membros da FEA.dev, com o objetivo de divulgar parte do nosso trabalho e compartilhar conhecimento com a comunidade.
 
 ## Quem Somos Nós
-Somos a a primeira entidade estudantil de programação da **FEA-USP**. Nosso propósito é **aproximar o mundo dos negócios ao universo da programação**, conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de **conteúdo aberto**, **projetos aplicados** e **formação prática** que ajudam a fechar as lacunas do ensino tradicional.
+Somos a a primeira entidade estudantil de programação da FEA-USP. Nosso propósito é aproximar o mundo dos negócios ao universo da programação conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de uma **capacitação interna**, com **projetos aplicados** e com uma **formação prática**, que busca preencher possíveis as lacunas do ensino tradicional.
 
 ### Nossa história
-Fundada em **2019** como um grupo de estudos, a FEA.dev nasceu de uma percepção de que faltavam conteúdos acerca **Ciência de Dados**, **IA** e **Finanças Quantitativas** durante a graduação. De lá para cá, evoluímos para uma comunidade que **produz, documenta e compartilha** conhecimento de forma aberta.
+Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de que faltavam conteúdos acerca **Ciência de Dados**, **IA** e **Finanças Quantitativas** durante a graduação. De lá para cá, evoluímos para uma comunidade que produz, documenta e compartilha conhecimento de forma aberta.
 
 ### O que você encontra neste Hub
 - **Guias e tutoriais práticos** (passo a passo, replicáveis).
@@ -30,12 +30,12 @@ Fundada em **2019** como um grupo de estudos, a FEA.dev nasceu de uma percepçã
 ### Quant Connect 
 
 Somos **cofundadores do Quant Connect**, o **primeiro evento universitário do Brasil dedicado exclusivamente a Finanças Quantitativas**. Organizado por nós da FEA.dev, como a FGV Quant, o Insper Quantitative Finance e a Poli Quant.  
-Foram **dois dias** de conteúdo técnico, troca de experiências e **acesso direto a profissionais** que estão na linha de frente do mercado.
+Foram dois dias de conteúdo técnico, troca de experiências e **acesso direto a profissionais** que estão na linha de frente do mercado.
 
 **Destaques**
-- Palestras técnicas .  
-- Painéis com gestoras e bancos.  
-- Networking com alunos de várias universidades e profissionais do buy-side e sell-side.
+- Palestras técnicas  
+- Painéis com gestoras e bancos  
+- Networking com alunos de várias universidades e profissionais do buy-side e sell-side
 
 
 <div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
@@ -44,22 +44,22 @@ Foram **dois dias** de conteúdo técnico, troca de experiências e **acesso dir
               gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
       <img src="quant-connect/quant-connect-2.jpg"
-           alt="Painel no auditório"
+           alt="Foto com Painel"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
       <img src="quant-connect/quant-connect-3.jpg"
-           alt="Apresentação técnica"
+           alt="Foto com o Raphael Cordeiro"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
       <img src="quant-connect/quant-connect-4.jpg"
-           alt="Participantes em sala de aula"
+           alt="Apresentação projeto Quantamental"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
       <img src="quant-connect/quant-connect-5.jpg"
-           alt="Foto do grupo"
+           alt="Foto da palestra"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
   </div>
