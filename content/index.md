@@ -8,7 +8,7 @@ enableToc: false
 
 > [!info] O que é o Hub?
 > É uma iniciativa de **acervo público** de materiais técnicos, produzidos internamente na entidade — **artigos, tutoriais e projetos autorais**.  
-> Produzido por **membros da FEA.dev**, com o objetivo de divulgar parte do nosso trabalho e compartilhar **conhecimento** com a comunidade.
+> Produzido por **membros da FEA.dev**, com o objetivo de divulgar parte do nosso trabalho e **compartilhar conhecimento** com a comunidade.
 
 ## Quem Somos Nós
 (Escreva aqui um parágrafo curto sobre a FEA.dev e a comunidade.)
