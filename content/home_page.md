@@ -1,7 +1,6 @@
-﻿---
-title: "FEA.dev"
-description: "Notas, finanças quantitativas e IA."
-aliases: ["/"]        # a URL raiz (/) aponta para esta página
+---
+title: Hub.dev
+description: Notas, finanças quantitativas e IA.
 enableToc: false
 ---
 
