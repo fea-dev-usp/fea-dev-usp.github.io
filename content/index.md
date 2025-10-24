@@ -23,7 +23,7 @@ enableToc: false
 - [Linguagens alternativas](/trilhas/langs/)
 
 ## Contato & redes
-- E-mail: contato.feadev@gmail.com
+- E-mail: `contato.feadev@gmail.com`
 - Youtube: <https://www.youtube.com/@fea-dev>
 - GitHub: <https://github.com/fea-dev-usp>
 - Instagram: [@fea.dev](https://www.instagram.com/fea.dev/)
