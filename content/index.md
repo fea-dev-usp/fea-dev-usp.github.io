@@ -27,8 +27,43 @@ Fundada em **2019** como um grupo de estudos, a FEA.dev nasceu de uma percepçã
 - Curtiu algo? **Reproduza, adapte ao seu contexto e divulgue nosso trabalho**.
 
 ## Projetos & Iniciativas
-- [[projetos/]]      <!-- ajuste se tiver pasta -->
-- [[tutoriais/]]
+### Quant Connect 
+
+Somos **cofundadores do Quant Connect**, o **primeiro evento universitário do Brasil dedicado exclusivamente a Finanças Quantitativas**. Organizado por nós da FEA.dev, como a FGV Quant, o Insper Quantitative Finance e a Poli Quant.  
+Foram **dois dias** de conteúdo técnico, troca de experiências e **acesso direto a profissionais** que estão na linha de frente do mercado.
+
+**Destaques**
+- Palestras técnicas .  
+- Painéis com gestoras e bancos.  
+- Networking com alunos de várias universidades e profissionais do buy-side e sell-side.
+
+
+<div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
+  <div id="qc-g1-track"
+       style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+              gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="quant-connect/quant-connect-2.jpg"
+           alt="Painel no auditório"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="quant-connect/quant-connect-3.jpg"
+           alt="Apresentação técnica"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="quant-connect/quant-connect-4.jpg"
+           alt="Participantes em sala de aula"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="quant-connect/quant-connect-5.jpg"
+           alt="Foto do grupo"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+  </div>
+</div>
 
 ## Trilhas
 - [IA](/trilhas/ia/)
