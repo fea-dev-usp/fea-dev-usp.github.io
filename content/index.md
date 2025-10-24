@@ -11,7 +11,20 @@ enableToc: false
 > Produzido por **membros da FEA.dev**, com o objetivo de divulgar parte do nosso trabalho e **compartilhar conhecimento** com a comunidade.
 
 ## Quem Somos Nós
-(Escreva aqui um parágrafo curto sobre a FEA.dev e a comunidade.)
+Somos a a primeira entidade estudantil de programação da **FEA-USP**. Nosso propósito é **aproximar negócios, programação e IA**, conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de **conteúdo aberto**, **projetos aplicados** e **formação prática** que ajudam a fechar as lacunas do ensino tradicional.
+
+### Nossa história
+Fundada em **2019** como um grupo de estudos, a FEA.dev nasceu de uma percepção de que faltavam, para estudantes de Economia, Administração, Contabilidade e Atuária, conteúdos acerca **Ciência de Dados**, **IA** e **Finanças Quantitativas**. De lá para cá, evoluímos para uma comunidade que **produz, documenta e compartilha** conhecimento de forma aberta.
+
+### O que você encontra neste Hub
+- **Guias e tutoriais práticos** (passo a passo, replicáveis).
+- **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.
+- **Roteiros de nossas aulas** do projeto de aulas intitucionais, a.k.a dev.ensina
+
+### Como aproveitar melhor
+- Explore **Projetos & Iniciativas** para ver o que já construímos e uma visão geral do que já produzimos até hoje.
+- Siga as **Trilhas** para um caminho curado de aprendizado por tema.
+- Curtiu algo? **Reproduza, adapta ao seu contexto e divulgue nosso trabalho**.
 
 ## Projetos & Iniciativas
 - [[projetos/]]      <!-- ajuste se tiver pasta -->
