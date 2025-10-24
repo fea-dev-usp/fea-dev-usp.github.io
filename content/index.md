@@ -30,7 +30,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 ### Quant Connect 
 
 Somos **cofundadores do Quant Connect**, o **primeiro evento universitário do Brasil dedicado exclusivamente a Finanças Quantitativas**. Organizado por nós da FEA.dev, como a FGV Quant, o Insper Quantitative Finance e a Poli Quant.  
-Foram dois dias de conteúdo técnico, troca de experiências e **acesso direto a profissionais** que estão na linha de frente do mercado.
+Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a profissionais que estão na linha de frente do mercado.
 
 **Destaques**
 - Palestras técnicas  
