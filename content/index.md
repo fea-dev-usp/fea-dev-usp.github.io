@@ -23,34 +23,38 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 
 ### Como aproveitar melhor
 - Explore **Projetos & Iniciativas** para ver o que já construímos e uma visão geral do que já produzimos até hoje.
-- Siga as **Trilhas** para um caminho curado de aprendizado por tema.
+	- Siga as **Trilhas** para um caminho curado de aprendizado por tema.
 - Curtiu algo? **Reproduza, adapte ao seu contexto e divulgue nosso trabalho**.
 
 ## Trilhas
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;align-items:stretch;">
-  <a href="/tags/trilha/finquant/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
-    <h3 style="margin:0 0 8px 0;">FinQuant</h3>
-    <p style="margin:0 0 12px 0;">Riscos, Backtests, Trading, Portfólio.</p>
-    <span style="margin-top:auto;font-weight:700;white-space:nowrap;">→ Ver materiais</span>
+  <a href="/tags/trilha/finquant/" aria-label="FinQuant"
+     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
+    <span style="display:block;font-weight:700;margin:0 0 8px 0;">FinQuant</span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;">Riscos, Backtests, Trading, Portfólio.</span>
+    <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/ia/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
-    <h3 style="margin:0 0 8px 0;">IA</h3>
-    <p style="margin:0 0 12px 0;">Machine Learning, Deep Learning, LLMs &amp; RAG.</p>
-    <span style="margin-top:auto;font-weight:700;white-space:nowrap;">→ Ver materiais</span>
+  <a href="/tags/trilha/ia/" aria-label="IA"
+     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
+    <span style="display:block;font-weight:700;margin:0 0 8px 0;">IA</span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;">Machine Learning, Deep Learning, LLMs &amp; RAG.</span>
+    <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/ciencia-de-dados/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
-    <h3 style="margin:0 0 8px 0;">Ciência de Dados</h3>
-    <p style="margin:0 0 12px 0;">ETL, visualização, estatística aplicada, boas práticas.</p>
-    <span style="margin-top:auto;font-weight:700;white-space:nowrap;">→ Ver materiais</span>
+  <a href="/tags/trilha/ciencia-de-dados/" aria-label="Ciência de Dados"
+     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
+    <span style="display:block;font-weight:700;margin:0 0 8px 0;">Ciência de Dados</span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;">ETL, visualização, estatística aplicada, boas práticas.</span>
+    <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/extras/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
-    <h3 style="margin:0 0 8px 0;">Extras</h3>
-    <p style="margin:0 0 12px 0;">Ferramentas e outras linguagens de programação.</p>
-    <span style="margin-top:auto;font-weight:700;white-space:nowrap;">→ Ver materiais</span>
+  <a href="/tags/trilha/extras/" aria-label="Extras"
+     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;min-height:170px;">
+    <span style="display:block;font-weight:700;margin:0 0 8px 0;">Extras</span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;">Ferramentas e outras linguagens de programação.</span>
+    <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 </div>
 
