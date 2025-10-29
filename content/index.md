@@ -33,7 +33,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
             gap:16px; align-items:stretch;">
 
   <!-- FinQuant -->
-  <a href="/tags/trilhas/finquant/"
+  <a href="/tags/trilha/finquant/"
      style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
             padding:var(--pad);display:flex;flex-direction:column;gap:10px;
             min-height:var(--card-h);">
@@ -46,7 +46,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
   </a>
 
   <!-- IA -->
-  <a href="/tags/trilhas/ia/"
+  <a href="/tags/trilha/ia/"
      style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
             padding:var(--pad);display:flex;flex-direction:column;gap:10px;
             min-height:var(--card-h);">
@@ -59,7 +59,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
   </a>
 
   <!-- Ciência de Dados -->
-  <a href="/tags/trilhas/ciencia-de-dados/"
+  <a href="/tags/trilha/ciencia-de-dados/"
      style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
             padding:var(--pad);display:flex;flex-direction:column;gap:10px;
             min-height:var(--card-h);">
@@ -72,7 +72,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
   </a>
 
   <!-- Extras -->
-  <a href="/tags/trilhas/extras/"
+  <a href="/tags/trilha/extras/"
      style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
             padding:var(--pad);display:flex;flex-direction:column;gap:10px;
             min-height:var(--card-h);">
