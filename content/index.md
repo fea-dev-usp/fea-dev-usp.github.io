@@ -29,53 +29,38 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 ## Trilhas
 
 <div style="--card-h: clamp(190px, 28vw, 240px);
-            display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-            gap:18px;align-items:stretch;">
+            display:grid; grid-template-columns:repeat(2,minmax(260px,1fr));
+            gap:18px; align-items:stretch;">
 
-  <a href="/tags/trilha/finquant/" aria-label="FinQuant"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
+  <!-- FinQuant -->
+  <a href="/tags/trilha/finquant/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
     <span style="display:block;font-weight:700;margin:0 0 8px 0;">FinQuant</span>
-    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">
-      Riscos, Backtests, Trading, Portfólio.
-    </span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">Riscos, Backtests, Trading, Portfólio.</span>
     <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/ia/" aria-label="IA"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
+  <!-- IA -->
+  <a href="/tags/trilha/ia/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
     <span style="display:block;font-weight:700;margin:0 0 8px 0;">IA</span>
-    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">
-      Machine Learning, Deep Learning, LLMs &amp; RAG.
-    </span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">Machine Learning, Deep Learning, LLMs &amp; RAG.</span>
     <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/ciencia-de-dados/" aria-label="Ciência de Dados"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
+  <!-- Ciência de Dados -->
+  <a href="/tags/trilha/ciencia-de-dados/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
     <span style="display:block;font-weight:700;margin:0 0 8px 0;">Ciência de Dados</span>
-    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">
-      ETL, Web Scraping, estatística aplicada, boas práticas.
-    </span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">ETL, Web Scraping, boas práticas.</span>
     <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 
-  <a href="/tags/trilha/extras/" aria-label="Extras"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
+  <!-- Extras -->
+  <a href="/tags/trilha/extras/" style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;padding:16px;display:flex;flex-direction:column;height:var(--card-h);">
     <span style="display:block;font-weight:700;margin:0 0 8px 0;">Extras</span>
-    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">
-      Git e outras linguagens de programação.
-    </span>
+    <span style="display:block;margin:0 0 12px 0;opacity:.9;line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;">Git e outras linguagens de programação.</span>
     <span style="margin-top:auto;font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
 </div>
+
 
 
 ### Como navegar por nível
