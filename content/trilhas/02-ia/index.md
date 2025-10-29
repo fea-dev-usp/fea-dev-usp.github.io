@@ -1,5 +1,5 @@
 ---
-title: "Trilha: IA"
+title: IA
 ---
 
 # Inteligência Articial

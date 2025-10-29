@@ -1,5 +1,5 @@
 ---
-title: "Trilha: Extras"
+title: Extras
 ---
 # Extras
 

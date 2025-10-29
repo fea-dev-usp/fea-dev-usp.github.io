@@ -1,5 +1,5 @@
 ---
-title: "Trilha: FinQuant"
+title: " FinQuant"
 ---
  
 # Finanças Quantitativas

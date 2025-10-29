@@ -1,5 +1,5 @@
 ---
-title: "Trilha: Ciência de dados"
+title: Ciência de dados
 ---
 # Ciência de dados
 
