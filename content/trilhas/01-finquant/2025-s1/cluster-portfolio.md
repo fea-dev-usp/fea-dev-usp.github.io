@@ -55,7 +55,18 @@ O backtest foi implementado em períodos de **três meses**, durante o período 
 
 O algoritmo de **clusterização** foi utilizado como forma de **restringir** o universo de possibilidades a serem otimizadas. Para isso, foram empregados indicadores financeiros derivados de dados públicos divulgados trimestralmente pelas empresas do mercado brasileiro, com base nos **Demonstrativos de Resultados (DRE)** e nos **Fluxos de Caixa**. A calibração do modelo resultou na formação de **três grupos**, número definido a partir dos testes empíricos do **método do cotovelo** e da **silhueta**.
 
-A análise visual desses métodos indicou que o teste do cotovelo delimitou a escolha entre **três e oito** clusters, enquanto o teste da silhueta mostrou que as pontuações entre **quatro e sete** permaneceram no mesmo patamar. Assim, a decisão final pela divisão em **três clusters** foi alcançada por meio do algoritmo **K-Means**, implementado na biblioteca **Scikit-learn**.
+![[projeto-cluster-portfolio-1.png]]
+
+>[!info]
+>A análise visual desses métodos indicou que o teste do cotovelo delimitou a escolha entre **três e oito** clusters
+
+
+![[projeto-cluster-portfolio-7.png]]
+
+>[!info]
+>Enquanto o teste da silhueta mostrou que as pontuações entre **quatro e sete** permaneceram no mesmo patamar
+
+Assim, a decisão final pela divisão em **três clusters** foi alcançada por meio do algoritmo **K-Means**, implementado na biblioteca **Scikit-learn**.
 
 Assim, nomeados os três subgrupos do universo máximo de **133 empresas**, foi criada uma **carteira fictícia** para cada um, de forma a **maximizar o Sharpe Ratio realizado** no período dos últimos três meses. Isso se deu através do algoritmo de alocação de carteiras via biblioteca do Python **PyPortfolioOpt (pypfopt)**, uma vez que ela busca uma solução ótima entre a **matriz de correlação** das ações e seus **retornos esperados** (dos últimos 3 meses). E, finalmente, uma carteira com seus pesos distribuídos entre as empresas que tiveram **melhor performance em cada subgrupo** é criada como ponto de comparação.
 
@@ -63,7 +74,10 @@ A seguinte análise de performance visa responder e comparar tanto os desempenho
 
 ## Resultados
 
-O backtest foi realizado considerando todos os trimestres de **2020 a 2024**. Nesse período, a **carteira principal (k = 4)** selecionou ao todo **29 ações**. Para destacar a relevância das escolhas, priorizou-se analisar as ações mais **recorrentes ao longo do tempo**, em vez das que tiveram **maior peso médio** em períodos isolados. Isso porque houve momentos em que a carteira concentrou peso **excessivo em uma única ação**, que depois acabou não retornando mais ao portfólio, o que poderia **distorcer a análise**.
+O backtest foi realizado considerando todos os trimestres de **2020 a 2024**. Nesse período, a carteira principal selecionou ao todo **29 ações**. Para destacar a relevância das escolhas, priorizou-se analisar as ações mais **recorrentes ao longo do tempo**, em vez das que tiveram **maior peso médio** em períodos isolados. Isso porque houve momentos em que a carteira concentrou peso **excessivo em uma única ação**, que depois acabou não retornando mais ao portfólio, o que poderia **distorcer a análise**.
+
+![[projeto-cluster-portfolio-9.png]]
+
 
 As ações que mais se destacaram no portfólio, tanto pela **frequência** quanto pelo **peso médio**, podem ser organizadas e descritas principalmente pelos seguintes setores e suas características:
 
@@ -73,7 +87,7 @@ A **SLC Agrícola** se destacou como a ação **mais relevante** do portfólio, 
 
 ### (2) Comunicações
 
-A presença de **VIVT3**, com o **segundo maior peso médio (62%)**, indica a importância do setor de **telecomunicações** no portfólio. Empresas desse setor apresentam **receitas recorrentes**, **geração de caixa robusta** e **políticas consistentes de dividendos**. A inclusão de VIVT3 sugere que o modelo buscou **diversificação com ativos defensivos**, capazes de oferecer **estabilidade** em períodos de maior incerteza econômica.
+A presença de **VIVT3**, com o **segundo maior peso médio (62%)**, indica a importância do setor de **telecomunicações** no portfólio. Empresas desse setor apresentam **receitas recorrentes**, **geração de caixa robusta** e **políticas consistentes de dividendos**. 
 
 ### (3) Materiais Básicos
 
@@ -87,23 +101,36 @@ A **WEG (WEGE3)** destacou-se como representante de **bens industriais**. A empr
 
 O setor de consumo cíclico foi representado por três companhias de segmentos distintos. A **Technos (TECN3)** adicionou um ativo de **menor capitalização**, refletindo oportunidades de curto prazo no **varejo de acessórios**. A **Vulcabras (VULC3)**, com marcas esportivas de renome, esteve associada à **retomada do consumo doméstico**. A **Whirlpool (WHRL4)**, multinacional de eletrodomésticos, reforçou a exposição a **bens duráveis**, geralmente mais sensíveis ao **ciclo econômico**. O conjunto sugere que o algoritmo explorou **nichos de consumo** em diferentes fases do ciclo de renda.
 
-De forma geral, a carteira apresentou **diversidade setorial**, com predominância de setores ligados à **rentabilidade estrutural**. Isso reforça o objetivo central do projeto: empregar a **clusterização** não apenas para identificar padrões de escolha, mas também para **ampliar a diversificação e reduzir riscos**.
+De forma geral, a carteira apresentou **diversidade setorial**, com predominância de setores ligados à **rentabilidade estrutural**. Isso reforça o objetivo central do projeto: empregar a **clusterização** não apenas para identificar padrões de escolha, mas também uma tentativa de **ampliar a diversificação e de se reduzir riscos**.
 
-Outro ponto relevante diz respeito à **dinâmica temporal dos pesos atribuídos**. Não basta analisar quais ações foram selecionadas, mas também **quando** e com **qual intensidade** participaram da carteira. A leitura mostra que as maiores concentrações ocorreram de forma **pontual**, não como posições permanentes. Em geral, os ativos **não permaneceram por muitos trimestres consecutivos**, retornando ao portfólio apenas depois de longos intervalos. Isso evidencia que, ao identificar um papel como **ótima escolha** dentro de seu cluster em determinado trimestre, o **otimizador de Sharpe Ratio** tende a atribuir-lhe **peso elevado**.
+Outro ponto relevante diz respeito à **dinâmica temporal dos pesos atribuídos**. Não basta analisar quais ações foram selecionadas, mas também **quando** e com **qual intensidade** participaram da carteira. 
+
+![[projeto-cluster-portfolio-3.png]]
+
+>[!info]
+>A leitura visual mostra que houve uma concentração a um único ativo por período de forma **sistêmica**, justamente pela escolha do critério de **Sharp Ratio**. O algoritimo acabou não fazendo uma boa distribuição de pesos, concentrando o peso do portfólio em cada período em uma única ação somente. Diante desse fato, será mostrado mais adiante, que isso acabou comprometendo a intenção inicial de reduzir riscos sistêmicos e de potencializar o retorno esperado.
 
 Ademais, pode-se observar que o modelo tem ativos como **VIVT3**, **VALE3** e **WEGE3** aparecendo em **múltiplos períodos** distintos, sugerindo que eles são “candidatos” recorrentes a compor a carteira. Suas características de **rentabilidade estrutural** são consistentemente capturadas pelo modelo em diferentes contextos de mercado. Em contrapartida, ações como **RANI3**, **TECN3** ou **WHRL4**, que aparecem de forma mais esporádica, representam **apostas mais táticas** e surgem como **oportunistas**, selecionadas quando seus fundamentos se destacam em um trimestre específico.
 
-Portanto, essa dinâmica **não é passiva** de comprar e segurar os ativos com os melhores fundamentos por longos períodos. Pelo contrário, é uma estratégia de **rotação quantitativa ativa** e de **diversificação**.
+Portanto, dinâmica da carteira **não é passiva**, no sentido de se comprar e segurar os ativos com os melhores fundamentos por longos períodos. Pelo contrário, é uma estratégia de **rotação quantitativa ativa** e de **diversificação**.
 
 Esse comportamento dinâmico levanta a questão central: até que ponto a rotação ativa e a diversificação de setores se traduziram em **resultados financeiros concretos**? Para responder, é necessário observar a **rentabilidade acumulada e parcial** da carteira ao longo do intervalo de tempo.
 
-A análise de performance revela que essa dinâmica **não se traduziu em resultados sustentáveis**. O resultado final da estratégia ao longo dos cinco anos (**2020–2025**) foi um **prejuízo acumulado de 24%**. A trajetória até esse desfecho foi **extremamente volátil**: a carteira chegou a registrar ganhos **próximos de 40%** no início de **2023**, mas reverteu toda a valorização e **terminou em território negativo**. O percurso expôs o portfólio a um **risco elevado**, com um **drawdown inicial superior a 50%** no primeiro trimestre de **2020** e uma **curva de capital instável** ao longo do tempo.
+![[projeto-cluster-portfolio-6.png]]
+
+>[!info]
+>A análise de performance revela que essa dinâmica **não se traduziu em resultados sustentáveis**. O resultado final da estratégia ao longo dos cinco anos (**2020–2025**) foi um **prejuízo acumulado de 24%**. A trajetória até esse desfecho foi **extremamente volátil**: a carteira chegou a registrar ganhos **próximos de 40%** no início de **2023**, mas reverteu toda a valorização e **terminou em território negativo**. O percurso expôs o portfólio a um **risco elevado**, com um **drawdown inicial superior a 50%** no primeiro trimestre de **2020** e uma **curva de capital instável** ao longo do tempo.
 
 O comportamento trimestral reforça essa leitura: a estratégia alternou trimestres de **ganhos expressivos (acima de 20%)** com **perdas acentuadas (superiores a -20%)**. Isso mostra que a **concentração** em poucas apostas de curto prazo, embora gerasse **picos de performance**, comprometeu a **consistência** dos resultados no horizonte de cinco anos.
 
 A fins de exercício da estratégia, foi estipulado um **valor patrimonial inicial** de **R$ 100.000,00**. Esse valor serve como referência base para avaliar tanto o crescimento quanto as perdas ao longo do período, permitindo interpretar os movimentos patrimoniais em termos **relativos e absolutos**.
 
-A evolução patrimonial evidencia algumas **lições centrais**. A trajetória foi caracterizada por **alta volatilidade**, refletindo **alocação de risco elevada** e exposição a oscilações significativas. A marca de **R$ 100 mil** atuou como **divisor de águas**: o patrimônio conseguiu superar e se manter acima por cerca de **1,5 ano**, mas acabou recuando, confirmando a resistência dessa faixa. O **drawdown** do primeiro trimestre de **2020** comprometeu fortemente a rentabilidade de longo prazo, revelando **falhas na gestão de risco**, enquanto a tendência de queda nos últimos trimestres indica que as estratégias adotadas a partir de **2024** não foram suficientes para estabilizar o portfólio.
+![[projeto-cluster-portfolio-4.png]]
+
+>[!info]
+>A linha de preta de mostra a referência incial dos R$ 100.000,00 investidos incialmente. As barras vermelhas mostram os períodos que o portfólio ficou abaixo desse patamar e as barras verdes mostram os períodos que ficou acima. 
+
+A evolução patrimonial evidencia algumas **lições centrais**. A trajetória foi caracterizada por **alta volatilidade**, refletindo **alocação de risco elevada** e exposição a oscilações significativas. A marca de **R$ 100 mil** atuou como **divisor de águas**: o patrimônio conseguiu superar e se manter acima por cerca de **1,5 ano**, mas acabou recuando, confirmando a resistência dessa faixa. O **drawdown** do primeiro trimestre de **2020** comprometeu fortemente a rentabilidade de longo prazo, revelando **falhas na gestão de risco**. 
 
 Em suma, a trajetória patrimonial demonstra que, apesar do potencial identificado pelo modelo e das oportunidades de ganhos expressivos em períodos pontuais, a estratégia apresentou **consistência limitada** e **alta sensibilidade a choques de mercado**. A **falta de mecanismos robustos de controle de risco** e a **concentração elevada** em poucos ativos por trimestre impediram que os ganhos fossem preservados, resultando em uma **performance final significativamente inferior** ao pico alcançado.
 ## Análise de Risco
@@ -113,6 +140,8 @@ Como descrito anteriormente, o portfólio apresentou um **perfil de risco elevad
 O **VaR** estima a **perda máxima esperada** do portfólio em um horizonte de tempo definido, dado um **nível de confiança** específico. Diante disso, foi estimado um **VaR mensal com 95% de confiança** que indicou um resultado de **-15%**, ou seja, em **19 de 20 meses** do período de análise, as perdas **não devem ultrapassar -15%**.
 
 Já o **CVaR** calcula a **perda média nos piores cenários**, ou seja, quando a perda ultrapassa o valor estimado pelo VaR. No caso do portfólio analisado, essa métrica indicou uma **queda de -30%**, evidenciando a severidade das perdas em **eventos extremos**. Assim, enquanto o VaR estabelece um **limite de perda “esperado”**, o CVaR captura a **magnitude real das perdas** nos piores cenários, sendo especialmente relevante para estratégias **concentradas** ou com **retornos assimétricos**.
+
+![[projeto-cluster-portfolio-2.png]]
 
 No caso do portfólio analisado, o VaR mensal de **-15%** confirma que a estratégia **assume risco elevado** de forma consistente, enquanto o CVaR de **-30%** evidencia que, quando o limite do VaR é ultrapassado, o **prejuízo médio esperado é substancial**. Os eventos históricos de **-50%**, **-31%** e **-18%** reforçam a materialização concreta desse risco, demonstrando que perdas severas **não** são meros acidentes, mas sim uma **característica estrutural** da carteira. O **drawdown máximo de 51%** registrado no início de **2020** confirma que o portfólio é vulnerável a **choques extremos**, resultado da **extrema concentração** de capital em poucos ativos.
 
@@ -140,6 +169,11 @@ Na fase de **validação interna**, o número de clusters indicados como ideal v
 ## Conclusão 
 
 O projeto demonstrou que a estratégia de **otimização via clusterização**, na forma como foi implementada, **não cumpriu o objetivo** inicial de **reduzir risco** e **maximizar o Sharpe Ratio**. A carteira resultante apresentou **desempenho volátil**, **forte concentração** em poucos ativos e um **resultado acumulado negativo**, evidenciando **falhas de gestão de risco**.
+
+![[projeto-cluster-portfolio-5.png]]
+
+>[!info]
+>Comparação entre a **rentabilidade acumulada** da nossa carteira principal com o **Ibovespa** e com a **carteira sem clusterizar**, que apenas pegava ações do universo inteiro com maior maior Sharpe Ratio no período. Podemos perceber o desempenho ficou bem aquém do esperado.
 
 Apesar de ter identificado **setores relevantes** e capturado **momentos de alta rentabilidade**, a estratégia mostrou-se **inconsistente** no longo prazo. A **diversificação** prometida pela clusterização **não** se concretizou, já que a **alocação excessiva** em um ou dois papéis **anulou** os benefícios esperados, performando **pior** que a carteira na qual **não houve clusterização**.
 
