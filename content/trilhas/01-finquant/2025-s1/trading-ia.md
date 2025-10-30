@@ -1,15 +1,12 @@
 ---
 title: Estratégias de trading com python
-authors:
-  - Ana Beatriz Zaparoli
-  - David Leati 
-  - Eduardo Lud
-  - Tiago Toledo
 tags:
   - trilha/finquant
   - nivel/avancado
 draft: false
 ---
+_**Autores:** Ana Beatriz Zaparoli · David Leati · Eduardo Lud · Tiago Toledo_
+
 O mercado de criptoativos revolucionou o cenário financeiro com sua natureza digital e descentralizada. Caracterizado por sua constante evolução e alta volatilidade, ele apresenta tanto oportunidades quanto desafios significativos para os investidores. A dificuldade em prever movimentos de preços e identificar momentos ideais de entrada e saída é um problema persistente, que impede muitos participantes de maximizar seus retornos e gerenciar riscos de forma eficaz.
 
 A volatilidade, embora possa gerar ganhos substanciais se as negociações forem feitas no momento certo — o que no jargão cripto é conhecido como _“buy the dip”_ (comprar na baixa) e _“taking profit_” (realizar lucro) — , também pode resultar em perdas significativas se não for gerenciada adequadamente. Vender na baixa e comprar na alta são exemplos clássicos de operações prejudiciais. Essa característica intrínseca do mercado cripto não pode ser ignorada no desenvolvimento de estratégias de investimento.
