@@ -21,10 +21,10 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 - **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.
 - **Roteiros de nossas aulas** do nosso projeto interno de aulas intitucionais (a.k.a dev.ensina)
 
-### Como aproveitar melhor
-- Explore **Projetos & Iniciativas** para ver o que já construímos e uma visão geral do que já produzimos até hoje.
--  Siga as **Trilhas** para um caminho curado de aprendizado por tema.
-- Curtiu algo? **Reproduza, adapte ao seu contexto e divulgue nosso trabalho**.
+>[!tip] Como aproveitar melhor
+>- Explore **Projetos & Iniciativas** para ver o que já construímos e uma visão geral do que já produzimos até hoje.
+>-  Siga as **Trilhas** para um caminho curado de aprendizado por tema.
+>- Curtiu algo? **Reproduza, adapte ao seu contexto e divulgue nosso trabalho**.
 
 ## Trilhas
 
