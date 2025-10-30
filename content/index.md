@@ -23,7 +23,7 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 
 ### Como aproveitar melhor
 - Explore **Projetos & Iniciativas** para ver o que já construímos e uma visão geral do que já produzimos até hoje.
-	- Siga as **Trilhas** para um caminho curado de aprendizado por tema.
+-  Siga as **Trilhas** para um caminho curado de aprendizado por tema.
 - Curtiu algo? **Reproduza, adapte ao seu contexto e divulgue nosso trabalho**.
 
 ## Trilhas
