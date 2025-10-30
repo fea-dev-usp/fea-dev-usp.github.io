@@ -3,9 +3,9 @@ title: Estratégias de trading com python
 tags:
   - trilha/finquant
   - nivel/avancado
-draft: false
 ---
 _**Autores:** Ana Beatriz Zaparoli · David Leati · Eduardo Lud · Tiago Toledo_
+## Introdução
 
 O mercado de criptoativos revolucionou o cenário financeiro com sua natureza digital e descentralizada. Caracterizado por sua constante evolução e alta volatilidade, ele apresenta tanto oportunidades quanto desafios significativos para os investidores. A dificuldade em prever movimentos de preços e identificar momentos ideais de entrada e saída é um problema persistente, que impede muitos participantes de maximizar seus retornos e gerenciar riscos de forma eficaz.
 
