@@ -421,7 +421,7 @@ A segmentação em 12 clusters aprofunda a análise, revelando que os "Eixos de 
 |  10    | Epicentro da Crise Múltipla            | Piores indicadores de pobreza e violência (caso extremo).                        | M’Boi Mirim                                                                                                                |
 |  11    | Défice Educacional Crítico             | Pior taxa de educação, combinada com alta pobreza.                               | Sé                                                                                                                         |
 
-## DISCUSSÃO, LIMITAÇÕES E PRÓXIMOS PASSOS
+## Discussão, Limitações e Próximos Passos
 
 A partir dos resultados das análises realizadas, é possível inferir algumas hipóteses à respeito do que foi observado. Primeiramente, como dito anteriormente, foi verificado que o uso da técnica de regressão linear simples para prever indicadores de infraestrutura, como  percentual de domicílios com saneamento básico e número de UBS) e demográficos (longevidade) mostram tendências claras e são altamente previsíveis. Nesse contexto, 9 das 21 análises para os indicadores escolhidos apresentaram um elevado R² (> 0.9). 
 
@@ -435,7 +435,7 @@ A principal está relacionada à escassez de dados em nível de subprefeitura, j
 
 Como próximos passos, recomenda-se a inclusão de outras técnicas de clustering, como o DBSCAN (RASCHKA; LIU; MIRJALILI, 2022), que pode lidar melhor com dados ruidosos e identificar grupos de formatos irregulares , além da aplicação de métricas adicionais para avaliação da qualidade dos clusters, como o índice Davies-Bouldin. Tais abordagens podem refinar a análise, proporcionando interpretações mais robustas e auxiliando na tomada de decisão baseada em dados. Além disso, também seria interessante a realização de análises preditivas que mostram como a composição dos clusters varia ao longo do tempo, sendo uma forma adicional de verificar a evolução da qualidade de vida nas subprefeituras.
 
-## CONCLUSÃO
+## Conclusão
 
 Este projeto demonstrou que é possível enxergar pontos de desigualdade entre os bairros da cidade de São Paulo com mais profundidade do que índices muito utilizados atualmente, como o IDH. Com base em 21 indicadores disponibilizados pelo ObservaSampa, sobre as subprefeituras de São Paulo, foram realizadas diversas análises fundamentadas em técnicas profissionais, como projeções temporais com regressão linear, clustering de k-means e clustering no modelo hierárquico. 
 
@@ -445,7 +445,7 @@ Já no modelo de clustering por k-means, foram encontrados uma divisão clara em
 
 Em síntese, o trabalho cumpriu seu objetivo proposto: oferecer uma base empírica para priorização territorial e desenho de políticas mais direcionadas para os diferentes agrupamentos. Entretanto, também foram reconhecidas falhas e pontos de melhoria, como o baixo escore de silhouette para os clusterings, o que pode indicar uma complexidade suscetível a erros, apesar da linearidade dos agrupamentos com o contexto real de São Paulo.
 
-## REFERÊNCIAS
+## Referências
 
 - IBGE – INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. Censo Demográfico 2022 [dados]. Rio de Janeiro: IBGE, 2022.
 - INSTITUTO NACIONAL DE PESQUISAS ESPACIAIS – INPE. O que é El Niño e La Niña? Acesso à Informação – Perguntas Frequentes – Principais Produtos e Serviços – Previsão de Tempo e Clima. Brasília, 20 set. 2024. Atualizado em 24 set. 2024. Disponível em: [https://www.gov.br/inpe/pt-br/acesso-a-informacao/perguntas-frequentes/principais-produtos-e-servicos-do-inpe/previsao-de-tempo-e-clima/o-que-e-el-nino](https://www.gov.br/inpe/pt-br/acesso-a-informacao/perguntas-frequentes/principais-produtos-e-servicos-do-inpe/previsao-de-tempo-e-clima/o-que-e-el-nino). Acesso em: 13 ago. 2025.
