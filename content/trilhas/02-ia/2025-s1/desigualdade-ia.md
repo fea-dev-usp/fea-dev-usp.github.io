@@ -38,7 +38,7 @@ _**Autores:** Felipe Bulgareli de Faria · Gustavo Katsuo Tsutsui · Thales Viei
 - **Tabela 2.** Métricas de performance dos modelos de regressão linear  
 - **Tabela 3.** Perfil detalhado dos 12 clusters  
 
-	## Seções
+## Seções
 - [Introdução](#introdução)
 - [Descrição e origem dos dados utilizados](#descrição-e-origem-dos-dados-utilizados)
 - [Processamento e preparação dos dados](#processamento-e-preparação-dos-dados)
