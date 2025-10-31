@@ -112,7 +112,7 @@ Outro ponto relevante diz respeito à **dinâmica temporal dos pesos atribuídos
 
 Ademais, pode-se observar que o modelo tem ativos como **VIVT3**, **VALE3** e **WEGE3** aparecendo em **múltiplos períodos** distintos, sugerindo que eles são “candidatos” recorrentes a compor a carteira. Suas características de **rentabilidade estrutural** são consistentemente capturadas pelo modelo em diferentes contextos de mercado. Em contrapartida, ações como **RANI3**, **TECN3** ou **WHRL4**, que aparecem de forma mais esporádica, representam **apostas mais táticas** e surgem como **oportunistas**, selecionadas quando seus fundamentos se destacam em um trimestre específico.
 
-Portanto, dinâmica da carteira **não é passiva**, no sentido de se comprar e segurar os ativos com os melhores fundamentos por longos períodos. Pelo contrário, é uma estratégia de **rotação quantitativa ativa** e de **diversificação**.
+Portanto, dinâmica da carteira **não é passiva**, no sentido de se comprar e segurar os ativos com os melhores fundamentos por longos períodos. Pelo contrário, é uma estratégia de **rotação quantitativa ativa**.
 
 Esse comportamento dinâmico levanta a questão central: até que ponto a rotação ativa e a diversificação de setores se traduziram em **resultados financeiros concretos**? Para responder, é necessário observar a **rentabilidade acumulada e parcial** da carteira ao longo do intervalo de tempo.
 
