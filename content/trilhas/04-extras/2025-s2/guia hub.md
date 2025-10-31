@@ -1,7 +1,8 @@
 ---
 title: Onboarding do Hub – Guia passo a passo
 ---
->[! WARNING]
+>[!warning]
+>
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
 
 Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Obsidian + Git + Quartz**.
@@ -15,9 +16,11 @@ Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedad
 - Ter também o **Obsidian** instalado (para editar os arquivos Markdown `.md`).
 
 >[!info]
->Links oficiais para download, caso ainda não tenha instalado:
->Git: <https://git-scm.com> 
->Obsidian: <https://obsidian.md/>
+> Links oficiais para download, caso ainda não tenha instalado:
+>
+> - [Git](https://git-scm.com)
+> - [Obsidian](https://obsidian.md/)
+
 
 ## 2) Clonar o repositório da organização
 
@@ -63,8 +66,10 @@ code . # isso abre a pasta no VsCode
 
 ![[guia-hub-3.jpg]]
 
-3 - Após clicar nele, selecione em Gerenciar Cofres:
+3 - Após clicar nele, selecione em "Gerenciar Cofres...";
 
+![[guia-hub-4.jpg]]
 
+4 - Nessa nova tela que se abriu clique em "Abrir pasta como cofre"; 
 
 
