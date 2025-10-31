@@ -28,7 +28,7 @@ Com ambos instalados no seu computador, siga os seguintes passos:
 
 1 - Abra seu VsCode;
 
-2 - Inicialize seu Terminal, pode tanto arrastando com mouse a parte inferior para cima (imagem abaixo como referência) ou por meio do atalho Crtl + Shift + Aspas;
+2 - Inicialize seu Terminal, pode tanto arrastando com mouse a parte inferior para cima (imagem abaixo como referência) ou por meio do atalho Ctrl + Shift + Aspas;
 
 ![[guia-hub-2.jpg]]
 
@@ -62,7 +62,7 @@ code . # isso abre a pasta no VsCode
 
 1 -  Abra o Obsidian;
 
-2 - No canto inferior esquerdo clique 'Vault' (está do lado do símbolo ponto de interrogação e da engragem):
+2 - No canto inferior esquerdo clique no "Vault" padrão que está no seu Obsidian (está ao lado do símbolo de interrogação e da engrenagem):
 
 ![[guia-hub-3.jpg]]
 
