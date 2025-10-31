@@ -70,6 +70,8 @@ code . # isso abre a pasta no VsCode
 
 ![[guia-hub-4.jpg]]
 
-4 - Nessa nova tela que se abriu clique em "Abrir pasta como cofre"; 
+4 - Nessa nova tela que se abriu, clique em "Abrir" na seção "Abrir pasta como cofre"; 
 
+![[guia-hub-5.jpg]]
+5-
 
