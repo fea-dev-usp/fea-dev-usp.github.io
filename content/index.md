@@ -89,10 +89,6 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 - 🟢 **Iniciante**: primeiros passos e guias passo a passo  
 - 🟠 **Intermediário**: já pressupõe base técnica  
 - 🔴 **Avançado**: profundidade teórica/técnica
-
-> Dica: acesse também as páginas por nível:  
-> [/tags/nivel/iniciante/](/tags/nivel/iniciante/) • [/tags/nivel/intermediario/](/tags/nivel/intermediario/) • [/tags/nivel/avancado/](/tags/nivel/avancado/)
-
 ## Projetos & Iniciativas
 ### Quant Connect 
 
