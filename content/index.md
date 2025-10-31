@@ -110,22 +110,22 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
        style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
               gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="quant-connect/quant-connect-2.jpg"
+      <img src="imagens/quant-connect/quant-connect-2.jpg"
            alt="Foto com Painel"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="quant-connect/quant-connect-3.jpg"
+      <img src="imagens/quant-connect/quant-connect-3.jpg"
            alt="Foto com o Raphael Cordeiro"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="quant-connect/quant-connect-4.jpg"
+      <img src="imagens/quant-connect/quant-connect-4.jpg"
            alt="Apresentação projeto Quantamental"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="quant-connect/quant-connect-5.jpg"
+      <img src="imagens/quant-connect/quant-connect-5.jpg"
            alt="Foto da palestra"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
