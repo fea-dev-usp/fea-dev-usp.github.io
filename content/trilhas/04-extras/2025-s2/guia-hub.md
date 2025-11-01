@@ -47,7 +47,7 @@ Com ambos instalados no seu computador, siga os seguintes passos:
 ```powershell
 # Alterar depois para os links corretos
 git clone https://github.com/<ORGANIZACAO>/<REPO-DO-HUB>.git
-cd <REPO-DO-HUB>
+cd felipesantanafs.github.io
 
 # Só para confirmar a branch padrão do projeto
 git branch -a # o output aqui esperado algo que contenha 'v4'
@@ -202,11 +202,42 @@ Bom espero que esteja acompanhando tudo até o momento, supunha que terminou as 
 
 ![[guia-hub-21.jpg]]
 
-3- adicione o que você alterou na pasta content
+3- Adicione o que você alterou na pasta content;
 
+![[guia-hub-22.jpg]]
 
+4- Dê o commit (coloquei um exemplo que estou fazendo, descreve o que você fez no seu caso);
 
- 
+![[guia-hub-23.jpg]]
+
+Vai aparecer tudo que você fez, que beleza hein!
+
+5- Por fim, de um push e mandará tudo ao github;
+
+![[guia-hub-25.jpg]]
+
+Beleza Tudo foi para o Github lá nosso! Mas se segura ai, a mudança lá no site do Hub não é algo automático! 
+Primeiro verificamos no próprio Github se a nossa adição deu tudo certo
+
+6- Abrindo a aba "Actions" do nosso repositório;
+
+![[guia-hub-27.jpg]]
+
+Clique na última sua última adição, que no meu caso foi essa marcada pela setinha vermelha. 
+Se ao selecioná-la e ainda estiver amarela ainda as mudanças não foram adicionadas ao Hub (ou seja, não adianta ficar dando F5 lá na site ainda não vai ter alteração alguma), espere ele ficar azul que as mudanças foram enviadas (agora pode ficar dando F5 igual um louco) 
+
+![[guia-hub-24.jpg]]
+(sinal de esperar ainda)
+
+![[guia-hub-26.jpg]]
+(agora foi!)
+
+7- Pronto suas alterações foram feitas e o Hub estará atualizado! 😁
+## Considerações Finais: 
+
+Bom o guia básico de como acessar e criar seus arquivos foram feitos! Eu sei que parece muito a primeira vista, mas juro que com a prática de vocês logo tudo ficará guardado na cabeça de vocês e vai sair tudo de forma automática praticamente. Revisem tudo e façam todo o passo a passo com calma. 
+
+Conto que vocês para sempre atualizar esse meio com excelentes materiais, você vai ajudar toda a comunidade dev e externa! 🚀🚀🚀
 
 ## [Opcional] - Background do Hub:
 
