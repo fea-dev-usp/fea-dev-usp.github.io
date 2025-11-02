@@ -84,7 +84,7 @@ Os temas, com seus respectivos indicadores escolhidos foram:
 	- Estabelecimentos formais no município - Total.
 - **Educação:** 
 	- Taxa de Universalização da Educação Básica obrigatória (%).
-- **Meio ambiente: **
+- **Meio ambiente:** 
 	- Cobertura vegetal per capita (m²/hab);
 	- Cobertura vegetal no MSP (%).
 - Mobilidade e Segurança no Trânsito

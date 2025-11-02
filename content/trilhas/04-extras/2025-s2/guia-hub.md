@@ -38,7 +38,7 @@ Com ambos instalados no seu computador, siga os seguintes passos:
 
 ![[guia-hub-2.jpg]]
 
-3- É esperado que você esteja visualizando isso na  sua tela:
+3- É esperado que você esteja visualizando isso na sua tela:
 
 ![[guia-hub-1.jpg]]
 
@@ -146,9 +146,11 @@ vai aparecer isso exatamente na hora!
 ![[guia-hub-13.jpg]]
 3- Tags: para adicionar uma tag clique em 'Adicionar propriedade' e escreva 'tags'. Até o momento temos 2 tipos de tags e com suas classificações:
 
-a- Nível:  escreva  #nivel/basico , #nivel/intermediario ou #nivel/avancado  
+a- Nível:  escreva  "#nivel/basico" , "#nivel/intermediario" ou "#nivel/avancado"  
 
-b- Trilhas: escreva #trilha/finquant , #trilha/ia , #trilha/extras ou #trilha/ciencia-de-dados 
+b- Trilhas: escreva "#trilha/finquant" , "#trilha/ia" , "#trilha/extras" ou "#trilha/ciencia-de-dados" 
+
+Obs: escreva sem as aspas!
 
 Pronto seu cabeçalho está pronto, ficará dessa forma: 
 
@@ -243,6 +245,6 @@ Conto que vocês para sempre atualizar esse meio com excelentes materiais, você
 
 >[!info]
 >Se ainda ficou curiso e quer saber como o Hub foi feito e entender mais o como funciona o Quartz, leia a seguinte documentação: 
->[https://quartz.jzhao.xyz/authoring-content](https://quartz.jzhao.xyz/authoring-content)
-[https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages](https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages)
+>[https://quartz.jzhao.xyz/authoring-content](https://quartz.jzhao.xyz/authoring-content )
+>[https://notes.nicolevanderhoeven.com](https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages) 
 >[https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz](https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz)
