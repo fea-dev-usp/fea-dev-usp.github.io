@@ -245,6 +245,6 @@ Conto que vocês para sempre atualizar esse meio com excelentes materiais, você
 
 >[!info]
 >Se ainda ficou curiso e quer saber como o Hub foi feito e entender mais o como funciona o Quartz, leia a seguinte documentação: 
->[https://quartz.jzhao.xyz/authoring-content](https://quartz.jzhao.xyz/authoring-content )
->[https://notes.nicolevanderhoeven.com](https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages) 
->[https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz](https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz)
+>- [https://quartz.jzhao.xyz/authoring-content](https://quartz.jzhao.xyz/authoring-content )
+>- [https://notes.nicolevanderhoeven.com](https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages) 
+>- [https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz](https://yagasaki.bohr.io/blog/como-criar-um-blog-usando-github-pages-obsidian-quartz)
