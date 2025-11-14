@@ -1,0 +1,26 @@
+name: Setup Directory Structure
+
+on: push
+
+jobs:
+    set-dir:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+            - name: New Folder Detection
+              run: |
+                git fetch origin ${{ github.event.before }}
+                NEW_FOLDERS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^content/' | cut -d'/' -f3 | sort -u)
+                ls -R content/
+                echo "New folders detected: $NEW_FOLDERS"
+                for folder in $NEW_FOLDERS; do
+                    if [ -d "content/$folder"]; then #verifica se é um diretório
+                        find content/$folder -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" \) -exec mv {} imagens/ \;
+
+                        ls -la imagens/$folder || echo "No images moved for $folder"
+                    fi
+
+            - name: Commit and Push changes
+              run: |
+                echo "Estrutura criada:"
+                ls -R content/imagens
