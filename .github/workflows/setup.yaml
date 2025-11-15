@@ -1,26 +1,43 @@
 name: Setup Directory Structure
 
-on: push
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
     set-dir:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v5
-            - name: New Folder Detection
+              with:
+                  fetch-depth: 0
+            - name: Move Images
               run: |
-                git fetch origin ${{ github.event.before }}
-                NEW_FOLDERS=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^content/' | cut -d'/' -f3 | sort -u)
-                ls -R content/
-                echo "New folders detected: $NEW_FOLDERS"
-                for folder in $NEW_FOLDERS; do
-                    if [ -d "content/$folder"]; then #verifica se é um diretório
-                        find content/$folder -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.gif" \) -exec mv {} imagens/ \;
-
-                        ls -la imagens/$folder || echo "No images moved for $folder"
+                NEW_FOLDERS=$(git diff --name-only HEAD~1 HEAD | grep '^content/' | cut -d'/' -f2 | sort | uniq)
+                for FOLDER in $NEW_FOLDERS; do
+                    if [ -d "content/$FOLDER" ]; then
+                        mkdir -p "content/imagens/$FOLDER"
+                        if find "content/$FOLDER" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print -quit | grep -q .; then
+                            find "content/$FOLDER" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print0 | xargs -0 -I {} mv "{}" "content/imagens/$FOLDER/"
+                        else
+                            echo "Nenhuma imagem para mover em content/$FOLDER"
+                        fi
                     fi
-
-            - name: Commit and Push changes
+                done
+            - name: Commit and push changes
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                echo "Estrutura criada:"
-                ls -R content/imagens
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                  git fetch origin v4
+                  git merge origin/v4 --no-edit
+                  git add content
+                  if [ -n "$(git status --porcelain)" ]; then
+                      git commit -m "chore: Move images to structured folders"
+                      git push origin v4
+                  else
+                      echo "No changes to commit."
+                  fi
