@@ -1,0 +1,59 @@
+name: Organizar imagens do Hub
+
+on:
+  push:
+    branches: [ "v4" ]   
+
+jobs:
+  move-images:
+    # evita loop: o commit do próprio bot não dispara o job de novo
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Detectar e mover imagens
+        run: |
+          # Arquivos adicionados ou modificados neste push
+          CHANGED_FILES=$(git diff --name-status HEAD^ HEAD | awk '$1=="A" || $1=="M"{print $2}')
+
+          echo "Arquivos alterados:"
+          echo "$CHANGED_FILES"
+
+          # Filtrar só imagens dentro de content/trilhas
+          IMAGES=$(echo "$CHANGED_FILES" | grep -E '^content/trilhas/.*\.(png|jpe?g|gif|svg)$' || true)
+
+          if [ -z "$IMAGES" ]; then
+            echo "Nenhuma imagem em content/trilhas para mover."
+            exit 0
+          fi
+
+          for FILE in $IMAGES; do
+            # Remove prefixo 'content/' -> fica 'trilhas/02-ia/2025-s1/...'
+            REL_PATH=${FILE#content/}
+
+            # Pasta de destino: content/imagens/trilhas/02-ia/2025-s1/...
+            DEST_DIR="content/imagens/${REL_PATH%/*}"
+
+            echo "Movendo $FILE -> $DEST_DIR/"
+            mkdir -p "$DEST_DIR"
+            git mv "$FILE" "$DEST_DIR/"
+          done
+
+      - name: Commit e push se houve mudança
+        run: |
+          # Verifica se git mv gerou mudanças no index
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração para commitar."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "chore: mover imagens para content/imagens"
+          git push
