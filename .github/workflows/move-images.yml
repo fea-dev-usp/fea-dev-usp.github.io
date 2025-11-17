@@ -2,7 +2,7 @@ name: Organizar imagens do Hub
 
 on:
   push:
-    branches: [ "v4" ]
+    branches: [ "v4" ]   # se estiver usando outra branch, coloca aqui também (ex: "main")
 
 jobs:
   move-images:
@@ -22,7 +22,7 @@ jobs:
           BEFORE_SHA="${{ github.event.before }}"
           AFTER_SHA="${{ github.sha }}"
 
-          # Se for o primeiro commit da branch, não existe "before":
+          # Se for primeiro commit da branch, não existe "before"
           if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
             echo "Primeiro push da branch, pegando todos os arquivos trackeados."
             CHANGED_FILES=$(git ls-files)
@@ -34,7 +34,7 @@ jobs:
           echo "Arquivos alterados:"
           echo "$CHANGED_FILES"
 
-          # Pega imagens em QUALQUER pasta de content, exceto as que já estão em content/imagens
+
           IMAGES=$(echo "$CHANGED_FILES" | grep -Ei '^content/(?!imagens/).*\.(png|jpe?g|gif|svg)$' || true)
 
           if [ -z "$IMAGES" ]; then
@@ -43,9 +43,9 @@ jobs:
           fi
 
           for FILE in $IMAGES; do
-            # Remove prefixo 'content/' -> ex: 'trilhas/01-finquant/2025-s1/img.png'
+            
             REL_PATH=${FILE#content/}
-            # Pasta de destino: content/imagens/<mesmo caminho da imagem, sem o nome do arquivo>
+            
             DEST_DIR="content/imagens/${REL_PATH%/*}"
             BASENAME=$(basename "$FILE")
 
