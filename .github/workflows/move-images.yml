@@ -2,51 +2,60 @@ name: Organizar imagens do Hub
 
 on:
   push:
-    branches: [ "v4" ]   
+    branches: [ "v4" ]
 
 jobs:
   move-images:
-    # evita loop: o commit do próprio bot não dispara o job de novo
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Detectar e mover imagens
         run: |
-          # Arquivos adicionados ou modificados neste push
-          CHANGED_FILES=$(git diff --name-status HEAD^ HEAD | awk '$1=="A" || $1=="M"{print $2}')
+          set -e
+
+          BEFORE_SHA="${{ github.event.before }}"
+          AFTER_SHA="${{ github.sha }}"
+
+          # Se for o primeiro commit da branch, não existe "before":
+          if [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            echo "Primeiro push da branch, pegando todos os arquivos trackeados."
+            CHANGED_FILES=$(git ls-files)
+          else
+            echo "Diff entre $BEFORE_SHA e $AFTER_SHA"
+            CHANGED_FILES=$(git diff --name-status "$BEFORE_SHA" "$AFTER_SHA" | awk '$1=="A" || $1=="M"{print $2}')
+          fi
 
           echo "Arquivos alterados:"
           echo "$CHANGED_FILES"
 
-          # Filtrar só imagens dentro de content/trilhas
-          IMAGES=$(echo "$CHANGED_FILES" | grep -E '^content/trilhas/.*\.(png|jpe?g|gif|svg)$' || true)
+          # Pega imagens em QUALQUER pasta de content, exceto as que já estão em content/imagens
+          IMAGES=$(echo "$CHANGED_FILES" | grep -Ei '^content/(?!imagens/).*\.(png|jpe?g|gif|svg)$' || true)
 
           if [ -z "$IMAGES" ]; then
-            echo "Nenhuma imagem em content/trilhas para mover."
+            echo "Nenhuma imagem fora de content/imagens para mover."
             exit 0
           fi
 
           for FILE in $IMAGES; do
-            # Remove prefixo 'content/' -> fica 'trilhas/02-ia/2025-s1/...'
+            # Remove prefixo 'content/' -> ex: 'trilhas/01-finquant/2025-s1/img.png'
             REL_PATH=${FILE#content/}
-
-            # Pasta de destino: content/imagens/trilhas/02-ia/2025-s1/...
+            # Pasta de destino: content/imagens/<mesmo caminho da imagem, sem o nome do arquivo>
             DEST_DIR="content/imagens/${REL_PATH%/*}"
+            BASENAME=$(basename "$FILE")
 
-            echo "Movendo $FILE -> $DEST_DIR/"
+            echo "Movendo $FILE -> $DEST_DIR/$BASENAME"
             mkdir -p "$DEST_DIR"
-            git mv "$FILE" "$DEST_DIR/"
+            git mv "$FILE" "$DEST_DIR/$BASENAME"
           done
 
       - name: Commit e push se houve mudança
         run: |
-          # Verifica se git mv gerou mudanças no index
           if git diff --cached --quiet; then
             echo "Nenhuma alteração para commitar."
             exit 0
@@ -54,6 +63,5 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
           git commit -m "chore: mover imagens para content/imagens"
           git push
