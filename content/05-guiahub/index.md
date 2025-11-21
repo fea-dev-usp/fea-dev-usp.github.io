@@ -36,11 +36,11 @@ Com ambos instalados no seu computador, siga os seguintes passos:
 
 2- Inicialize seu Terminal, pode tanto arrastando com mouse a parte inferior para cima (imagem abaixo como referência) ou por meio do atalho Ctrl + Shift + Aspas;
 
-![[../../imagens/guia-hub/guia-hub-19.jpg]]
+![[../imagens/index/index-15.jpg]]
 
 3- É esperado que você esteja visualizando isso na sua tela:
 
-![[../../imagens/guia-hub/guia-hub-10.jpg]]
+![[../imagens/index/index-25.jpg]]
 
 4- No terminal agora você vai clonar o repositório do github para sua máquina, por meio do git. Dessa forma: 
 
@@ -70,15 +70,15 @@ code . # isso abre a pasta no VsCode
 
 2- No canto inferior esquerdo clique no "Vault" padrão que está no seu Obsidian (está ao lado do símbolo de interrogação e da engrenagem):
 
-![[../../imagens/guia-hub/guia-hub-4.jpg]]
+![[../imagens/index/index-5.jpg]]
 
 3- Após clicar nele, selecione em "Gerenciar Cofres...";
 
-![[../../imagens/guia-hub/guia-hub-5.jpg]]
+![[../imagens/index/index-4.jpg]]
 
 4- Nessa nova tela que se abriu, clique em "Abrir" na seção "Abrir pasta como cofre"; 
 
-![[../../imagens/guia-hub/guia-hub-6.jpg]]
+![[../imagens/index/index-3.jpg]]
 
 5- No explorador de arquivos, você vai colocar o caminho que você encontrou no passo 2.6
 Você vai escrever na área de busca, algo parecido com isso:
@@ -87,13 +87,13 @@ Você vai escrever na área de busca, algo parecido com isso:
 >Trocar essa imagem quando eu for trocar o nome do repositório para o da dev 
 
 
-![[../../imagens/guia-hub/guia-hub-7.jpg]]
+![[../imagens/index/index-2.jpg]]
 
 6- Seguindo a imagem, a pasta que deve estar selecionada é a 'content'. Com isso, você vai estar vendo que o nosso hub dentro do Obsidian (ele servirá como local de apenas de criar mudanças,  se quiser utilizar para leitura de preferência a utilizar o site). 
 
 7- A Cara do Hub é essa à princípio (imagem do dia 31/10/2025, no futuro poderá estar diferente):
 
-![[../../imagens/guia-hub/guia-hub-8.jpg]]
+![[../imagens/index/index-1.jpg]]
 
 ## 4) Estrutura do Hub: 
 
@@ -101,7 +101,7 @@ Você vai escrever na área de busca, algo parecido com isso:
 
 a. Home Page: O arquivo referente a nossa página é o index (que não está em nenhuma pasta), à princípio a sua alteração fica a cargo apenas para o pessoal de Tech e da Gestão, não altera ele sem a permissão do pessoal. 
 
-![[../../imagens/guia-hub/guia-hub-9.jpg]]
+![[../imagens/index/index.jpg]]
 
 
 >[!warning]
@@ -121,15 +121,15 @@ Aqui eu vou te ensinar como criar seu arquivo e como organizá-lo aqui dentro do
 
 OBS: não utilize ponto no nome do arquivo ( por exemplo: cluster.portfólio, utilize cluster-portfólio ), o ponto faz que o Obsidian tente o ler como arquivo, no caso citado seria um arquivo .portfolio e não como Markdown.
 
-![[../../imagens/guia-hub/guia-hub.jpg]]
+![[../imagens/index/index-26.jpg]]
 
 2- Criando pasta: Bom para criar é só clicar no ícone da "pasta com um sinal mais dentro" está do lado do ícone do arquivo. As mesma recomendações do Arquivo valem para as Pastas.
 
-![[../../imagens/guia-hub/guia-hub-12.jpg]]
+![[../imagens/index/index-24.jpg]]
 
 3- Forma alternativa para ambos é só clicar com o botão direito na lateral
 
-![[../../imagens/guia-hub/guia-hub-13.jpg]]
+![[../imagens/index/index-22.jpg]]
 
 
 ## 5) Personalização Essencial de sua Página:
@@ -138,12 +138,12 @@ Com a sua primeira página criada, vamos dar um cabeçalho para ela e anexar as 
 
 1- Cabeçalho: Escreva exatamente três hífens (---) sem os parêntases no topo do arquivo, bem abaixo do título: 
 
-![[../../imagens/guia-hub/guia-hub-11.jpg]]
+![[../imagens/index/index-23.jpg]]
 vai aparecer isso exatamente na hora!
 
 2- Título: preencha essa propriedade com 'title' e escrava seu título que quiser
 
-![[../../imagens/guia-hub/guia-hub-14.jpg]]
+![[../imagens/index/index-21.jpg]]
 3- Tags: para adicionar uma tag clique em 'Adicionar propriedade' e escreva 'tags'. Até o momento temos 2 tipos de tags e com suas classificações:
 
 a- Nível:  escreva  "#nivel/basico" , "#nivel/intermediario" ou "#nivel/avancado"  
@@ -154,7 +154,7 @@ Obs: escreva sem as aspas!
 
 Pronto seu cabeçalho está pronto, ficará dessa forma: 
 
-![[../../imagens/guia-hub/guia-hub-17.jpg]]
+![[../imagens/index/index-20.jpg]]
 
 ## 6) Adicionar imagens
 
@@ -162,23 +162,23 @@ Como já avisei anteriormente as imagens são algo que demandam bastante atenç�
 
 1- Crie uma subpasta na pasta imagem para armazenar suas imagens dentro, nesse exemplo criei uma que se chama "guia-hub":
 
-![[../../imagens/guia-hub/guia-hub-18.jpg]]
+![[../imagens/index/index-18.jpg]]
 
 2- Observe que todas as imagens que usei nesse arquivo estão dentro dela, tente manter a mesma sintaxe vai te ajudar a selecioná-las depois; 
 
- ![[../../imagens/guia-hub/guia-hub-2.jpg]]
+ ![[../imagens/index/index-16.jpg]]
 
 3- Você pode salvar a imagem dando um Ctrl + V da imagem dentro da imagem e depois  a renomeando apertando com o botão direito do mouse ou você pode fazer seu manejo pelo explorador de arquivos fique tranquilo
 
 4- Com isso em mente, para você colocar a sua imagem no corpo do seu arquivo faça a seguinte sintaxe: 
 
-![[../../imagens/guia-hub/guia-hub-15.jpg]]
+![[../imagens/index/index-19.jpg]]
 
 Dessa forma, já aparecerá uma sugestão para adicionar uma imagem salva no obsidian.
 
 5- Referenciando a imagem que você quer, terá algo do tipo:
 
-![[../../imagens/guia-hub/guia-hub-16.jpg]]
+![[../imagens/index/index-17.jpg]]
 
 6- Pronto sua imagem foi indexada ao Texto.
 
@@ -187,10 +187,10 @@ Eu concordo com você, seria muito mais fácil e direto, mas vou te mostrar o pr
 
 se eu simplesmente colasse a imagem que eu queria aconteceria isso: 
 
-![[../../imagens/guia-hub/guia-hub-20.jpg]]
+![[../imagens/index/index-14.jpg]]
 O nome da imagem seria algo bem abstrato e que depois para saber o que aquela imagem queria mostrar e de qual projeto faz parte. Além disso, ao se fazer isso o Obsidian adiociona automaticamente a imagem na barra lateral de forma aleatória! Observe na imagem que anexei abaixo: 
 
-![[../../imagens/guia-hub/guia-hub-21.jpg]] 
+![[../imagens/index/index-13.jpg]] 
 
 **Por fim eu sei que é um processo chato, mas que a longo prazo é necessário para a própria manutenção da organização do hub. Com pouco tempo você já acostuma com a sintaxe e já sai quase de forma automática. Conto com vocês com essa parte!**
 
@@ -202,36 +202,36 @@ Bom espero que esteja acompanhando tudo até o momento, supunha que terminou as 
  
 2- Mude para o ambiente da o hub;
 
-![[../../imagens/guia-hub/guia-hub-22.jpg]]
+![[../imagens/index/index-12.jpg]]
 
 3- Adicione o que você alterou na pasta content;
 
-![[../../imagens/guia-hub/guia-hub-23.jpg]]
+![[../imagens/index/index-11.jpg]]
 
 4- Dê o commit (coloquei um exemplo que estou fazendo, descreve o que você fez no seu caso);
 
-![[../../imagens/guia-hub/guia-hub-24.jpg]]
+![[../imagens/index/index-10.jpg]]
 
 Vai aparecer tudo que você fez, que beleza hein!
 
 5- Por fim, de um push e mandará tudo ao github;
 
-![[../../imagens/guia-hub/guia-hub-26.jpg]]
+![[../imagens/index/index-8.jpg]]
 
 Beleza Tudo foi para o Github lá nosso! Mas se segura ai, a mudança lá no site do Hub não é algo automático! 
 Primeiro verificamos no próprio Github se a nossa adição deu tudo certo
 
 6- Abrindo a aba "Actions" do nosso repositório;
 
-![[../../imagens/guia-hub/guia-hub-3.jpg]]
+![[../imagens/index/index-6.jpg]]
 
 Clique na última sua última adição, que no meu caso foi essa marcada pela setinha vermelha. 
 Se ao selecioná-la e ainda estiver amarela ainda as mudanças não foram adicionadas ao Hub (ou seja, não adianta ficar dando F5 lá na site ainda não vai ter alteração alguma), espere ele ficar azul que as mudanças foram enviadas (agora pode ficar dando F5 igual um louco) 
 
-![[../../imagens/guia-hub/guia-hub-25.jpg]]
+![[../imagens/index/index-9.jpg]]
 (sinal de esperar ainda)
 
-![[../../imagens/guia-hub/guia-hub-27.jpg]]
+![[../imagens/index/index-7.jpg]]
 (agora foi!)
 
 7- Pronto suas alterações foram feitas e o Hub estará atualizado! 😁
