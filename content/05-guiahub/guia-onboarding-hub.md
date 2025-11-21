@@ -1,5 +1,5 @@
 ---
-title: Onboarding do Hub – Guia passo a passo
+title: 1- Onboarding do Hub
 ---
 >[!warning]
 >
