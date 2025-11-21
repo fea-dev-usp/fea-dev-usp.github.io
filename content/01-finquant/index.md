@@ -31,10 +31,8 @@ O objetivo é dar viasibilidade aos projetos criados internamente, juntamente co
 - Quer entender **como fundos, desks e quants** pensam risco, retorno, drawdown, alavancagem etc.
     
 - Está se preparando para **estágios/trainees em mercado financeiro, quant, research ou data**
-    
 
-Não precisa já saber tudo – o importante é estar disposto a **estudar, testar ideias e compartilhar código**.
-
+---
 ## Como navegar pela trilha
 
 Use o menu à baixo para acessar os conteúdos de cada semestre:

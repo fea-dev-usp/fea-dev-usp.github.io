@@ -28,9 +28,6 @@ O objetivo é dar visibilidade aos projetos criados internamente e organizar mat
 - Gosta de **programar em Python** e quer aplicar isso em problemas quantitativos e de negócio
 - Quer entender **como cientistas de dados, engenheiros de ML e quants** projetam, treinam e validam modelos
 - Está se preparando para **estágios/trainees em dados, IA, pesquisa aplicada ou áreas quantitativas**
-
-Não precisa já dominar IA – o importante é estar disposto a **estudar, experimentar modelos diferentes, medir resultados e compartilhar código**.
-
 ---
 
 ## Como navegar pela trilha

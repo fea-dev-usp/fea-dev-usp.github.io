@@ -30,9 +30,6 @@ O objetivo é dar visibilidade aos projetos criados internamente e organizar mat
 - Gosta de **automatizar tarefas repetitivas** (coleta de dados, relatórios, atualizações de planilhas)
 - Quer entender **como cientistas de dados e engenheiros de dados** preparam bases antes da modelagem
 - Está se preparando para **estágios/trainees em dados, BI, analytics, engenharia de dados ou áreas quantitativas**
-
-Não precisa já dominar tudo – o importante é estar disposto a **estruturar melhor seus códigos, se preocupar com qualidade de dados e compartilhar boas práticas**.
-
 ---
 ## Como navegar pela trilha
 
