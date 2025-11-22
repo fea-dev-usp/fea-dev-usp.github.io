@@ -132,16 +132,14 @@ Foram dias de conteúdo técnico, visão de mercado e contato direto com quem es
 
 **Destaques da Semana.dev**
 
-- **Rafael Lavrado** – conversa acerca dos caminhos pra quem quer atuar em mercado financeiro com foca nas áreas quantitativas
+- **Rafael Lavrado** – oportunidades e trajetórias no mercado financeiro para quem deseja seguir carreira em finanças quantitativas.
     
 - **Claudio Pinhanez** – visão de futuro, pesquisa aplicada e impacto da IA no Brasil e no cenário global
     
-- **Uncover** – entendimento do funcionamento da empresa e como é feita a modelagem da otimização das carteiras marketing
+- **Uncover** – entendimento do funcionamento de uma martech e como é feita a modelagem da otimização das carteiras marketing
     
 - **Palver** – aplicação de Ciência de Dados e IA em análise política e tomada de decisão
     
-- **Networking entre trilhas** – integração das frentes de Data Science, FinQuant e IA com alunos de diferentes cursos e semestres
-
 <div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
   <div id="qc-g1-track"
        style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
