@@ -1,5 +1,7 @@
 ---
 title: 1)  Onboarding do Hub
+tags:
+  - nivel/basico
 ---
 >[!warning]
 >

@@ -3,7 +3,7 @@ title: " FinQuant"
 ---
 
 >[!warning]
-> Se você é membro da dev e quer contribuir com algum material, se liga no **Guia do Hub** disponível na seção Extras: [[../05-guiahub/01-guia-onboarding-hub|Guia do Hub]]
+> Se você é membro da dev e quer contribuir com algum material, se liga no **Guia do Hub** disponível na barra lateral: [[../05-guiahub/01-guia-onboarding-hub|Guia do Hub]]
 
 ## O que é a trilha de Finanças Quantitativas (FinQuant)?
 
@@ -33,6 +33,6 @@ O objetivo é dar viasibilidade aos projetos criados internamente, juntamente co
 - Está se preparando para **estágios/trainees em mercado financeiro, quant, research ou data**
 
 ---
-## Como navegar pela trilha
+## Como navegar pela trilha?
 
 Use o menu à baixo para acessar os conteúdos de cada semestre:

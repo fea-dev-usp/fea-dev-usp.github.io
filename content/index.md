@@ -90,7 +90,6 @@ Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de
 - 🔴 **Avançado**: profundidade teórica/técnica
 ## Projetos & Iniciativas
 ### Quant Connect 
-
 Somos **cofundadores do Quant Connect**, o **primeiro evento universitário do Brasil dedicado exclusivamente a Finanças Quantitativas**. Organizado por nós da FEA.dev juntamente com a FGV Quant, o Insper Quantitative Finance e a Poli Quant.  
 Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a profissionais que estão na linha de frente do mercado.
 
@@ -127,10 +126,55 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
   </div>
 </div>
 
+### Semana.dev
+Organizamos a **Semana.dev**, uma série de encontros que conectou **Ciência de Dados, IA e Finanças Quantitativas** com o que há de mais avançado no mercado. Durante a semana, recebemos a **Palver**, referência nacional no uso de dados e IA para análise política, a **Uncover** maior martech do Brasil, nascida como um protótipo de fundo quant, além de uma palestra sobre IA com **Claudio Pinhanez**, cientista-chefe da IBM, e uma conversa sobre carreiras em finanças com **Rafael Lavrado**.  
+Foram dias de conteúdo técnico, visão de mercado e contato direto com quem está construindo tecnologia de ponta no Brasil.
+
+**Destaques da Semana.dev**
+
+- **Rafael Lavrado** – conversa acerca dos caminhos pra quem quer atuar em mercado financeiro com foca nas áreas quantitativas
+    
+- **Claudio Pinhanez** – visão de futuro, pesquisa aplicada e impacto da IA no Brasil e no cenário global
+    
+- **Uncover** – entendimento do funcionamento da empresa e como é feita a modelagem da otimização das carteiras marketing
+    
+- **Palver** – aplicação de Ciência de Dados e IA em análise política e tomada de decisão
+    
+- **Networking entre trilhas** – integração das frentes de Data Science, FinQuant e IA com alunos de diferentes cursos e semestres
+
+<div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
+  <div id="qc-g1-track"
+       style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+              gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/semana-dev/semana-dev-1.jpg"
+           alt="Rafael Lavrado"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/semana-dev/semana-dev-2.jpg"
+           alt="Claudio Pinhanez"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/semana-dev/semana-dev-3.jpg"
+           alt="Uncover"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/semana-dev/semana-dev-4.jpg"
+           alt="Palver"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
+    </figure>
+  </div>
+</div>
+
 ## Contato & redes
 - E-mail: `contato.feadev@gmail.com`
 - Youtube: <https://www.youtube.com/@fea-dev>
 - GitHub: <https://github.com/fea-dev-usp>
 - Instagram: [@fea.dev](https://www.instagram.com/fea.dev/)
 - LinkedIn: [FEA.dev](https://www.linkedin.com/company/fea-dev/)
-	
+
+
+

@@ -2,7 +2,7 @@
 title: IA
 ---
 >[!warning]
-> Se você é membro da dev e quer contribuir com algum material, se liga no **Guia do Hub** disponível na seção Extras: [[../05-guiahub/01-guia-onboarding-hub|Guia do Hub]]
+> Se você é membro da dev e quer contribuir com algum material, se liga no **Guia do Hub** disponível na barra lateral: [[../05-guiahub/01-guia-onboarding-hub|Guia do Hub]]
 
 ## O que é a trilha de Inteligência Artificial (IA)?
 
@@ -30,6 +30,6 @@ O objetivo é dar visibilidade aos projetos criados internamente e organizar mat
 - Está se preparando para **estágios/trainees em dados, IA, pesquisa aplicada ou áreas quantitativas**
 ---
 
-## Como navegar pela trilha
+## Como navegar pela trilha?
 
 Use o menu à baixo para acessar os conteúdos de cada semestre:
