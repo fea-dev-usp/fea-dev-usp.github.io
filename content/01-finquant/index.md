@@ -15,7 +15,7 @@ Aqui integramos de forma estruturada:
 - **Programação científica** (principalmente em Python, com foco em data pipelines, backtesting e automação)
 - **Teoria de portfólio, risco e otimização** (alocação ótima, métricas de risco-retorno, restrições e controle de drawdown)
 
-O objetivo é dar viasibilidade aos projetos criados internamente, juntamente com artigos que sejam capazes de mostrar como se**formula, implementa e valida estratégias quantitativas completas**, desde a construção e tratamento da base de dados até a avaliação rigorosa de desempenho (backtests, métricas de risco-retorno e análise de robustez).
+O objetivo é dar viasibilidade aos projetos criados internamente, juntamente com artigos que sejam capazes de mostrar como se **formula, implementa e valida estratégias quantitativas completas**, desde a construção e tratamento da base de dados até a avaliação rigorosa de desempenho (backtests, métricas de risco-retorno e análise de robustez).
 
 
 ---
