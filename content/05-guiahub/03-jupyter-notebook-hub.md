@@ -7,6 +7,10 @@ tags:
 >
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
 >
+>Antes de subir um arquivo no hub **avise algum membro de tech** 
+>
+>Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar)! 😁
+>
 >Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
 
 >[!info]
@@ -75,7 +79,7 @@ Qualquer dúvida dê um revisada no passo a passo mais detalhado no guia anterio
 1- Abra seu arquivo agora em Markdown agora no Obsidian; 
  ![[Pasted image 20251124195152.png]]
 
-3- Se tiver algum título no seu documento remova ele  e substitua pela formatação do Obsidian. 
+2- Se tiver algum título no seu documento remova ele  e substitua pela formatação do Obsidian. 
 (No meu caso não tenho, "introducao_poo_fea_dev" é o nome do arquivo)
 
 Você escreverá três hífens ( "-" ) no topo da página e selecione o as propriedades "title" e "tags":
@@ -102,11 +106,12 @@ Na linha abaixo do painel de propriedades, dê seus créditos pelo trabalho! Use
 _**Autores:** Autor(a) · Autor(a) · Autor(a)_
 ```
 
-Obs: Se for apenas um autor não utilize a separação de pontos
+Obs-1: Se for apenas um autor não utilize a separação de pontos
+Obs-2: Se o nome do arquivo conter 'underline' ( _ ) troque por hífen ( - ) para evitar possiveis problemas de formatação do arquivo
 
 Pronto seu arquivo seu arquivo está certinho em Markdown, é recomendado dar um revisada para verificar nada faltando. 
 
-4- Dê um Ctrl + S para salvar o arquivo e pode fechar o Obsidian
+3- Dê um Ctrl + S para salvar o arquivo e pode fechar o Obsidian
 ## 4) Dando Pull Request no Github
 
 1- Entre no repositório do Hub: [Repositório do Hub](https://github.com/fea-dev-usp/fea-dev-usp.github.io)

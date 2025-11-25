@@ -6,7 +6,15 @@ tags:
 >[!warning]
 >
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev.
+>
 >Se você optar por esse método, o guia 1 pode ser ignorado!
+>
+>Antes de subir um arquivo no hub **avise algum membro de tech** 
+>
+>Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar)! 😁
+>
+>Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
+>
 
 >[!info]
 >Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Vscode + Obsidian + Git +Github**. Essa é forma **mais lenta**, mas é a **mais completa** e ter a visualização completa acerca ecossistema.
@@ -25,3 +33,6 @@ tags:
 > - [Git](https://git-scm.com)
 > - [VsCode](https://code.visualstudio.com/)
 > - [Obsidian](https://obsidian.md/)
+
+
+[Em breve]

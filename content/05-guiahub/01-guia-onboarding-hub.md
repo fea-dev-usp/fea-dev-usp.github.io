@@ -8,6 +8,13 @@ tags:
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
 >
 >Se você optar por esse método, as páginas o guia 2 pode ser ignorado!
+>
+>Antes de subir um arquivo no hub **avise algum membro de tech** 
+>
+>Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar)! 😁
+>
+>Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
+
 
 >[!info]
 >Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Obsidian + Github**. Essa é a forma **mais rápida**, mas fica **mais limitado** em relação ao acesso ao ecossistema.
@@ -50,21 +57,7 @@ Nesse primeiro caso iremos mostrar passo a passo como se upar um arquivo aos mol
 
 7- Depois de ter feito isso 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Em breve]
 
 ## Considerações Finais: 
 
