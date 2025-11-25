@@ -11,7 +11,7 @@ tags:
 >
 >Antes de subir um arquivo no hub **avise algum membro de tech** 
 >
->Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar)! 😁
+>Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar! 😁
 >
 >Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
 
