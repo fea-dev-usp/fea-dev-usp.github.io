@@ -107,6 +107,7 @@ _**Autores:** Autor(a) · Autor(a) · Autor(a)_
 ```
 
 Obs-1: Se for apenas um autor não utilize a separação de pontos
+
 Obs-2: Se o nome do arquivo conter 'underline' ( _ ) troque por hífen ( - ) para evitar possiveis problemas de formatação do arquivo
 
 Pronto seu arquivo seu arquivo está certinho em Markdown, é recomendado dar um revisada para verificar nada faltando. 
