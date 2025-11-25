@@ -1,32 +1,69 @@
 ---
-title: 1)  Onboarding do Hub
+title: 1) Onboarding do Hub (sem Git)
 tags:
   - nivel/basico
 ---
 >[!warning]
 >
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
+>
+>Se você optar por esse método, as páginas o guia 2 pode ser ignorado!
 
 >[!info]
->
-
-Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Obsidian + Git + Quartz**.
-
+>Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Obsidian + Github**. Essa é a forma **mais rápida**, mas fica **mais limitado** em relação ao acesso ao ecossistema.
 ## 1) O que você vai precisar (pré‑requisitos)
 
-- **Acesso ao repositório** da organização (peça para te adicionarem como _member_ e com permissão de escrita no repo do Hub).
-    
-- Ter o **Git e VsCode** instalados na sua máquina.
-    
-- Ter também o **Obsidian** instalado (para editar os arquivos Markdown `.md`)
+- Ter o **Obsidian** instalado (para editar os arquivos Markdown `.md`)
     
 
 >[!info]
-> Links oficiais para download, caso ainda não tenha instalado:
->
-> - [Git](https://git-scm.com)
-> - [VsCode](https://code.visualstudio.com/)
-> - [Obsidian](https://obsidian.md/)
+> Link oficial para download, caso ainda não tenha instalado:
+>   [Obsidian](https://obsidian.md/)
+
+## 2) Transformando seu Arquivo .docx para .md
+
+Nesse primeiro caso iremos mostrar passo a passo como se upar um arquivo aos moldes de relatório (originalmente um arquivo em .docx) para o Hub. 
+
+1- Abra o seu arquivo no Google Docs: [Google Docs](https://docs.google.com/?hl=pt-BR)
+2- Com o arquivo aberto, clique na opção "Arquivos" no canto superior esquerdo (imagens abaixo como exemplo ilustrativo apenas):
+
+
+3- Clique em seguida em Baixar e depois selecione em Markdown (.md):
+
+
+ 4- Desse tópico era isso, é esperado que esse arquivo esteja na sua pasta de Downloads
+
+## 3) Fazendo ajustes necessários no arquivo pelo Obsidian
+
+1- Abra o aplicativo do Obsidian na sua máquina;
+2- No canto inferior esquerdo, clique onde está escrito "Obsidian Vault" (se você já utilizar o Obsidian, clique no nome do vault que esteja ali) 
+
+3- Clique em "Gerenciar cofres..."
+
+
+4- Clique em "Criar um novo cofre":
+
+
+5- Dê um nome para o seu cofre e selecione uma pasta para colocar os arquivos .md dentro;
+
+6- Dentro do seu Explorador de Arquivos, transfira o arquivo .md para a pasta que acabou de escolher anteriormente;
+
+7- Depois de ter feito isso 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Considerações Finais: 

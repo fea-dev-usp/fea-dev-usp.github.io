@@ -1,7 +1,8 @@
 ---
 title: Guia do Hub
+tags:
+  - nivel/basico
 ---
-## Guia do Hub
 
 Bem-vindo ao centro de documentação do FEA.dev Hub, para subir corretamente seu arquivo leias os 4 arquivos obrigatórios abaixo:
 
