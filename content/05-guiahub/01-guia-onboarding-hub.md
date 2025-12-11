@@ -7,9 +7,7 @@ tags:
 >
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
 >
->Se você optar por esse método, as páginas o guia 2 pode ser ignorado!
->
->Antes de subir um arquivo no hub **avise algum membro de tech** 
+>Antes de subir qualquer arquivo no hub, **avise algum membro de tech!** 
 >
 >Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar! 😁
 >
