@@ -11,7 +11,7 @@ tags:
 >
 >Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar! 😁
 >
->Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
+>Todos os atalhos colocados são para Windows, se você utiliza Mac, Linux ou outro sistema operacional, pesquise eles por fora! 
 
 >[!info]
 >Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Vscode + Obsidian + Github**.

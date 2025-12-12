@@ -11,19 +11,23 @@ tags:
 >
 >Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar! 😁
 >
->Todos os atalhos colocados são para Windows, se você utiliza Mac ou outro sistema operacional, pesquise eles por fora! 
-
+>Todos os atalhos colocados são para Windows, se você utiliza Mac, Linux ou outro sistema operacional, pesquise eles por fora! 
 
 >[!info]
->Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **Obsidian + Github**. Essa é a forma **mais rápida**, mas fica **mais limitado** em relação ao acesso ao ecossistema.
+>Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **VsCode + Obsidian + Git +**. 
 ## 1) O que você vai precisar (pré‑requisitos)
 
 - Ter o **Obsidian** instalado (para editar os arquivos Markdown `.md`)
     
+- Ter o **VsCode** instalado (IDE que servir como meio de utilizar o Git)
+    
+- Ter o **Git** instalado (utilizaremos para fazer os commits para o GitHub)
 
 >[!info]
 > Link oficial para download, caso ainda não tenha instalado:
 >   [Obsidian](https://obsidian.md/)
+>   [VsCode](https://obsidian.md/)
+>   [Git](https://obsidian.md/)
 
 ## 2) Transformando seu Arquivo .docx para .md
 
@@ -31,31 +35,66 @@ Nesse primeiro caso iremos mostrar passo a passo como se upar um arquivo aos mol
 
 1- Abra o seu arquivo no Google Docs: [Google Docs](https://docs.google.com/?hl=pt-BR)
 2- Com o arquivo aberto, clique na opção "Arquivos" no canto superior esquerdo (imagens abaixo como exemplo ilustrativo apenas):
-
-
+![[Pasted image 20251211214425.png]]
 3- Clique em seguida em Baixar e depois selecione em Markdown (.md):
-
-
+![[Pasted image 20251211214456.png]]
  4- Desse tópico era isso, é esperado que esse arquivo esteja na sua pasta de Downloads
+## 3) Clonando Repositório 
 
-## 3) Fazendo ajustes necessários no arquivo pelo Obsidian
+1- Abra o VsCode;
+![[Pasted image 20251211210956.png]]
+2- Abra o terminal, utilize o atalho Ctrl + Shift + Aspas: 
+![[Pasted image 20251211211125.png]]
+3- Vamos checar se o git está realmente instalado, use esse comando no console:
+```
+git --version
+```
+![[Pasted image 20251211211303.png]]
+4- Vamos clonar o repositório que está lá no GitHub, utilize esse comando:
+```
+git clone https://github.com/fea-dev-usp/fea-dev-usp.github.io
+```
+![[Pasted image 20251211211416.png]]
+5- Por enquanto o que precisamos fazer inicialmente no VsCode era isso, voltaremos nele mais para frente.
+## 4) Abrindo o Hub pelo Obsidian
 
 1- Abra o aplicativo do Obsidian na sua máquina;
-2- No canto inferior esquerdo, clique onde está escrito "Obsidian Vault" (se você já utilizar o Obsidian, clique no nome do vault que esteja ali) 
-
+![[Pasted image 20251211211553.png]]
+2- No canto inferior esquerdo, clique onde está escrito "Obsidian Vault" (se você já utilizar o Obsidian, clique no nome do vault que esteja ali) ![[Pasted image 20251211211605.png]]
 3- Clique em "Gerenciar cofres..."
 
+![[Pasted image 20251211211612.png]]
+4- Clique em "Abrir" em "Abrir pasta como um cofre":
+![[Pasted image 20251211211617.png]]
+5- Ele abrirá o seu explorador de arquivos, vamos encontrar nossa pasta com os arquivos do hub;
+6- Desça a barra de rolagem da esquerda até encontrar 'Este Computador' e clique nele;
+![[Pasted image 20251211211826.png]]
+7- Clique em 'Usuários':
+![[Pasted image 20251211211855.png]]
+8- Selecione o usuário em que você utilizou para baixar o repositório do Hub (no meu caso só tenho um e ele se chama 'felip', no seu caso clique no seu); 
+![[Pasted image 20251211211924.png]]
+9- Dentro da pasta do seu usuário, procure a pasta com o nome 'fea-dev-usp.github.io' e clique nela;
+![[Pasted image 20251211212132.png]]
+10- Dentro dessa pasta, clique na outra pasta chamada 'content';
+![[Pasted image 20251211212238.png]]
+11- Com essa pasta aberta, clique em 'Selecionar pasta' (verifique na barra superior se o caminho é parecido, o que deva divergir seria apenas o nome do usúario);
+![[Pasted image 20251211212320.png]]
+12- Você estará vendo toda a estrutura do Hub dentro do Obsidian (a estruturá poderá estar diferente no momento que você esteja vendo, mas em suma deverá aparecer algo parecido); 
+![[Pasted image 20251211212552.png]]
+>[!info]
+>Não altere a estrutura por conta própria, deixe isso para o pessoal que faz a manutenção do Hub
+>Também não altere nenhum nome dos arquivos, em especial os chamados 'Index', esse nome é fundamental para a gente, o Quartz utiliza indentifica os arquivos como Página Inicial
+## 5) Colocando seu Projeto dentro Obsidian
 
-4- Clique em "Criar um novo cofre":
+>[!warning] Lembrete
+>O seu arquivo deverá estar em formato .md, como informado no passo 1.
+>Já te adianto que qualquer outro formato não funcionará!  
+
+1- 
 
 
-5- Dê um nome para o seu cofre e selecione uma pasta para colocar os arquivos .md dentro;
 
-6- Dentro do seu Explorador de Arquivos, transfira o arquivo .md para a pasta que acabou de escolher anteriormente;
 
-7- Depois de ter feito isso 
-
-[Em breve]
 
 ## Considerações Finais: 
 
