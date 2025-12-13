@@ -1385,7 +1385,7 @@ Se você já usou Scikit-Learn, viu que um modelo precisa ser instanciado, trein
 
 O modelo é um objeto, e .fit() e .predict() são métodos que manipulam esse objeto!
 
-### Esses são apenas alguns exemplos, mas o mundo da programação está repleto de aplicações da POO. Frameworks como Django para desenvolvimento web, bibliotecas de visualização como Matplotlib e até ferramentas de automação seguem esses mesmos princípios. Agora que você entende a base por trás dessas estruturas, conseguirá identificar a POO em quase todos os códigos que encontrar.
+Esses são apenas alguns exemplos, mas o mundo da programação está repleto de aplicações da POO. Frameworks como Django para desenvolvimento web, bibliotecas de visualização como Matplotlib e até ferramentas de automação seguem esses mesmos princípios. Agora que você entende a base por trás dessas estruturas, conseguirá identificar a POO em quase todos os códigos que encontrar.
 
 ## **Conclusão: POO é uma Nova Forma de Pensar Programação**
 

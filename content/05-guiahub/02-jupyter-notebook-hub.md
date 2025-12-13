@@ -7,7 +7,7 @@ tags:
 >
 >Isso aqui é um Tutorial direcionado apenas para os Membros da FEA.dev
 >
->Antes de subir um arquivo no hub **avise algum membro de tech** 
+>Antes de subir qualquer arquivo no hub, **avise algum membro de tech!** 
 >
 >Qualquer dúvida/problema que tiver acione eles também, eles vão te ajudar! 😁
 >
@@ -113,7 +113,7 @@ Obs-2: Se o nome do arquivo conter 'underline' ( _ ) troque por hífen ( - ) par
 Pronto seu arquivo seu arquivo está certinho em Markdown, é recomendado dar um revisada para verificar nada faltando. 
 
 3- Dê um Ctrl + S para salvar o arquivo e pode fechar o Obsidian
-## 4) Dando Pull Request no Github
+## 4) Adicionando Arquivo no Github
 
 1- Entre no repositório do Hub: [Repositório do Hub](https://github.com/fea-dev-usp/fea-dev-usp.github.io)
 
@@ -189,3 +189,6 @@ Se ficar ainda em amarelo as alterações ainda não foram submetidas ao Hub, es
 ![[Pasted image 20251124214817.png]]
 
 Tudo certo agora! Podem atualizar o Hub e tudo estará lá bonitinho! 
+
+>[!Warning]
+>Você se quiser você pode subir para o Github utilizando o Git, da mesma forma que foi explicado no método do guia 1, caso você queira! 
