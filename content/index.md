@@ -176,3 +176,4 @@ Foram dias de conteúdo técnico, visão de mercado e contato direto com quem es
 
 
 
+![[Pasted image 20251213165334.png]]

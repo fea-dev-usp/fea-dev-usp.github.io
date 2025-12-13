@@ -14,7 +14,7 @@ tags:
 >Todos os atalhos colocados são para Windows, se você utiliza Mac, Linux ou outro sistema operacional, pesquise eles por fora! 
 
 >[!info]
->Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **VsCode + Obsidian + Git +**. 
+>Este guia ensina qualquer pessoa a **acessar, editar e publicar** o Hub hospedado no **GitHub da organização** usando **VsCode + Obsidian + Git**. 
 ## 1) O que você vai precisar (pré‑requisitos)
 
 - Ter o **Obsidian** instalado (para editar os arquivos Markdown `.md`)
@@ -159,6 +159,8 @@ git pull origin v4
 git add content
 ```
 
+![[Pasted image 20251212210634.png]]
+
 
 5- Vamos commitar o que foi feito, siga as boas condutas abaixo para deixar o hub bem estruturado!
 
@@ -178,6 +180,9 @@ Prefixos recomendados:
 - **chore:** tarefas gerais (config, scripts, dependências, organização)
 
 Utilize alguma ferramenta de LLM para te ajudar a preencher se for necessário!
+Exemplo:
+
+![[Pasted image 20251212211014.png]]
 
 6- Vamos dar mandar tudo isso para o Github, dê um Push para nossa Branch:
 
@@ -185,9 +190,16 @@ Utilize alguma ferramenta de LLM para te ajudar a preencher se for necessário!
 git push origin v4
 ```
 
+![[Pasted image 20251212211111.png]]
 
-7- Vamos checar se as mudanças foram feitas corretamente e lá no Github
+7- Vamos checar se as mudanças foram feitas corretamente e lá no Github, acesse:
+https://github.com/fea-dev-usp/fea-dev-usp.github.io/actions
 
+![[Pasted image 20251212211500.png]]
+
+Se esse símbolo estiver **amarelo** é só esperar que a magia do seu arquivo está sendo feita, espere ficar **azul** como na imagem! 
+
+Quando ficar azul, vocês podem 
 
 ## Considerações Finais: 
 
