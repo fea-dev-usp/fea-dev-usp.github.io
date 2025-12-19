@@ -104,22 +104,22 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
        style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
               gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/quant-connect/quant-connect-2.jpg"
+      <img src="imagens/imagens/quant-connect-2.jpg"
            alt="Foto com Painel"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/quant-connect/quant-connect-3.jpg"
+      <img src="imagens/imagens/quant-connect-3.jpg"
            alt="Foto com o Raphael Cordeiro"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/quant-connect/quant-connect-4.jpg"
+      <img src="imagens/imagens/quant-connect-4.jpg"
            alt="Apresentação projeto Quantamental"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/quant-connect/quant-connect-5.jpg"
+      <img src="imagens/imagens/quant-connect-5.jpg"
            alt="Foto da palestra"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
@@ -145,22 +145,22 @@ Foram dias de conteúdo técnico, visão de mercado e contato direto com quem es
        style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
               gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/semana-dev/semana-dev-1.jpg"
+      <img src="imagens/imagens/semana-dev-1.jpg"
            alt="Rafael Lavrado"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/semana-dev/semana-dev-2.jpg"
+      <img src="imagens/imagens/semana-dev-2.jpg"
            alt="Claudio Pinhanez"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/semana-dev/semana-dev-3.jpg"
+      <img src="imagens/imagens/semana-dev-3.jpg"
            alt="Uncover"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
-      <img src="imagens/semana-dev/semana-dev-4.jpg"
+      <img src="imagens/imagens/semana-dev-4.jpg"
            alt="Palver"
            style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
@@ -175,5 +175,3 @@ Foram dias de conteúdo técnico, visão de mercado e contato direto com quem es
 - LinkedIn: [FEA.dev](https://www.linkedin.com/company/fea-dev/)
 
 
-
-![[Pasted image 20251213165334.png]]

@@ -55,13 +55,13 @@ O backtest foi implementado em períodos de **três meses**, durante o período 
 
 O algoritmo de **clusterização** foi utilizado como forma de **restringir** o universo de possibilidades a serem otimizadas. Para isso, foram empregados indicadores financeiros derivados de dados públicos divulgados trimestralmente pelas empresas do mercado brasileiro, com base nos **Demonstrativos de Resultados (DRE)** e nos **Fluxos de Caixa**. A calibração do modelo resultou na formação de **três grupos**, número definido a partir dos testes empíricos do **método do cotovelo** e da **silhueta**.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-1.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-1.png]]
 
 >[!info]
 >A análise visual desses métodos indicou que o teste do cotovelo delimitou a escolha entre **três e oito** clusters
 
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-7.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-7.png]]
 
 >[!info]
 >Enquanto o teste da silhueta mostrou que as pontuações entre **quatro e sete** permaneceram no mesmo patamar
@@ -76,7 +76,7 @@ A seguinte análise de performance visa responder e comparar tanto os desempenho
 
 O backtest foi realizado considerando todos os trimestres de **2020 a 2024**. Nesse período, a carteira principal selecionou ao todo **29 ações**. Para destacar a relevância das escolhas, priorizou-se analisar as ações mais **recorrentes ao longo do tempo**, em vez das que tiveram **maior peso médio** em períodos isolados. Isso porque houve momentos em que a carteira concentrou peso **excessivo em uma única ação**, que depois acabou não retornando mais ao portfólio, o que poderia **distorcer a análise**.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-9.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-9.png]]
 
 
 As ações que mais se destacaram no portfólio, tanto pela **frequência** quanto pelo **peso médio**, podem ser organizadas e descritas principalmente pelos seguintes setores e suas características:
@@ -105,7 +105,7 @@ De forma geral, a carteira apresentou **diversidade setorial**, com predominânc
 
 Outro ponto relevante diz respeito à **dinâmica temporal dos pesos atribuídos**. Não basta analisar quais ações foram selecionadas, mas também **quando** e com **qual intensidade** participaram da carteira. 
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-3.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-3.png]]
 
 >[!info]
 >A leitura visual mostra que houve uma concentração a um único ativo por período de forma **sistêmica**, justamente pela escolha do critério de **Sharp Ratio**. O algoritimo acabou não fazendo uma boa distribuição de pesos, concentrando o peso do portfólio em cada período em uma única ação somente. Diante desse fato, será mostrado mais adiante, que isso acabou comprometendo a intenção inicial de reduzir riscos sistêmicos e de potencializar o retorno esperado.
@@ -116,7 +116,7 @@ Portanto, dinâmica da carteira **não é passiva**, no sentido de se comprar e 
 
 Esse comportamento dinâmico levanta a questão central: até que ponto a rotação ativa e a diversificação de setores se traduziram em **resultados financeiros concretos**? Para responder, é necessário observar a **rentabilidade acumulada e parcial** da carteira ao longo do intervalo de tempo.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-6.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-6.png]]
 
 >[!info]
 >A análise de performance revela que essa dinâmica **não se traduziu em resultados sustentáveis**. O resultado final da estratégia ao longo dos cinco anos (**2020–2025**) foi um **prejuízo acumulado de 24%**. A trajetória até esse desfecho foi **extremamente volátil**: a carteira chegou a registrar ganhos **próximos de 40%** no início de **2023**, mas reverteu toda a valorização e **terminou em território negativo**. O percurso expôs o portfólio a um **risco elevado**, com um **drawdown inicial superior a 50%** no primeiro trimestre de **2020** e uma **curva de capital instável** ao longo do tempo.
@@ -125,7 +125,7 @@ O comportamento trimestral reforça essa leitura: a estratégia alternou trimest
 
 A fins de exercício da estratégia, foi estipulado um **valor patrimonial inicial** de **R$ 100.000,00**. Esse valor serve como referência base para avaliar tanto o crescimento quanto as perdas ao longo do período, permitindo interpretar os movimentos patrimoniais em termos **relativos e absolutos**.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-4.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-4.png]]
 
 >[!info]
 >A linha de preta de mostra a referência incial dos R$ 100.000,00 investidos incialmente. As barras vermelhas mostram os períodos que o portfólio ficou abaixo desse patamar e as barras verdes mostram os períodos que ficou acima. 
@@ -141,7 +141,7 @@ O **VaR** estima a **perda máxima esperada** do portfólio em um horizonte de t
 
 Já o **CVaR** calcula a **perda média nos piores cenários**, ou seja, quando a perda ultrapassa o valor estimado pelo VaR. No caso do portfólio analisado, essa métrica indicou uma **queda de -30%**, evidenciando a severidade das perdas em **eventos extremos**. Assim, enquanto o VaR estabelece um **limite de perda “esperado”**, o CVaR captura a **magnitude real das perdas** nos piores cenários, sendo especialmente relevante para estratégias **concentradas** ou com **retornos assimétricos**.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-2.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-2.png]]
 
 No caso do portfólio analisado, o VaR mensal de **-15%** confirma que a estratégia **assume risco elevado** de forma consistente, enquanto o CVaR de **-30%** evidencia que, quando o limite do VaR é ultrapassado, o **prejuízo médio esperado é substancial**. Os eventos históricos de **-50%**, **-31%** e **-18%** reforçam a materialização concreta desse risco, demonstrando que perdas severas **não** são meros acidentes, mas sim uma **característica estrutural** da carteira. O **drawdown máximo de 51%** registrado no início de **2020** confirma que o portfólio é vulnerável a **choques extremos**, resultado da **extrema concentração** de capital em poucos ativos.
 
@@ -170,7 +170,7 @@ Na fase de **validação interna**, o número de clusters indicados como ideal v
 
 O projeto demonstrou que a estratégia de **otimização via clusterização**, na forma como foi implementada, **não cumpriu o objetivo** inicial de **reduzir risco** e **maximizar o Sharpe Ratio**. A carteira resultante apresentou **desempenho volátil**, **forte concentração** em poucos ativos e um **resultado acumulado negativo**, evidenciando **falhas de gestão de risco**.
 
-![[../../imagens/projeto-cluster-portfolio/projeto-cluster-portfolio-5.png]]
+![[../../imagens/imagens/projeto-cluster-portfolio-5.png]]
 
 >[!info]
 >Comparação entre a **rentabilidade acumulada** da nossa carteira principal com o **Ibovespa** e com a **carteira sem clusterizar**, que apenas pegava ações do universo inteiro com maior maior Sharpe Ratio no período. Podemos perceber o desempenho ficou bem aquém do esperado.

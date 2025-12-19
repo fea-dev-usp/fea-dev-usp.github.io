@@ -31,19 +31,19 @@ tags:
 
 ## 2) Transformando seu Arquivo .docx para .md
 
-Nesse primeiro caso iremos mostrar passo a passo como se upar um arquivo aos moldes de relatório (originalmente um arquivo em .docx) para o Hub. 
+Nesse primeiro caso iremos mostrar passo a passo como se upar um arquivo aos moldes de relatório (originalmente um arquivo em .docx) para o Hub.
 
 1- Abra o seu arquivo no Google Docs: [Google Docs](https://docs.google.com/?hl=pt-BR)
 
-2- Com o arquivo aberto, clique na opção "Arquivos" no canto superior esquerdo (imagens abaixo como exemplo ilustrativo apenas):
+2- Com o arquivo aberto, clique na opção “Arquivos” no canto superior esquerdo (imagens abaixo como exemplo ilustrativo apenas):
 
-![[Pasted image 20251211214425.png]]
+![[Pasted image 20251218220703.png]]
 
 3- Clique em seguida em Baixar e depois selecione em Markdown (.md):
 
-![[Pasted image 20251211214456.png]]
+![[Pasted image 20251218220746.png]]
 
- 4- Desse tópico era isso, é esperado que esse arquivo esteja na sua pasta de Downloads
+4- Desse tópico era isso, é esperado que esse arquivo esteja na sua pasta de Downloads
 ## 3) Clonando Repositório 
 
 1- Abra o VsCode;
@@ -124,11 +124,49 @@ tenho um e ele se chama 'felip', no seu caso clique no seu);
 
 ## 5) Colocando seu Projeto dentro Obsidian
 
->[!warning] Lembrete
->O seu arquivo deverá estar em formato .md, como informado no passo 1.
->Já te adianto que qualquer outro formato não funcionará!  
+1- Crie uma nota, você pode fazer isso clicando no ícone do lápis no canto superior esquerdo
 
-1- 
+![[Pasted image 20251218211736.png]]
+
+ou na barra cinza lateral com o botão direito e selecionar 'Nova nota'
+
+![[Pasted image 20251218211926.png]]
+
+2- Com sua nota criada, você verá 'Sem Título' no campo superior da página, esse não será o nome utilizado que será visível lá da página do Hub na web! Ele servirá como uma forma de organização dentro aqui do Obsidian, coloque algo que envolva o seu projeto. 
+
+Ex: prever-time-series
+
+Utilize sempre letras mínusculas, coloque hífen no lugar de espaço e não coloque acentos
+
+3- Para personalizar corretamente a sua página, logo na primeira linha abaixo do seu nível escreva: 
+```
+---
+```
+
+Nisso abrirá uma essa aba de personalização:
+
+![[Pasted image 20251218214512.png]]
+Você escolherá: 'tags' e 'title'
+
+Dê o título apropriado ao seu trabalho e nas tags padronize, de acordo com essas:
+
+```
+nível:
+#nivel/avancado #nivel/intermediario #nivel/basico 
+
+trilhas: 
+#trilha/finquant #trilha/ia #trilha/ciencia-de-dados #trilha/extras
+```
+
+Na linha abaixo do painel de propriedades, dê seus créditos pelo trabalho! Use essa formatação como referência:
+
+```
+_**Autores:** Autor(a) · Autor(a) · Autor(a)_
+```
+
+No meu caso ficou assim: 
+
+![[Pasted image 20251218220415.png]]
 
 
 ## 6) Enviando seu arquivo para o Github
@@ -199,7 +237,7 @@ https://github.com/fea-dev-usp/fea-dev-usp.github.io/actions
 
 Se esse símbolo estiver **amarelo** é só esperar que a magia do seu arquivo está sendo feita, espere ficar **azul** como na imagem! 
 
-Quando ficar azul, vocês podem 
+Quando ficar azul, vocês podem atualizar a página do Hub e espera-se que tudo esteja em ordem!
 
 ## Considerações Finais: 
 
