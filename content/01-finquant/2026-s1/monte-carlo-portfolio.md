@@ -87,8 +87,8 @@ os seguintes tickers:
 - PETR4.SA (Petrobras);
 - VALE3.SA (Vale);
 - ITUB4.SA (Itaú Unibanco);
--  LREN3.SA (Lojas Renner);
-*  WEGE3.SA (WEG);
+- LREN3.SA (Lojas Renner);
+* WEGE3.SA (WEG);
 - AXIA3.SA
 
 O período de análise compreende o intervalo de 01/01/2015 a 30/12/2025. Os anos
