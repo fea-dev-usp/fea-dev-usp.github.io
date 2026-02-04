@@ -1,10 +1,10 @@
 ---
-title: "Otimização de Portfólio com Stable\rTail-Adjusted Return Ratio, Volatilidade\rDinâmica e Simulação Estocástica de Monte\rCarlo"
+title: "Otimização de Portfólio com Monte\rCarlo"
 tags:
   - nivel/intermediario
   - trilha/finquant
 ---
-_**Autores:** Leandro Santos · Tales Rafael Morales Pino · Victor Hugo Mendes Braga
+_**Autores:** Leandro Santos · Tales Rafael Morales Pino · Victor Hugo Mendes Braga_
 
 # Resumo 
 
