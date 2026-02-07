@@ -6,15 +6,13 @@ enableToc: false
 # Bem-vindo!
 
 > [!info] O que é o Hub?
-> É uma iniciativa de **acervo público** de materiais técnicos, produzidos internamente na entidade — artigos, tutoriais e projetos autorais.  
+> É uma iniciativa de **acervo público** de materiais técnicos, produzidos internamente na entidade: artigos, tutoriais e projetos autorais.  
 > Produzido pelos membros da FEA.dev, com o objetivo de divulgar parte do nosso trabalho e compartilhar conhecimento com a comunidade.
 
 ## Quem Somos Nós
-Somos a a primeira entidade estudantil de programação da FEA-USP. Nosso propósito é aproximar o mundo dos negócios ao universo da programação conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de uma **capacitação interna**, com **projetos aplicados** e com uma **formação prática**, que busca preencher possíveis as lacunas do ensino tradicional.
-
+Somos a primeira entidade estudantil de programação da FEA-USP, voltada à aplicação de **Ciência de Dados** e **Inteligência Artificial**. Nosso propósito é criar a ponte **onde tecnologia e teoria se encontram**, conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de **capacitação interna**, **projetos aplicados** e **eventos** com lideranças do setor, promovendo uma formação prática que ajuda a preencher lacunas do ensino tradicional.
 ### Nossa história
-Fundada em 2019 como um grupo de estudos, a FEA.dev nasceu de uma percepção de que faltavam conteúdos acerca **Ciência de Dados**, **IA** e **Finanças Quantitativas** durante a graduação. De lá para cá, evoluímos para uma comunidade que produz, documenta e compartilha conhecimento de forma aberta.
-
+Fundada em 2019, a FEA.dev nasceu da iniciativa de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário. De lá para cá, evoluímos para uma comunidade que produz, documenta e compartilha conhecimento de forma aberta, desenvolvendo competências cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
 ### O que você encontra neste Hub
 - **Guias e tutoriais práticos** (passo a passo, replicáveis).
 - **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.

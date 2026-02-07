@@ -383,4 +383,3 @@ Assim, alguns pontos de melhorias que podemos implementar para um projeto futuro
 - Aumentar o período de treinamento para um intervalo maior e mais realista, incluindo períodos de queda (como o da Covid-19).  
 - Distinção de fontes de sentimento.  
 - Otimização avançada de portfólio.  
-``

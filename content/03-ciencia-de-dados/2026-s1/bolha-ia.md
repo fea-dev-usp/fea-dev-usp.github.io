@@ -1,5 +1,5 @@
 ---
-title: "IA como Infraestrutura Crítica: IA vs Dot-com (1999-2025)"
+title: AI Boom vs Bolha Dot-com
 tags:
   - nivel/intermediario
   - trilha/ciencia-de-dados
