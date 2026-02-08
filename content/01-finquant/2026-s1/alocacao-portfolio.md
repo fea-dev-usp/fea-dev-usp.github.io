@@ -116,11 +116,12 @@ Diferentemente de métodos anteriores que sofriam com atualizações de polític
 Em suma, a escolha do PPO via Stable Baselines3 justifica-se pela necessidade de um algoritmo robusto, capaz de lidar com a natureza ruidosa e não estacionária dos dados financeiros sem comprometer a estabilidade do treinamento. Essa base teórica fornece o suporte necessário para a implementação prática do agente, cujos detalhes de arquitetura, pré-processamento de dados e definição do ambiente de simulação serão detalhados no capítulo de Metodologia a seguir.
 
 	  
-**2.3 Métricas de Avaliação de Desempenho**
+## **2.3 Métricas de Avaliação de Desempenho**
 
 Para validar a eficácia do agente de Inteligência Artificial frente aos modelos tradicionais, a análise de rentabilidade isolada é insuficiente. É necessário avaliar o desempenho ajustado ao risco. Para isso, este estudo utiliza duas métricas: o Índice de Sharpe e o Maximum Drawdown.
 
-**2.3.1 Índice de Sharpe (Sharpe Ratio)**
+### **2.3.1 Índice de Sharpe (Sharpe Ratio)**
+
 
 Desenvolvido por William F Sharpe, o Índice de Sharpe é projetado para ajudar os investidores a entender o retorno potencial de um investimento em comparação com seu risco. Quanto maior o Índice Sharpe, mais atraente é o retorno ajustado ao risco. Matematicamente, é definido pela equação:  
 
@@ -139,20 +140,24 @@ Enquanto o Índice de Sharpe mede a volatilidade média, o Maximum Drawdown (MDD
 
 O MDD é crucial para a gestão de risco, pois mede a resiliência da estratégia e o "risco de ruína". Em termos práticos, indica qual seria a perda máxima que um investidor teria sofrido se tivesse entrado no melhor momento e saído no pior momento dentro da janela de tempo analisada. Estratégias com MDD menor são consideradas mais seguras e consistentes, preservando melhor o patrimônio em momentos de crise.
 
-3. # **Metodologia**
+# 3. **Metodologia**
 
-	A qualidade dos dados é um fator determinante para o sucesso de modelos de Aprendizado de Máquina. A seguir, apresentaremos o pipeline de engenharia de dados construído, desde a aquisição bruta até a transformação em vetores de estado (interpretáveis pelo agente inteligente).
+A qualidade dos dados é um fator determinante para o sucesso de modelos de Aprendizado de Máquina. A seguir, apresentaremos o pipeline de engenharia de dados construído, desde a aquisição bruta até a transformação em vetores de estado (interpretáveis pelo agente inteligente).
 
 
-# **3.1 Coleta e Tratamento de Dados**
+## **3.1 Coleta e Tratamento de Dados**
 
-	Como citado acima, o universo de investimento escolhido para o estudo foi o índice S\&P 100, uma ETF (Exchange Traded Fund, em inglês,  que pode ser traduzido livremente para fundo negociado em bolsa) que engloba as 100 maiores empresas de capital aberto dos Estados Unidos, garantindo alta liquidez e representatividade de mercado.  
-	Para extrairmos a lista atualizada das ações presentes no S\&P 100 fizemos web scraping da página oficial da Wikipedia, utilizando a biblioteca pandas para a estruturação. Com base nos tickers identificados, foram coletados os dados históricos de preços de fechamento ajustados diários.  
+
+Como citado acima, o universo de investimento escolhido para o estudo foi o índice S\&P 100, uma ETF (Exchange Traded Fund, em inglês,  que pode ser traduzido livremente para fundo negociado em bolsa) que engloba as 100 maiores empresas de capital aberto dos Estados Unidos, garantindo alta liquidez e representatividade de mercado.  
+
+
+Para extrairmos a lista atualizada das ações presentes no S\&P 100 fizemos web scraping da página oficial da Wikipedia, utilizando a biblioteca pandas para a estruturação. Com base nos tickers identificados, foram coletados os dados históricos de preços de fechamento ajustados diários.  
+
+
 Para garantir a integridade do *backtest* e mitigar ruídos, os dados brutos passaram por uma etapa rigorosa de limpeza, consolidada no arquivo matriz\_final\_v3\_survivorship.csv. As principais etapas incluíram:
 
 1. Tratamento de Ações Gêmeas: identificou-se a presença de uma empresa com mais de uma ação listada (Alphabet Inc. com *GOOG* e *GOOGL*). Para evitar redundância e colinearidade perfeita,que prejudicariam o aprendizado da rede neural, realizou-se uma análise de correlação (que apontou ser maior que 0.99), optando-se pela remoção da classe de menor liquidez (*GOOGL*).  
 2. Filtro de Histórico (Viés de Sobrevivência/Existência): ativos que não possuíam histórico completo durante a janela de treino (como empresas que realizaram IPO recentemente, ex: PLTR em 2020\) tiveram suas janelas de tempo ajustadas. Isso evita que o modelo tente negociar ativos em datas onde eles ainda não existiam, garantindo a consistência da matriz temporal.
-
    
 
 	Migrando para a engenharia de atributos, o agente de RL não observa apenas o preço bruto, mas sim "derivadas" do comportamento do mercado que indicam tendências e riscos. Os dados foram processados para gerar um conjunto de indicadores técnicos (features), salvos no arquivo features\_rl\_sp100.csv. As variáveis de entrada fornecidas ao modelo incluem:
