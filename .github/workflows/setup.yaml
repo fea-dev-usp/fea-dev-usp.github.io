@@ -15,17 +15,36 @@ jobs:
                   fetch-depth: 0
             - name: Move Images
               run: |
-                NEW_FOLDERS=$(git diff --name-only HEAD~1 HEAD | grep '^content/' | cut -d'/' -f2 | sort | uniq)
-                for FOLDER in $NEW_FOLDERS; do
-                    if [ -d "content/$FOLDER" ]; then
-                        mkdir -p "content/imagens/$FOLDER"
-                        if find "content/$FOLDER" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print -quit | grep -q .; then
-                            find "content/$FOLDER" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print0 | xargs -0 -I {} mv "{}" "content/imagens/$FOLDER/"
-                        else
-                            echo "Nenhuma imagem para mover em content/$FOLDER"
-                        fi
+                # Obtém todos os diretórios modificados em content/ (recursivamente)
+                MODIFIED_DIRS=$(git diff --name-only HEAD~1 HEAD | grep '^content/' | xargs -r dirname | sort | uniq)
+                
+                for DIR in $MODIFIED_DIRS; do
+                    # Ignora imagens/
+                    if [[ "$DIR" == content/imagens* ]]; then
+                        continue
+                    fi
+                    
+                    # Procura imagense no diretório modificado
+                    if [ -d "$DIR" ]; then
+                        while IFS= read -r -d '' IMAGE; do
+                            # Calcula o caminho relativo a partir de content/
+                            REL_PATH=${IMAGE#content/}
+                            DIR_PART=$(dirname "$REL_PATH")
+                            FILE_NAME=$(basename "$IMAGE")
+                            
+                            # Cria a estrutura de diretórios em content/imagens/
+                            mkdir -p "content/imagens/$DIR_PART"
+                            
+                            # _____________________________________________
+
+                            # Move a imagem
+                            mv "$IMAGE" "content/imagens/$DIR_PART/"
+                            echo "Movido: $IMAGE -> content/imagens/$DIR_PART/$FILE_NAME"
+                        done < <(find "$DIR" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print0)
                     fi
                 done
+
+
             - name: Commit and push changes
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
