@@ -2,6 +2,12 @@ name: Setup Directory Structure
 
 on:
   workflow_dispatch:
+    inputs:
+      commits_back:
+        description: 'Número de commits para processar (ex: 1, 5, 10)'
+        required: true
+        default: '1'
+        type: string
 
 permissions:
   contents: write
@@ -16,7 +22,7 @@ jobs:
             - name: Move Images
               run: |
                 # Obtém todos os diretórios modificados em content/ (recursivamente)
-                MODIFIED_DIRS=$(git diff --name-only HEAD~1 HEAD | grep '^content/' | xargs -r dirname | sort | uniq)
+                MODIFIED_DIRS=$(git diff --name-only HEAD~${{ inputs.commits_back }} HEAD | grep '^content/' | xargs -r dirname | sort | uniq)
                 
                 for DIR in $MODIFIED_DIRS; do
                     # Ignora imagens/
