@@ -33,6 +33,12 @@ jobs:
                     # Procura imagense no diretório modificado
                     if [ -d "$DIR" ]; then
                         while IFS= read -r -d '' IMAGE; do
+                            # fix: Ignora imagens que estão em content/imagens/
+                            if [[ "$IMAGE" == content/imagens/* ]]; then
+                                echo "Ignorando (já em imagens/): $IMAGE"
+                                continue
+                            fi
+                            
                             # Calcula o caminho relativo a partir de content/
                             REL_PATH=${IMAGE#content/}
                             DIR_PART=$(dirname "$REL_PATH")
