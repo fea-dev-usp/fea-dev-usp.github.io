@@ -4,13 +4,14 @@ tags:
   - trilha/finquant
 title: Comparador de Estratégias de Alocação de Portfólio
 ---
-_**Autores:** Ana Beatriz Santos. Ana Beatriz Zaparoli. Julia Toledo. Luane Miranda. Mentor: Gabriel Navarro_
-
+_**Autores:** Ana Beatriz Santos · Ana Beatriz Zaparoli · Julia Toledo ·  Luane Miranda._
+_**Mentor:** Gabriel Navarro_
+_**Repositório:** [link](https://github.com/AnaBiaGZ/Grupo-1--FinQuant)_
  
 # Sumário
 
 
-1\. [Introdução](#introdução)	
+1\. Introdução	
 
 2\. Fundamentação Teórica…………………………………………………………………………..
 

@@ -11,7 +11,7 @@ O mercado de criptoativos revolucionou o cenário financeiro com sua natureza di
 
 A volatilidade, embora possa gerar ganhos substanciais se as negociações forem feitas no momento certo — o que no jargão cripto é conhecido como _“buy the dip”_ (comprar na baixa) e _“taking profit_” (realizar lucro) — , também pode resultar em perdas significativas se não for gerenciada adequadamente. Vender na baixa e comprar na alta são exemplos clássicos de operações prejudiciais. Essa característica intrínseca do mercado cripto não pode ser ignorada no desenvolvimento de estratégias de investimento.
 
-![[../../imagens/imagens/projeto-tiago-1.jpg]]
+![[../../imagens/projeto-tiago-1.jpg]]
 
 Nesse contexto dinâmico, o desenvolvimento de estratégias de trading robustas e adaptáveis é crucial. A busca por métodos que possam explorar as ineficiências do mercado, ao mesmo tempo em que mitigam os riscos inerentes, motiva a criação de abordagens inovadoras. Nosso projeto se insere nessa lacuna, buscando desenvolver e comparar duas estratégias distintas para negociação de criptomoedas, visando não apenas a rentabilidade, mas também a resiliência em cenários voláteis.
 
@@ -73,17 +73,17 @@ df.to_csv(f'fechamentos/{symbol}_{interval}_data.csv', index=False)
 
 A seleção das moedas utilizadas na estratégia foi baseada em seu **valor de mercado (_Market Cap_)**. Assim, foram escolhidas as 13 maiores criptomoedas nesse critério. Em seguida, para a estratégia de arbitragem, realizou-se o teste de cointegração entre todos os pares possíveis, a fim de identificar aqueles mais adequados para a formação das estratégias de negociação. Já para o modelo de _machine learning_, os dados foram acrescidos com variáveis derivadas como: retornos, médias móveis, volatilidade histórica, etc.
 
-![[../../imagens/imagens/projeto-tiago-2.jpg]]
+![[../../imagens/projeto-tiago-2.jpg]]
 
 ## Análise exploratória dos dados (estatísticas e gráficos)
 
 Para compreender as análises e gráficos apresentados a seguir, é importante inicialmente observar o comportamento histórico dos valores das criptomoedas selecionadas. Abaixo, são exibidos, como exemplo, os gráficos de duas das moedas que se mostraram cointegradas após uma análise de correlação histórica.
 
-![[../../imagens/imagens/projeto-tiago-3.jpg]]
+![[../../imagens/projeto-tiago-3.jpg]]
 
 Abaixo, apresenta-se a análise do crescimento do capital inicial da estratégia. O gráfico correspondente ilustra a evolução percentual tanto dos ativos quanto da estratégia de trading no período entre 05/01/2025 e 20/07/2025.
 
-![[../../imagens/imagens/projeto-tiago-4.jpg]]
+![[../../imagens/projeto-tiago-4.jpg]]
 
 >[!info]
 >Observa-se que o capital inicial da estratégia obteve um crescimento aproximado de **40%** ao final da simulação, enquanto os ativos individualmente apresentaram variações bem mais modestas: cerca de **3%** para o Ativo 1 e praticamente **0%** para o Ativo 2
@@ -116,7 +116,7 @@ Ferramentas e análises: Para tomar as decisões, os traders utilizam principalm
 
 A arbitragem estatística, ou _pair trading_, é uma estratégia que busca explorar relações históricas entre dois ativos que apresentam alta correlação ou, sendo um pouco mais específico, séries coestacionárias ou cointegradas.
 
-![[../../imagens/imagens/projeto-tiago-5.jpg]]
+![[../../imagens/projeto-tiago-5.jpg]]
 
 >[!info]
 >Como ilustrado na imagem, durante o período observado, o par de ativos 1 e 2 tende a retornar ao spread médio histórico
@@ -125,12 +125,12 @@ A lógica é simples: quando dois ativos se movem juntos ao longo do tempo, desv
 
 No contexto de criptomoedas, essa abordagem pode, por exemplo, aproveitar diferenças momentâneas entre pares como **BTC/BNB.** Em muitos casos, a verificação da **cointegração** é ainda mais relevante do que a correlação, já que séries de preços normalmente não são estacionárias individualmente, mas podem formar uma combinação linear estacionária, caracterizando cointegração.
 
-![[../../imagens/imagens/projeto-tiago-7.jpg]]
+![[../../imagens/projeto-tiago-7.jpg]]
 
 >[!info]
 >A fim de curiosidade, esta figura mostra que a cointegração só permaneceu como condição verdadeira para os pares BNBxLTC durante um período de poucos meses, valendo lembrar que a estratégia de pair trading só ocorre quando estes dois ativos estiverem cointegrados
 
-![[../../imagens/imagens/projeto-tiago-8.jpg]]
+![[../../imagens/projeto-tiago-8.jpg]]
 
 >[!info]
 >Outra coisa interessante de se analisar é que quando usamos janelas muito curtas de cointegração (menos de 120 dias) começamos a ter problemas com falsos positivos (períodos cointegrados de poucos dias). Então é vital usar janelas de tempo bem definidas e que de fato encapsulem os comportamentos da série.
@@ -185,7 +185,7 @@ Para entender a estratégia, o gráfico mais importante é o **z-score do spread
 - Quando o z-score está **positivo e acima do limite**, a estratégia **vende o ativo 1 e compra o ativo 2**.
 - Quando o z-score está **negativo e abaixo do limite**, faz-se o inverso: **compra o ativo 1 e vende o ativo 2**.
 
-![[../../imagens/imagens/projeto-tiago-9.jpg]]
+![[../../imagens/projeto-tiago-9.jpg]]
 
 >[!info]
 >Esta imagem ilustra o código acima, em que, dependendo do z-score, assumimos uma posição e encerramos na expectativa de reversão a média histórica.
@@ -194,7 +194,7 @@ O objetivo é obter lucro mesmo em mercados laterais, já que o ganho não depen
 
 E, como mostrado anteriormente, a estratégia somente irá operar em momentos de cointegração, mesmo assim, ao trabalhar com múltiplas moedas, temos muitas oportunidades ao longo do tempo.
 
-![[../../imagens/imagens/projeto-tiago-10.jpg]]
+![[../../imagens/projeto-tiago-10.jpg]]
 
 >[!info]
 >Esta simulação de 2020 a 2025, por exemplo, contou com cerca de 12 moedas, totalizando 66 pares, e, em média, operava com cerca de 3,5 posições abertas simultaneamente.
@@ -232,7 +232,7 @@ O desenvolvimento da estratégia segue um processo bem definido, com etapas lóg
 
 O treino ocorre conforme a imagem abaixo:
 
-![[../../imagens/imagens/projeto-tiago-11.jpg]]
+![[../../imagens/projeto-tiago-11.jpg]]
 
 4. **Treinamento do Modelo (XGBoost):** O modelo é treinado para prever a probabilidade de alta/baixa. Seus **hiperparâmetros** são ajustados para otimizar o desempenho do modelo. Os principais são:
 
@@ -284,7 +284,7 @@ $$
 
 O modelo de arbitragem, em sua forma inicial, mostrou-se altamente ineficiente para lidar com quebras na cointegração durante períodos de alta volatilidade. Em diversos momentos, acabou apostando em reversões que nunca ocorreram, resultando em retornos que variaram entre **-15% e -60%**. Como exemplo, uma simulação apresentou **drawdown de 50%** e retorno acumulado de **-28% em quatro anos**, evidenciando o risco excessivo da abordagem original.
 
-![[../../imagens/imagens/projeto-tiago-12.jpg]]
+![[../../imagens/projeto-tiago-12.jpg]]
 
 >[!info]
 >Inicialmente a estratégia assumia um risco gigantesco e tinha retorno negativo.
@@ -293,16 +293,16 @@ Para mitigar esses problemas, foram adicionados alguns filtros de segurança. Fo
 
 Por fim, obtivemos os seguintes resultados:
 
-![[../../imagens/imagens/projeto-tiago-13.jpg]]
+![[../../imagens/projeto-tiago-13.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-14.jpg]]
+![[../../imagens/projeto-tiago-14.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-15.jpg]]
+![[../../imagens/projeto-tiago-15.jpg]]
 
 >[!info]
 >Retorno final de apenas 2,5% do dia 01/01/2020 até 01/01/2025.
 
-![[../../imagens/imagens/projeto-tiago-16.jpg]]
+![[../../imagens/projeto-tiago-16.jpg]]
 
 Mesmo com essas melhorias — que reduziram bastante o risco e eliminaram os retornos negativos — a estratégia continuou inconsistente, apresentando **drawdown de 12% e retorno acumulado de apenas 2,5%**. Alguns pares se beneficiaram significativamente, alcançando **mais de 120% de retorno**, enquanto muitos outros registraram resultados negativos. Isso mostra a limitação de um **modelo heurístico**, baseado em regras fixas como “comprar se o z-score cair abaixo de X e vender se voltar a Y”, que não se adapta sozinho às mudanças do mercado. Ainda mais em um mercado como o de criptomoedas, com **alta volatilidade e padrões imprevisíveis**, esse tipo de modelo tende a falhar, mostrando que são necessários ajustes mais sofisticados para lidar com essas condições.
 
@@ -327,72 +327,72 @@ Foi feita análise com 13 criptomoedas diferentes, porém apenas as 8 a seguir t
 - **Análise:** O desempenho da estratégia e do _Buy_ & _Hold_ foram muito semelhantes durante a maior parte do período histórico. Em alguns momentos, a estratégia conseguiu reduzir perdas, mas em outros, não capturou totalmente as altas do mercado.
 - **Veredito:** **Desempenho Misto/Inferior.** No período _“Out-of-Sample”_, a estratégia de _Buy_ & _Hold_ mostrou um retorno superior, indicando que, para o Bitcoin, o modelo não conseguiu gerar um alfa consistente e seria mais vantajoso apenas ter mantido o ativo.
 
-![[../../imagens/imagens/projeto-tiago-17.jpg]]
+![[../../imagens/projeto-tiago-17.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-18.jpg]]
+![[../../imagens/projeto-tiago-18.jpg]]
 
 ### 2. Ethereum (ETHUSDT)
 
 - **Análise:** Assim como no Bitcoin, a performance da estratégia para o Ethereum foi bastante próxima à do _Buy_ & _Hold_. A estratégia parece ter navegado um pouco melhor nos períodos de baixa, com _drawdowns_ (quedas) menos acentuados, mas também ficou atrás durante as fortes altas.
 - **Veredito:** **Desempenho Misto/Inferior.** No período de teste final (_“Out-of-Sample”_), o _Buy_ & _Hold_ novamente superou a estratégia, que não conseguiu acompanhar o ímpeto do mercado.
  
-![[../../imagens/imagens/projeto-tiago-19.jpg]]
+![[../../imagens/projeto-tiago-19.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-20.jpg]]
+![[../../imagens/projeto-tiago-20.jpg]]
 
 ### 3. Solana (SOLUSDT)
 
 - **Análise:** Este é o caso de maior sucesso para o modelo. A estratégia superou massivamente o _Buy_ & _Hold_ durante quase todo o período, incluindo uma performance espetacular no período _“Out-of-Sample”_. O modelo conseguiu identificar e se beneficiar da forte tendência de alta da Solana de forma muito mais eficaz.
 - **Veredito:** **Desempenho Muito Superior.** A estratégia gerou retornos exponencialmente maiores, provando ser extremamente eficaz para este ativo.
 
-![[../../imagens/imagens/projeto-tiago-21.jpg]]
+![[../../imagens/projeto-tiago-21.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-22.jpg]]
+![[../../imagens/projeto-tiago-22.jpg]]
 
 ### 4. Ripple (XRPUSDT)
 
 - **Análise:** A estratégia demonstrou uma clara vantagem sobre o _Buy_ & _Hold_. Ela conseguiu capturar os movimentos de alta e, crucialmente, proteger o capital durante as quedas e longos períodos de lateralização do XRP. O gráfico da estratégia é visivelmente mais suave e consistentemente ascendente.
 - **Resultado:** **Desempenho Superior.** O modelo foi bem-sucedido, entregando retornos mais altos com uma aparente redução de risco em comparação com simplesmente manter o ativo.
 
-![[../../imagens/imagens/projeto-tiago-23.jpg]]
+![[../../imagens/projeto-tiago-23.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-24.jpg]]
+![[../../imagens/projeto-tiago-24.jpg]]
 
 ### 5. Bitcoin Cash (BCHUSDT)
 
 - **Análise:** A estratégia apresentou um resultado significativamente melhor que o _Buy_ & _Hold_. Enquanto o _Buy_ & _Hold_ teve um retorno modesto e volátil, a estratégia mostrou um crescimento muito mais robusto e consistente, especialmente a partir de 2023 e continuando no período _“Out-of-Sample”_.
 - **Resultado:** **Desempenho Superior.** O modelo de _Machine Learning_ conseguiu extrair valor de forma consistente do BCH, superando com folga a estratégia passiva.
 
-![[../../imagens/imagens/projeto-tiago-25.jpg]]
+![[../../imagens/projeto-tiago-25.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-26.jpg]]
+![[../../imagens/projeto-tiago-26.jpg]]
 
 ### 6. Litecoin (LTCUSDT)
 
 - **Análise:** A estratégia se mostrou superior ao _Buy_ & _Hold_ na maior parte do tempo. O modelo foi particularmente eficaz em evitar as perdas profundas que o _Buy_ & _Hold_ sofreu entre meados de 2021 e o final de 2023. Embora não tenha capturado o pico máximo em 2021, a gestão de risco resultou em um retorno acumulado maior no final do período.
 - **Resultado:** **Desempenho Superior.** A capacidade de mitigar perdas foi o grande diferencial, tornando a estratégia mais lucrativa a longo prazo.
 
-![[../../imagens/imagens/projeto-tiago-27.jpg]]
+![[../../imagens/projeto-tiago-27.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-28.jpg]]
+![[../../imagens/projeto-tiago-28.jpg]]
 
 ### 7. BNB (BNBUSDT)
 
 - **Análise:** Este é um caso claro de falha do modelo. A estratégia de _Buy_ & _Hold_ para o BNB foi imensamente mais lucrativa. O modelo de _Machine Learning_ gerou um retorno quase irrelevante em comparação com a valorização explosiva do ativo.
 - **Resultado:** **Desempenho Muito Inferior.** A estratégia falhou completamente em capturar o potencial de crescimento do BNB, tornando o _Buy_ & _Hold_ a escolha indiscutivelmente melhor.
 
-![[../../imagens/imagens/projeto-tiago-29.jpg]]
+![[../../imagens/projeto-tiago-29.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-30.jpg]]
+![[../../imagens/projeto-tiago-30.jpg]]
 
 ### 8. Cardano (ADAUSDT)
 
 - **Análise:** Semelhante ao BNB, a estratégia para Cardano teve um desempenho muito fraco. Ela não participou da gigantesca alta de 2021 e, desde então, gerou retornos mínimos. O _Buy_ & _Hold_, mesmo com sua alta volatilidade e quedas acentuadas, foi ordens de magnitude mais rentável.
 - **Resultado:** **Desempenho Muito Inferior.** O modelo não foi eficaz para o ADA, e um investidor teria tido um resultado drasticamente melhor apenas mantendo a criptomoeda.
 
-![[../../imagens/imagens/projeto-tiago-31.jpg]]
+![[../../imagens/projeto-tiago-31.jpg]]
 
-![[../../imagens/imagens/projeto-tiago-32.jpg]]
+![[../../imagens/projeto-tiago-32.jpg]]
 
 ## Conclusão e possíveis melhorias no código:
 

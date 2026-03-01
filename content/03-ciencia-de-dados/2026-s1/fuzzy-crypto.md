@@ -5,6 +5,7 @@ tags:
   - trilha/ciencia-de-dados
 ---
 _**Autores:** Ana Monteiro · Jayni Lima · Lucas Navis_
+_**Repositório:** [link](https://github.com/lucasnavis/dev.ensina-grupo1)_
 # 1. Introdução 
 
 ## 1.1 Contexto e motivação (cripto, regimes, ruído e não-linearidade)

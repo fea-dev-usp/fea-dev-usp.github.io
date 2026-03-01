@@ -2,7 +2,7 @@
 title: Extras
 ---
 >[!warning]
-> Se você é membro da dev e quer contribuir com algum material, se liga no **Guia do Hub** disponível na barra lateral: [[../05-guiahub/01-guia-onboarding-hub|Guia do Hub]]
+> Se você é membro ou ex-membro da dev e quiser contribuir com material, por favor, entre em  contato com algum membro de Tech, Governança ou com os Presidentes. 
 
 ## O que é a trilha Extras?
 

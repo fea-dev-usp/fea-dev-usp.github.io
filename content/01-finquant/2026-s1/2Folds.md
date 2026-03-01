@@ -4,7 +4,8 @@ tags:
   - nivel/intermediario
   - trilha/finquant
 ---
-_**Autores:** Alexis Sebastian · Gabriel Ferreira · Pedro Pinheiro_
+_**Autores:** Alexis Sebastian · Gabriel Ferreira · Pedro Pinheiro_ 
+_**Repositório:** [link](https://github.com/alexisetechas/2folds)_
 
 ![[image-removebg-preview(4).png]]
 

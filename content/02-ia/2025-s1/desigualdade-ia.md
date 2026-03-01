@@ -116,7 +116,7 @@ Subsequentemente, os 21 arquivos foram concatenados em um único DataFrame, que 
 
 	Figura 1 - Dados Concatenados
 
-![[../../imagens/imagens/projeto-desigualdade-ia-18.png]]
+![[../../imagens/projeto-desigualdade-ia-18.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -125,7 +125,7 @@ Por conseguinte, foi iniciada a etapa de identificação de valores ausentes e n
 
 	Figura 2 - Identificação de Valores Nulos
 
-![[../../imagens/imagens/projeto-desigualdade-ia-16.png]]
+![[../../imagens/projeto-desigualdade-ia-16.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -138,7 +138,7 @@ Nesse sentido, também foi calculado e plotado o coeficiente de variação, ferr
 
 	Figura 3 - Coeficiente de Variação por Indicador
 
-![[../../imagens/imagens/projeto-desigualdade-ia-8.png]]
+![[../../imagens/projeto-desigualdade-ia-8.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -147,14 +147,14 @@ Ademais, foi inicializada as visualizações exploratórias, para detectar padr�
 
 	Figura 4 - Histograma dos Indicadores
 
-![[../../imagens/imagens/projeto-desigualdade-ia-7.png]]
+![[../../imagens/projeto-desigualdade-ia-7.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 5 - Boxplot dos Indicadores
 
-![[../../imagens/imagens/projeto-desigualdade-ia-10.png]]
+![[../../imagens/projeto-desigualdade-ia-10.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -163,7 +163,7 @@ Além disso, foi realizada uma análise de correlação entre os índices. Para 
 
 	Figura 6 - Matriz de correlação dos Indicadores
 
-![[../../imagens/imagens/projeto-desigualdade-ia-9.png]]
+![[../../imagens/projeto-desigualdade-ia-9.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -189,67 +189,67 @@ Por fim, para esses pares altamente correlacionados, foram feitos gráficos de d
 
 	Figura 7 - Dispersão domicílios sem água vs. cobertura vegetal per capita
 
-![[../../imagens/imagens/projeto-desigualdade-ia-2.png]]
+![[../../imagens/projeto-desigualdade-ia-2.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 8 - Dispersão domicílios sem esgoto vs. cobertura vegetal per capita
 
-![[../../imagens/imagens/projeto-desigualdade-ia-1.png]]
+![[../../imagens/projeto-desigualdade-ia-1.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 9 - Dispersão domicílios sem esgoto vs. domicílios sem água
 
-![[../../imagens/imagens/projeto-desigualdade-ia-14.png]]
+![[../../imagens/projeto-desigualdade-ia-14.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 10 - Dispersão estabelecimentos formais vs empregos formais
 
-![[../../imagens/imagens/projeto-desigualdade-ia-11.png]]
+![[../../imagens/projeto-desigualdade-ia-11.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 11 - Dispersão famílias transferência renda vs famílias em extrema pobreza
 
-![[../../imagens/imagens/projeto-desigualdade-ia-13.png]]
+![[../../imagens/projeto-desigualdade-ia-13.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 12 - Dispersão  violência pessoas idosas vs violência crianças adolescentes
 
-![[../../imagens/imagens/projeto-desigualdade-ia-15.png]]
+![[../../imagens/projeto-desigualdade-ia-15.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 13- Dispersão  taxa mortalidade infantil vs proporção gestantes adolescentes
 
-![[../../imagens/imagens/projeto-desigualdade-ia-17.png]]
+![[../../imagens/projeto-desigualdade-ia-17.png]]
 
 	Figura 14- Dispersão  taxa mortalidade infantil vs idade média ao morrer
 
-![[../../imagens/imagens/projeto-desigualdade-ia-19.png]]
+![[../../imagens/projeto-desigualdade-ia-19.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 15- Dispersão proporção gestantes adolescentes vs idade média ao morrer
 
-![[../../imagens/imagens/projeto-desigualdade-ia-20.png]]
+![[../../imagens/projeto-desigualdade-ia-20.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 16- Dispersão  população situação de rua vs livros servicos leitura
 
-![[../../imagens/imagens/projeto-desigualdade-ia-21.png]]
+![[../../imagens/projeto-desigualdade-ia-21.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -272,7 +272,7 @@ Em suma, o fluxo metodológico envolveu a utilização de modelos preditivos sim
 
 	Figura 17 - Fluxograma do projeto
 
-![[../../imagens/imagens/projeto-desigualdade-ia-22.png]]
+![[../../imagens/projeto-desigualdade-ia-22.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -336,14 +336,14 @@ A análise das projeções (Figura 1 e 2) revela que indicadores de infraestrutu
 
 	 Figura 18: Tendência Linear Forte (Alto R²)
 
-![[../../imagens/imagens/projeto-desigualdade-ia-23.png]]
+![[../../imagens/projeto-desigualdade-ia-23.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 19: Tendência Fraca (Baixo R²)
 
-![[../../imagens/imagens/projeto-desigualdade-ia-24.png]]
+![[../../imagens/projeto-desigualdade-ia-24.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -356,14 +356,14 @@ Para a análise com K-Means, foi utilizado k = 2, correspondendo ao primeiro pic
 
 	Figura 20: Visualização dos Clusters (K-Means, k = 2)
 
-![[../../imagens/imagens/projeto-desigualdade-ia-3.png]]
+![[../../imagens/projeto-desigualdade-ia-3.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 21: Perfil Comparativo (K-Means, k=2)
 
-![[../../imagens/imagens/projeto-desigualdade-ia-4.png]]
+![[../../imagens/projeto-desigualdade-ia-4.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
@@ -388,14 +388,14 @@ A análise do Coeficiente de Silhueta para o modelo hierárquico (Figura 5) apon
 
 	Figura 22: Análise do Coeficiente de Silhueta
 
-![[../../imagens/imagens/projeto-desigualdade-ia-5.png]]
+![[../../imagens/projeto-desigualdade-ia-5.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
 
 	Figura 23: Visualização dos Clusters com PCA (k=12)
 
-![[../../imagens/imagens/projeto-desigualdade-ia-6.png]]
+![[../../imagens/projeto-desigualdade-ia-6.png]]
 
 >[!info]
 >Fonte: Elaboração Própria
