@@ -4,7 +4,7 @@ tags:
   - trilha/ia
 title: AlphaZero no jogo de Xadrez
 ---
-**_Autores:** Felipe Bulgareli de Faria · Lucas Skate · Pedro Miguelez_ 
+_**Autores:** Felipe Bulgareli de Faria · Lucas Skate · Pedro Miguelez_ 
 
 **_Repositório:_** [link](https://github.com/lucas-santt/dev.ensina-IAXadrez)
 # O jogo de Xadrez
