@@ -5,6 +5,7 @@ tags:
   - trilha/ciencia-de-dados
 ---
 _**Autores:** Ana Monteiro · Jayni Lima · Lucas Navis_
+
 _**Repositório:** [link](https://github.com/lucasnavis/dev.ensina-grupo1)_
 # 1. Introdução 
 

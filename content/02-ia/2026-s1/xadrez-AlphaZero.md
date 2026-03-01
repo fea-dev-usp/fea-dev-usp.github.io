@@ -4,8 +4,9 @@ tags:
   - trilha/ia
 title: AlphaZero no jogo de Xadrez
 ---
-**_Autores:** Felipe Bulgareli de Faria · Lucas Skate · Pedro Miguelez 
-**Repositório:** [link](https://github.com/lucas-santt/dev.ensina-IAXadrez)_
+**_Autores:** Felipe Bulgareli de Faria · Lucas Skate · Pedro Miguelez_ 
+
+**_Repositório:_** [link](https://github.com/lucas-santt/dev.ensina-IAXadrez)
 # O jogo de Xadrez
 
 ## **Tabuleiro**
@@ -101,7 +102,7 @@ O $\textit{Self-Play}$ simula uma partida apenas (ou seja, um caminho dentre tod
 
 Assim, no final, temos uma partida completa onde cada movimento é o melhor movimento segundo a MCTS. Tendo em vista que a MCTS utiliza a própria rede neural para guiar sua busca, temos que: 
 
-$\textbf{A rede neural se treina não só no quesito de jogar contra si mesma, mas também na questão de guiar a própria busca da MCTS!!!}$
+A rede neural se treina não só no quesito de jogar contra si mesma, mas também na questão de guiar a própria busca da MCTS!!!
 
 ### Treinamento local
 

@@ -5,7 +5,8 @@ tags:
   - trilha/ciencia-de-dados
 ---
 _**Autores:** Guilherme Matos · Jonathan Pereira · Marco Antonio_
-_**Repositório:** [link](https://github.com/GuilhermeMP-prog/Dev.ensinaG4)_
+
+**_Repositório:_** [link](https://github.com/GuilhermeMP-prog/Dev.ensinaG4)
 
 # Resumo
 

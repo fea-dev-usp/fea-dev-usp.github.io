@@ -4,8 +4,9 @@ tags:
   - nivel/avancado
 title: Previsão de Atividade Econômica (IBC-Br) via Stacking Ensemble
 ---
-**_Autores:** David Leati · Lucas Terra
-**Repositório:** [link](https://github.com/lsterra/dev_ensina_ia_grupo3)_
+_**Autores:** David Leati · Lucas Terra_
+
+**_Repositório:_** [link](https://github.com/lsterra/dev_ensina_ia_grupo3)
 # 1.**Introdução e Contextualização**
 
 Este projeto tem como objetivo desenvolver um modelo preditivo robusto para o IBC-Br (Índice de Atividade Econômica do Banco Central), amplamente utilizado pelo mercado financeiro e acadêmico como *proxy* mensal de alta frequência para o Produto Interno Bruto (PIB) brasileiro. Dada a defasagem temporal na divulgação do PIB oficial trimestral (IBGE), o IBC-Br atua como um termômetro ágil, essencial para a tomada de decisão em política monetária e alocação de ativos.

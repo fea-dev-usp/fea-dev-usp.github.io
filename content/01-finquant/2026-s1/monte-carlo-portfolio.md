@@ -5,7 +5,8 @@ tags:
   - trilha/finquant
 ---
 _**Autores:** Leandro Santos · Tales Rafael Morales Pino · Victor Hugo Mendes Braga_
-_**Repositório:** [link](https://github.com/leandrodasilvasantos/DEV.ENSINA---GRUPO-5---FEA.DEV/tree/master)_
+
+**_Repositório:_** [link](https://github.com/leandrodasilvasantos/DEV.ENSINA---GRUPO-5---FEA.DEV/tree/master)
 # Resumo 
 
 Este projeto apresenta um framework de otimização e validação de portfólios

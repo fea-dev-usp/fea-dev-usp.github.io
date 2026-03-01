@@ -5,7 +5,8 @@ tags:
   - trilha/finquant
 ---
 _**Autores:** Gabriela Saito · Lucas Marino · Maria Eduarda Alonso_
-_**Repositório:** [link](https://github.com/grupo-3-feadev/grupo-3-projeto)_
+
+**_Repositório:_** [link](https://github.com/grupo-3-feadev/grupo-3-projeto)
 
 ## 1. Introdução do Projeto 
 

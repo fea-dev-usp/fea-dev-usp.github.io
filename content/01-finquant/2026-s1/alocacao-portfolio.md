@@ -5,8 +5,10 @@ tags:
 title: Comparador de Estratégias de Alocação de Portfólio
 ---
 _**Autores:** Ana Beatriz Santos · Ana Beatriz Zaparoli · Julia Toledo ·  Luane Miranda._
+
 _**Mentor:** Gabriel Navarro_
-_**Repositório:** [link](https://github.com/AnaBiaGZ/Grupo-1--FinQuant)_
+
+**_Repositório:_** [link](https://github.com/AnaBiaGZ/Grupo-1--FinQuant)
  
 # Sumário
 
