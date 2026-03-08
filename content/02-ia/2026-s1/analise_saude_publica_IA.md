@@ -1,28 +1,22 @@
 ---
 title: Mapeando a Saúde Pública no Brasil com Inteligência Artificial
 tags:
-  - nivel/intermediario
   - trilha/ia
+  - nivel/avancado
 ---
-_**Autores:** Gustavo Katsuo Tsuitsui, Gabriel Graciano Dias
+_**Autores:** Gustavo Katsuo Tsuitsui, Gabriel Graciano Dias_
 
-**Análise da Saúde Pública Brasileira usando Inteligência Artificial**
-
-**Grupo 2 - FEA.dev**
-
-**Projeto:** Mapeamento de Clusters e Detecção de Anomalias usando dados do SUS
-
-**Data:** Fevereiro/2026
+_Repositório: [GitHub - fea-dev-usp/case-IA-grupo-02: Repositório do grupo 2 para o case de IA da capacitação 2025/2. · GitHub](https://github.com/fea-dev-usp/case-IA-grupo-02)_
 
 # 1.  Introdução e Contexto
 
 O Brasil possui 5.570 municípios com realidades desiguais. A gestão tradicional de saúde pública, baseada em médias estaduais, falha ao ignorar que cidades ricas podem ter gestão ineficiente e cidades pobres podem ser referências em atenção básica.
 
-## 1.1.  Problema
+## 1.1  Problema
 
 Identificar padrões de eficiência e vulnerabilidade que não são visíveis em análises geográficas simples e detectar cidades anômalas que fogem de algum padrão estatístico esperado.
 
-## 1.2.  Objetivo
+## 1.2  Objetivo
 
 Desenvolver uma aplicação de Inteligência Artificial capaz de:
 
@@ -34,7 +28,7 @@ Desenvolver uma aplicação de Inteligência Artificial capaz de:
 
 # 2.  Metodologia (Pipeline de Dados)
 
-## 2.1.  Engenharia de Dados
+## 2.1  Engenharia de Dados
 
 Os dados foram coletados de fontes governamentais oficiais (DATASUS e IBGE) abrangendo indicadores de **Economia, Demografia, Mortalidade e Eficiência Hospitalar**.
 
@@ -42,7 +36,7 @@ Os dados foram coletados de fontes governamentais oficiais (DATASUS e IBGE) abra
 
 ●     **Tratamento:** Limpeza de valores nulos, normalização de nomes de municípios e criação de indicadores calculados (ex: _Taxa de Internações por Condições Sensíveis à Atenção Primária - ICSAP_).
 
-## 2.2.  Modelagem: Machine Learning (Clustering)
+## 2.2  Modelagem: Machine Learning (Clustering)
 
 Utilizamos o algoritmo **K-Means** para segmentar o Brasil. O número ideal de clusters (k=4) foi definido pelo método do Cotovelo (Elbow Method).
 
@@ -56,7 +50,7 @@ Utilizamos o algoritmo **K-Means** para segmentar o Brasil. O número ideal de c
 
 ●     **Cluster 3 -  Vulnerável :** Baixo PIB, alta dependência do SUS e indicadores de saúde críticos.
 
-## 2.3.  Modelagem: Deep Learning (Anomalias)
+## 2.3  Modelagem: Deep Learning (Anomalias)
 
 Implementamos um **Autoencoder** (Rede Neural Artificial) usando TensorFlow.
 
@@ -66,9 +60,8 @@ Implementamos um **Autoencoder** (Rede Neural Artificial) usando TensorFlow.
 
 # 3.  Resultados e Análises
 
-## 3.1.  Panorama Nacional (Mapa de Clusters)  
+## 3.1  Panorama Nacional (Mapa de Clusters)  
 
-![](file:///C:/Users/USUARI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg) 
 
 ## 3.2.  Casos extremos 
 
@@ -77,12 +70,6 @@ Surgem casos de borda, principalmente em municípios pequenos. Por exemplo, muni
 # 4.  Produto Final: Dashboard 
 
 Para garantir a aplicabilidade do projeto, desenvolvemos um Data App utilizando a biblioteca Streamlit. A ferramenta permite filtrar dados por estado, comparar municípios com a média de seus clusters e visualizar o um panorama da saúde municipal. Link:
-
-[https://grupo2-teste1-dev.streamlit.app/](https://grupo2-teste1-dev.streamlit.app/)
-
-![](file:///C:/Users/USUARI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg) 
-
-# 5.  Conclusão e Próximos Passos
 
 **Melhorias Futuras:**
 
