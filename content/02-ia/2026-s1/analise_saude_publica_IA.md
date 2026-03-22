@@ -80,7 +80,8 @@ Para garantir a aplicabilidade do projeto, desenvolvemos um Data App utilizando 
 
 [https://grupo2-teste1-dev.streamlit.app/](https://grupo2-teste1-dev.streamlit.app/)
 
-![](file:///C:/Users/USUARI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg) 
+ ![[Dashboard São Paulo.jpg]]
+ 
 
 # 5.  Conclusão e Próximos Passos
 
