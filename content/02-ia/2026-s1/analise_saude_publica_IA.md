@@ -6,7 +6,7 @@ tags:
 ---
 _**Autores:** Gustavo Katsuo Tsuitsui, Gabriel Graciano Dias_
 
-_Repositório: [GitHub - fea-dev-usp/case-IA-grupo-02: Repositório do grupo 2 para o case de IA da capacitação 2025/2. · GitHub](https://github.com/fea-dev-usp/case-IA-grupo-02)_
+_Repositório: [link](https://github.com/fea-dev-usp/case-IA-grupo-02)_
 
 # 1.  Introdução e Contexto
 
