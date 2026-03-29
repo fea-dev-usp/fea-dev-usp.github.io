@@ -139,7 +139,7 @@ Onde:
 * rp: retorno diário do portfólio obtido com os pesos escolhidos.  
 * σ²p: proxy de risco (neste estudo, calculado como o quadrado do retorno ou volatilidade instantânea), ponderado pelo fator de aversão ao risco λ \= 0.5.  
 * Turnover: a soma absoluta das mudanças nos pesos de um dia para o outro  
-   $$
+$$
 \sum |w_t - w_{t-1}|
 $$
 
