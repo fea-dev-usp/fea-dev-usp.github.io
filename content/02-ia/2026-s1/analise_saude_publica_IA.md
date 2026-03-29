@@ -8,7 +8,6 @@ _**Autores:** Gustavo Katsuo Tsuitsui, Gabriel Graciano Dias_
 
 _Repositório_: [GitHub - fea-dev-usp/case-IA-grupo-02: Repositório do grupo 2 para o case de IA da capacitação 2025/2. · GitHub](https://github.com/fea-dev-usp/case-IA-grupo-02)
 
-teste
 # 1.  Introdução e Contexto
 
 O Brasil possui 5.570 municípios com realidades desiguais. A gestão tradicional de saúde pública, baseada em médias estaduais, falha ao ignorar que cidades ricas podem ter gestão ineficiente e cidades pobres podem ser referências em atenção básica.
