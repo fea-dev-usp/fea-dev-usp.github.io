@@ -6,13 +6,7 @@ tags:
 ---
 _**Autores:** Gustavo Katsuo Tsuitsui, Gabriel Graciano Dias_
 
-<<<<<<< HEAD
-_Repositório: [link](https://github.com/fea-dev-usp/case-IA-grupo-02)_
-=======
-_Repositório: 
-
-[GitHub - fea-dev-usp/case-IA-grupo-02: Repositório do grupo 2 para o case de IA da capacitação 2025/2. · GitHub](https://github.com/fea-dev-usp/case-IA-grupo-02)_
->>>>>>> 0d77100 (Ajustes Grupo 1 - Relatório FinQuant 2026.1)
+_Repositório_: [GitHub - fea-dev-usp/case-IA-grupo-02: Repositório do grupo 2 para o case de IA da capacitação 2025/2. · GitHub](https://github.com/fea-dev-usp/case-IA-grupo-02)
 
 # 1.  Introdução e Contexto
 
@@ -68,14 +62,16 @@ Implementamos um **Autoencoder** (Rede Neural Artificial) usando TensorFlow.
 
 ## 3.1  Panorama Nacional (Mapa de Clusters)  
 
-
+![[Pasted image 20260329164325.png]]
 ## 3.2.  Casos extremos 
 
 Surgem casos de borda, principalmente em municípios pequenos. Por exemplo, municípios com taxa de mortalidade infantil igual a 0 ou municípios pouco populosos levam a um aumento desproporcional de algumas métricas. Isso impacta diretamente no cluster em que são alocados. Uma possível solução a esse problema a agregação por um período maior de tempo. Um exemplo é o município de Mineiros do Tietê - SP, com população de 11230 habitantes e taxa de mortalidade infantil igual a 0 para o período considerado, ou Oscar Bressane - SP com população de 2470 habitantes e taxa de mortalidade infantil de 66.66 óbitos por mil nascidos (considerado extremamente elevado).
 
 # 4.  Produto Final: Dashboard 
 
-Para garantir a aplicabilidade do projeto, desenvolvemos um Data App utilizando a biblioteca Streamlit. A ferramenta permite filtrar dados por estado, comparar municípios com a média de seus clusters e visualizar o um panorama da saúde municipal. Link:
+Para garantir a aplicabilidade do projeto, desenvolvemos um Data App utilizando a biblioteca Streamlit. A ferramenta permite filtrar dados por estado, comparar municípios com a média de seus clusters e visualizar o um panorama da saúde municipal. Link: https://grupo2-teste1-dev.streamlit.app/
+
+![[Pasted image 20260329164508.png]]
 
 **Melhorias Futuras:**
 
