@@ -143,6 +143,7 @@ $$
 \sum |w_t - w_{t-1}|
 $$
 
+
 * c: custo de transação simulado (0.001 ou 0.1%), que incentiva o agente a evitar operações desnecessárias que corroeriam o capital.
 
 # **3.3 Treinamento do Agente**
