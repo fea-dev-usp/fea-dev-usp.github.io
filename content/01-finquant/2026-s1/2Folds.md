@@ -304,30 +304,50 @@ Utilizamos a linguagem de programação orientada a objetos Python 3, e o seu co
 ## 6.2 Resultados
 
 ![[Pasted image 20260203231650.png]]
+>[!info]
+>Figura 1: 2Folds vs Ibovespa vs CDI
+
 
 A estratégia demonstrou uma capacidade robusta de geração de alpha consistente, tendo como retorno líquido - Assumindo os custos de corretagem - de 31.96% em comparação a 14.41% do Ibovespa. Além de ter um sharpe ratio de 1.16 e com uma média de ativos semanais de 7.5 papéis (em holding e negociados). Além disso, observa-se que a estratégia apresentou desempenho superior ao ativo livre de risco, representado pelo CDI.
 
 ![[Pasted image 20260203231702.png]]
+>[!info]
+>Figura 2: Drawdown Máximo de 2Folds vs Ibovespa.
+
 
 A resiliência do modelo é evidenciada pelo drawdown máximo controlado de -8.50%, significativamente inferior aos momentos de estresse observados no índice de referência. Isso valida a eficácia dos filtros de liquidez e fundamentalistas na proteção do capital durante correções de mercado.
 
 ![[Pasted image 20260203231712.png]]
+>[!info]
+>Figura 3: Performance Móvel.
+
 
 Mesmo nos períodos de quedas ( Novembro de 2024 - Fevereiro de 2025 e Agosto de 2025) é notável que o modelo ainda manteve um alpha em cima do benchmark.
 
 ![[Pasted image 20260203231723.png]]
+>[!info]
+>Figura 4: Alpha Móvel.
+
 
 A consistência da estratégia é observada através do Alpha Móvel (janela de 12 semanas), que se manteve positivo na maior parte do período. Com um Win Rate semanal de 57.63%, o modelo demonstra uma expectativa matemática positiva, lucrando através da consistência estatística e não de apostas esporádicas.
 
 ![[Pasted image 20260203231735.png]]
+>[!info]
+>Figura 5: Dinâmica do Ensemble.
+
 
 A análise da dinâmica do ensemble confirma a adaptabilidade do algoritmo. Observa-se a flutuação dos pesos (wA e wB) ao longo do tempo, indicando que o algoritmo identificou corretamente quais momentos do mercado favoreciam o modelo A (técnico) e quais eram regidos pelo modelo B (Sentimental), ajustando a exposição automaticamente.
 
 ![[Pasted image 20260203231746.png]]
+>[!info]
+>Figura 6: Diversificação da Carteira e Custo de Transação e Slippage (semanal).
 
 Segue ainda que a diversificação de portfólio se manteve alta desde o início do backtest, além do custo de transação ir diminuindo pelo fato da maior parte das boas ações foam identificadas pelo modelo e mantidas em holding por um bom período de tempo.
 
 ![[Pasted image 20260203231754.png]]
+>[!info]
+>Figura 7: Estrutura da Carteira.
+
 
 A distribuição temporal das operações destaca uma característica do modelo de baixo turnover. Ativos como CSMG3 e CMIG4 permaneceram em carteira por 59 semanas, demonstrando que o modelo prioriza a captura de tendências longas, em detrimento de giros excessivos, o que reduz custos de transação.
 
@@ -355,13 +375,16 @@ Por fim, sabe-se que o modelo 2Folds, mas para validar a hipótese principal do 
 # Modelo A
 
 ![[Pasted image 20260203231902.png]]
-
+>[!info]
+>Figura 8: Modelo A.
 
 O modelo A teve um retorno líquido de 34.03% em comparação a 14.41% do Ibovespa. Além de ter um sharpe ratio de 1.01 e com uma média de ativos semanais de 4.8 papéis.
 
 # Modelo B
 
 ![[Pasted image 20260203231916.png]]
+>[!info]
+>Figura 9: Modelo B.
 
 O modelo B teve um retorno líquido de +24.13% em comparação a 14.41% do Ibovespa. Além de ter um sharpe ratio de 0.78 Sortino Ratio de 0.20 e com uma média de ativos semanais de 8.3 papéis.
 
