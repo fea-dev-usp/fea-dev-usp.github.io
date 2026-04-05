@@ -38,12 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer({
-      filterFn: (node) => {
-        // Usa o displayName convertido para minúsculas para garantir que o filtro funcione
-        return node.displayName.toLowerCase() !== "imagens"
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [
     Component.Graph(),
@@ -67,11 +62,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      filterFn: (node) => {
-        return node.displayName.toLowerCase() !== "imagens"
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [],
 }

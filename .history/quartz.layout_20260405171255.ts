@@ -39,11 +39,11 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      filterFn: (node) => {
-        // Usa o displayName convertido para minúsculas para garantir que o filtro funcione
-        return node.displayName.toLowerCase() !== "imagens"
-      },
-    }),
+  filterFn: (node) => {
+    // Esconde a pasta do menu lateral se o nome for exatamente "imagens"
+    return node.name !== "imagens"
+  },
+}),
   ],
   right: [
     Component.Graph(),
@@ -67,11 +67,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      filterFn: (node) => {
-        return node.displayName.toLowerCase() !== "imagens"
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [],
 }

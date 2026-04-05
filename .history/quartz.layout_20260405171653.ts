@@ -40,8 +40,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       filterFn: (node) => {
-        // Usa o displayName convertido para minúsculas para garantir que o filtro funcione
-        return node.displayName.toLowerCase() !== "imagens"
+        return node.name !== "imagens"
       },
     }),
   ],
@@ -67,11 +66,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer({
-      filterFn: (node) => {
-        return node.displayName.toLowerCase() !== "imagens"
-      },
-    }),
+    Component.Explorer(),
   ],
   right: [],
 }
