@@ -154,13 +154,18 @@ t-Student. O histograma revela uma concentração de massa em torno da média, m
 uma dispersão significativa para os extremos negativos, característica típica das séries
 financeiras simuladas sob regimes de caudas pesadas.
 
+![[monte-carlo-portfolio-fig1.png]]
+>[!info]
+>Figura 1: Distribuição dos retornos simulados do portfólio ótimo.
+
+
 # Métricas de Risco de Cauda
 
 Os valores extraídos diretamente da imagem indicam uma realidade rigorosa para a gestão
 de ativos:
 
 -  Retorno Médio Simulado: −0, 3968%
-- CVaR 95% Simulado: −15, 2602%
+-  CVaR 95% Simulado: −15, 2602%
 
 Este resultado é fundamental para a fundamentação dos resultados. Embora o re-
 torno médio nos cenários simulados seja levemente negativo (−0, 3968%), o CV aR de
@@ -185,7 +190,12 @@ de mercado que seriam ignorados por modelos de média-variância tradicionais.
 Os resultados empíricos da execução do código são consolidados no segundo conjunto de
 gráficos, vide figura 2, que apresenta o "Retorno Acumulado"e o "Drawdown"desde 2018
 até o início de 2026. A análise destes dados permite concluir que a estratégia baseada no
-Starr Ratio obteve uma vitória expressiva sobre o índice de referência
+Starr Ratio obteve uma vitória expressiva sobre o índice de referência.
+
+![[monte-carlo-portfolio-fig2.png]]
+>[!info]
+>Figura 2: Retorno acumulado e drawdown da estratégia baseada no Starr Ratio.
+
 
 # Evolução Patrimonial e Geração de Alpha
 
@@ -204,7 +214,7 @@ Este desempenho é notável por ocorrer em um mercado lateralizado e volátil co
 brasileiro. O gráfico mostra que a estratégia conseguiu capturar ciclos de alta com maior
 eficiência do que o índice ponderado por valor de mercado. Enquanto o Ibovespa enfrentou
 dificuldades para superar patamares históricos entre 2021 e 2024, a carteira otimizada via
-CV aR manteve uma inclinação positiva, sugerindo que a reotimização baseada no Starr
+CVaR manteve uma inclinação positiva, sugerindo que a reotimização baseada no Starr
 Ratio foi capaz de rotacionar os pesos para ativos com melhor momento e menor risco de
 cauda dinâmico.
 
@@ -246,17 +256,7 @@ Starr Ratio Strat manteve seus drawdowns contidos em níveis menos severos.
 -  Gestão Ativa de Risco: O fato de o drawdown da estratégia ser menor em janelas
 de "mercado de lado"comprova que a substituição da variância pelo CV aR impede
 que a carteira fique excessivamente exposta a ativos com risco de cauda oculto.
-
-![[Pasted image 20260203210801.png]]
-
->[!info]
->Figura 1: Distribuição dos retornos simulados do portfólio ótimo.
->
-
- ![[Pasted image 20260203211052.png]]
-
->[!info]
->Figura 2: Retorno acumulado e drawdown da estratégia baseada no Starr Ratio.
+ 
 # Conclusão
 
 Este trabalho apresentou a implementação e avaliação de um algoritmo de alocação de
