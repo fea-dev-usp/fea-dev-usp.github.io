@@ -1,8 +1,8 @@
 ---
 title: Estratégias de trading com python
 tags:
-  - trilha/finquant
   - nivel/avancado
+  - trilha/ia
 ---
 _**Autores:** Ana Beatriz Zaparoli · David Leati · Eduardo Lud · Tiago Toledo_
 ## Introdução

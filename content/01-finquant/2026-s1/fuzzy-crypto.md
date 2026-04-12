@@ -2,7 +2,7 @@
 title: Features Fuzzy - Criptoativos
 tags:
   - nivel/intermediario
-  - trilha/ciencia-de-dados
+  - trilha/finquant
 ---
 _**Autores:** Ana Monteiro · Jayni Lima · Lucas Navis_
 
@@ -522,7 +522,7 @@ Esse pipeline garante rastreabilidade e repetibilidade, permitindo que o mesmo p
 
 # 8. Modelagem supervisionada
 
-### 8.1  Modelos avaliados e justificativa
+## 8.1  Modelos avaliados e justificativa
 
 A escolha do CatBoost em detrimento do XGBoost fundamenta-se em sua maior robustez em ambientes ruidosos e altamente voláteis, característica essencial no contexto do mercado de criptoativos. Embora o CatBoost permita o tratamento nativo de variáveis categóricas e o aprendizado conjunto de múltiplos ativos, neste projeto optou-se pela construção de 10 datasets separados, um para cada cripto ativo analisado, com o objetivo de preservar as dinâmicas individuais e os diferentes regimes de mercado associados a cada ativo. Em comparação ao XGBoost, o CatBoost é menos sensível a variações nos hiperparâmetros, reduzindo o risco de ajustes excessivos e mitigando o problema de overfitting, especialmente relevante em séries financeiras, onde o modelo pode facilmente memorizar padrões históricos sem capacidade de generalização. Essa propriedade torna-se ainda mais importante considerando que a variável de volatilidade utilizada no modelo é altamente sensível a mudanças abruptas e ruído de mercado. O CatBoost apresenta desempenho superior na modelagem de relações não lineares complexas, comuns em mercados financeiros e particularmente acentuadas no mercado de criptoativos. Mesmo operando sobre datasets individuais, o algoritmo mantém estabilidade e consistência na captura de padrões relevantes, sem demandar extensiva engenharia manual de atributos, o que favorece a escalabilidade e a reprodutibilidade do modelo.
 
@@ -734,13 +734,13 @@ Outro ponto: quando a fuzzificação não está muito bem calibrada para cada ti
 
 No total, a fuzzificação não foi um upgrade claro em performance geral: ela ajudou quando o benefício era ter um modelo mais “corajoso” em identificar regimes e capturar alta, mas atrapalhou ao aumentar o risco de erros com direção errada em cenários de queda, o que piora a qualidade econômica do sinal. Em resumo: o fuzzy parece trocar parte da “prudência neutra” do contínuo por mais direcionalidade e isso só vale a pena se o projeto controlar esses erros críticos (especialmente de queda para alta).
 
-### 10.2 Limitações do estudo
+## 10.2 Limitações do estudo
 
 A primeira limitação é de dados e recorte amostral. O estudo usa séries diárias (OHLCV) e proxies macro/sentimento (como FGI), com janela histórica descrita como cerca de cinco anos (2021–hoje) e fontes como Binance e Yahoo Finance. Em cripto, isso é um período com mudanças estruturais relevantes (ciclos de liquidez, choques de volatilidade e fases de “risk-on/risk-off”), então existe risco de mudança de regime que o modelo não consegue generalizar bem: padrões de treino podem não se repetir no teste, especialmente em horizontes curtos onde o ruído domina.
 
 A segunda limitação é metodológica: (i) risco de viés de sobrevivência e de “universo móvel” se o Top 10 for definido olhando para o presente; o próprio planejamento do projeto aponta a necessidade de uma data de corte reproduzível para definir o Top 10 e lidar com mudanças de ticker e trechos de baixa liquidez, justamente para evitar distorções desse tipo. (ii) a fuzzificação depende de escolhas de desenho (funções de pertinência e partições), que são parcialmente arbitrárias: a primeira tentativa, por exemplo, usou uma zona intermediária trapezoidal mais larga (neutralidade) e extremos “pontudos” (triangulares), mas essa padronização “igual para tudo” mostrou limitações porque as features têm distribuições e significados diferentes. Por fim, as métricas avaliadas (F1 macro, acurácia, Log Loss e confusão) medem qualidade estatística, mas não substituem uma avaliação econômica completa (custos de transação, risco de drawdown e assimetria de perdas).
 
-### 10.3 Sugestões de extensão
+## 10.3 Sugestões de extensão
 
 Uma extensão natural é ampliar o desenho experimental para testar mais horizontes (ex.: 2–3 dias, 14 dias, 60/90 dias) e também variações de discretização do alvo, porque a utilidade da fuzzificação parece ser condicional ao ativo e ao horizonte (ganhos pontuais, não sistemáticos). Além disso, vale transformar a comparação em um critério de decisão prático: por exemplo, usar fuzzy apenas onde ele melhora calibração (Log Loss) ou reduz erros críticos, já que vimos casos de vantagem clara (ex.: LINK) e casos de desvantagem consistente (ex.: ETH). Outra extensão é atacar diretamente o que os resultados sugerem: o fuzzy aumenta a direcionalidade, mas pode gerar “otimismo” em quedas (erro de comissão).
 
