@@ -2,7 +2,7 @@
 title: AI Boom vs Bolha Dot-com
 tags:
   - nivel/intermediario
-  - trilha/ciencia-de-dados
+  - trilha/finquant
 ---
 _**Autores:** Guilherme Matos · Jonathan Pereira · Marco Antonio_
 
