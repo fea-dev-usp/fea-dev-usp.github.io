@@ -54,34 +54,7 @@ Fundada em 2019, a FEA.dev nasceu da iniciativa de alunos que identificaram uma 
     </span>
     <span style="font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
-
-  <!-- Ciência de Dados -->
-  <a href="/03-ciencia-de-dados/"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:var(--pad);display:flex;flex-direction:column;gap:10px;
-            min-height:var(--card-h);">
-    <span style="display:block;font-weight:700;margin:0;">Ciência de Dados</span>
-    <span style="display:block;opacity:.9;line-height:1.35;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">
-      ETL, Web Scraping, boas práticas.
-    </span>
-    <span style="font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
-  </a>
-
-  <!-- Extras -->
-  <a href="/04-extras/"
-     style="text-decoration:none;border:1px solid var(--secondary);border-radius:12px;
-            padding:var(--pad);display:flex;flex-direction:column;gap:10px;
-            min-height:var(--card-h);">
-    <span style="display:block;font-weight:700;margin:0;">Extras</span>
-    <span style="display:block;opacity:.9;line-height:1.35;
-                 overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;">
-      Git e outras linguagens de programação.
-    </span>
-    <span style="font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
-  </a>
-</div>
-
+  
 ### Como navegar por nível
 - 🟢 **Iniciante**: primeiros passos e guias passo a passo  
 - 🟠 **Intermediário**: já pressupõe base técnica  
