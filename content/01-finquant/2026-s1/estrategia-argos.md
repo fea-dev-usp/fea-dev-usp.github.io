@@ -6,13 +6,16 @@ tags:
 ---
 _**Autores**: Lorenzo Cavalcante, Gabriel Navarro, Rodrigo Catto Menin_ 
 
-_**Repositório**:[link](https://github.com/Quant-IA-2025/main)
+_**Repositório**: [link](https://github.com/Quant-IA-2025/main)
 
 1. **Design Robô A.R.G.O.S.**
 
                                  A.R.G.O.S.
 
-![[robo-argos.jpg]]
+![[robo-argos.jpg|151]]
+
+>[!info]
+>**Figura 1**: Logo-argos.jpg
 
 2. Nome do Robô 
 
@@ -23,6 +26,7 @@ _**Repositório**:[link](https://github.com/Quant-IA-2025/main)
 3. Explicação do Nome: A.R.G.O.S. é um acrônimo para **Algoritmo de Reconhecimento Gráfico de Otimização de Sinais.** O nome é uma referência direta a **Argos Panoptes**, o gigante primordial da mitologia grega conhecido como "aquele que tudo vê"[2, 3], um ser com cem olhos que lhe permitia uma vigilância constante.[2, 3] Esta alegoria captura a essência da nossa estratégia. **O Reconhecimento Gráfico** refere-se à forma como reinventamos a análise técnica, permitindo que nossa abordagem de transfer learning “veja o mercado com seus cem olhos” ao analisar imagens gráficas (GAFs) dos preços, extraindo features aprendidas por backbones visuais pré-treinados e detectando padrões invisíveis à análise estatística convencional. A **Otimização de Sinais** descreve como essa “visão”, isto é, as representações extraídas via transfer learning, é tratada como um sinal, subsequentemente otimizado e ponderado contra o equilíbrio de mercado pelo modelo Black–Litterman para compor a alocação final. 
 
 4. Explicação da Lógica da Estratégia: A lógica do A.R.G.O.S. é uma fusão híbrida de aplicações inovadoras de deep learning e metódos clássicos robustos de teoria de portfólio. Primeiro, o robô "vê"o mercado transformando os dados de preços de 1 trimestre de cada ação em uma imagem de 2 canais (GASF/GADF), então, uma Rede Neural Convolucional (CNN), usando Transfer Learning, analisa essa imagem e a classifica imagem de acordo com a possibilidade do retorno futuros estar entre certos intervalos pré-definidos e fixos. Essa previsão não é um sinal direto de "compra", mas sim uma "visão"subjetiva. Em seguida, essa "visão"(o retorno esperado Q) e, crucialmente, a "confiança"da CNN nessa visão (Ω) são inseridas no modelo Black-Litterman. O modelo Black-Litterman combina otimamente a visão da nossa IA com o "equilíbrio"do mercado (o retorno neutro Π) e também a matriz de covariância (Σ) resolvendo o clássico problema de instabilidade dos modelos de otimização. O resultado é um portfólio robusto que pondera a previsão da IA pela sua própria confiança, gerando uma alocação de ativos confiável de forma inovadora, tal inovação evita efeitos de crowding no mercado 
+
 5. Classe de Ativos Ativos de Renda Variável (Ações) 
 
 6. Universo de Investimento S&P100 
@@ -30,7 +34,6 @@ _**Repositório**:[link](https://github.com/Quant-IA-2025/main)
 7. Frequência da Estratégia Trimestral (Rebalanceamento e previsão a cada 63 dias úteis) 
 
 8. Benchmark Índice S&P100 (SP100)
-
 
 
 # 2. Página Factsheet 
@@ -43,13 +46,11 @@ _**Repositório**:[link](https://github.com/Quant-IA-2025/main)
 #### 4. Fluxograma da Lógica (O Como)
 ![[fluxograma-projeto-argos.jpg]]
 
-
-**Figura 2:** Fluxograma da lógica
-
-
+>[!info]
+>**Figura 2:** Fluxograma da lógica
 
 # 3. Desenvolvimento do Trabalho
-### a) Ideia de Investimento 
+### A) Ideia de Investimento 
 Nossa ideia foi, em suma, combinar visão computacional com teoria de portfólios. Para tal, fizemos com que uma CNN pre-treináda via transfer learning extraisse padrões das imagens GAF e produzisse visões de mercado (Q); Além disso, fizemos com que o Black–Litterman transformasse essas visões em alocações robustas e bem calibradas ao risco. Intuitivamente, a CNN gera o alpha ao "ver"padrões nas imagens GAF para gerar "visões"de mercado (Q). Enquanto o Black-Litterman constrói o portfólio, usando a teoria de portfólio para alocação robusta e gerenciamento de risco. 
 
 O modelo BL recebe a "visão"da CNN (Q) e sua incerteza (Ω). Se a CNN está confiante (Ω baixo), sua visão tem alto peso. Se está "confusa"(Ω alto), a alocação gravita de volta para a âncora estável do equilíbrio, calculada com os 252 dias anteriores à realocação. 
@@ -58,7 +59,7 @@ Essa arquitetura nos permite alavancar o poder de reconhecimento de padrões de 
 	
 Essa arquitetura resolve os dois problemas: a CNN fornece o alpha e o BL fornece a "âncora"de equilíbrio que impede a instabilidade do ML puro. 
 
-### b) Regra de Investimento 
+### B) Regra de Investimento 
 A estratégia é sistematizada em um pipeline de cinco módulos, executado trimestralmente (horizonte de 63 dias). 
 1. **Codificação em Imagem** 
 	Para cada ativo do S&P100, em cada data de rebalanceamento $(τ ),$ o script analisa a janela anterior de 63 dias (w = 63). O processo de transformação converte esta série temporal em uma imagem de 2 canais (GAF) da seguinte forma: 
@@ -70,8 +71,11 @@ A estratégia é sistematizada em um pipeline de cinco módulos, executado trime
 	
 2. **Previsão via CNN** 
 	As imagens GAF (GASF/GADF) geradas são padronizadas e alimentadas em uma Rede Neural Convolucional. Em vez de treinar uma rede massiva do zero, aplicamos Transfer Learning: utilizamos uma arquitetura de CNN robusta (como ResNet) pré-treinada em milhões de imagens (ex: ImageNet)
+	
 	![[arquitetura-argos.jpg|653]]
-
+	
+>[!info]
+> **Figura 3**: Arquitetura CNN
 
 
 **Figura 3:** Exemplo de uma codificação em imagem.
@@ -103,14 +107,15 @@ $$\max_{w} \quad w^{T} \hat{\mu}_{BL,\tau} - \frac{\gamma}{2} w^{T} \Sigma_{\tau
 		  Onde $γ$ é a aversão ao risco do investidor e κ é uma penalidade de turnover para controlar custos de transação, definidas, respectivamente, como 0,03 e 10bps 
  A partir desse output calculamos os resultados e as métricas finais do backtest. 
 		  
-### c) Origem da Ideia 
+### C) Origem da Ideia 
+
  No início da análise técnica, traders tomavam decisões de investimento baseadas puramente na inspeção visual de gráficos de preços, buscando padrões. Apesar de relevante na sua época, esta abordagem era subjetiva e limitada. Com nossa abordagem inovadora, o robô A.R.G.O.S., buscamos reinventar esse método clássico de trading, não mais como uma análise superficial feita por humano, mas como uma análise feita por Inteligência Artificial de uma imagem complexa de dois canais(GASF/GADF), extraindo padrões significativos que o olho e a mente humana são incapazes de captar. A partir dai, temos um sinal que será incorporado no clássico modelo Black-Literman para gerar retorno. 
  
  Utilizamos alguns artigos para fundamentar nossa abordagem, o principal foi a proposta criada por Wang e Oates [1] de utilizar o GAF como transformação da série temporal em imagem e depois aplicar uma CNN para prever a imagem futura, e o artigo seminal do Black-Litterman, fundamental para gerarmos alpha com nosso sinal. 
  
  A pesquisa de Wang e Oates foi a mais importante para nós, pois demonstrou que a codificação de séries temporais em Gramian Angular Fields (GAF) cria representações de imagem que (a) preservam a dependência temporal e (b) podem ser consumidas eficazmente por Redes Neurais Convolucionais para classificação. Isso nos permitiu reformular o problema de previsão de séries temporais como um problema de visão computacional com fundamentos bem robustos. 
  
-### d) Universo de Dados
+### D) Universo de Dados
  **• Universo Investível:** Ações do S&P 100. 
  **• Fonte dos Dados:** Yahoo Finance, dados diários. 
  **• Período de Análise:** Dados de 2010-2025, com preços diários das ações do S&P100 no período, separados com proporções 70/30. 
@@ -122,12 +127,12 @@ $$\max_{w} \quad w^{T} \hat{\mu}_{BL,\tau} - \frac{\gamma}{2} w^{T} \Sigma_{\tau
 
 A combinação de min_max_scaler e cos−1 sempre gerará ao menos duas linhas bem claras que se destacam das demais. Não há evidências fortes que isso impacte a robustez dos resultados
 
-### e) Resultados
+### E) Resultados
 
 ![[serie-historica.jpg]]
 
-
-**Figura 4:** Série Histórico do valor do Portfólio
+>[!info]
+>**Figura 4:** Série Histórico do valor do Portfólio
 
 |**Métrica**|**A.R.G.O.S.**|**Markowitz**|**S&P100**|
 |---|---|---|---|
@@ -156,11 +161,13 @@ Em seguida, aplicamos o *DQ-test* — um cheque rápido (e formal) de dois ponto
 
 ![[var-argos.jpg]]
 
-Figura 5: Violações do VAR no modelo A.R.G.O.S (Black-Litterman)
+>[!info]
+>Figura 5: Violações do VAR no modelo A.R.G.O.S (Black-Litterman)
 
 ![[var-markowitz.jpg]]
 
-Figura 6: Violações do VAR no modelo Markowitz
+>[!info]
+>Figura 6: Violações do VAR no modelo Markowitz
 
 • Independência das violações: os hits não vêm em “rajadas” (sem clustering), o que verificamos com defasagens de It.
 
@@ -177,7 +184,7 @@ Figura 6: Violações do VAR no modelo Markowitz
 
 No nível $α$ $=$ 1%, não rejeita no Wald (*$p$ $=$ 0,2379*) e Markowitz rejeita ($p$ $=$ 0,000149); o LM para Markowitz não rejeita (p = 0,1524), não adicionando evidência global extra. Pelos coeficientes, a **calibração do quantil** é estável em BL ($VaRt$ não significativo: 0,66 < 2 × 0,46) e falha em Markowitz (2,16 > 2 × 0,76). Quanto à **memória**, BL mostra evidência fraca (apenas lag 1 marginal); em Markowitz, lags 1–3 são significativos, caracterizando *clustering* de exceções, e a constante significativa sugere viés de cobertura. Ou seja **BL aparenta ser melhor calibrado e com menor memória** enquanto **Markowitz** apresenta **pior calibração condicional e memória mais pronunciada.**
 
-### f) Processo de Backtest 
+### F) Processo de Backtest 
 A robustez de um backtest é definida pelos seus cuidados metodológicos contra vieses4 . Seguimos um protocolo rigoroso para garantir que nossos resultados sejam o mais realistas possível, conforme detalhado no pipeline do readme.
 
 **Tabela 3: Coeficientes essenciais do teste DQ (α = 1%, lags= 4)**
@@ -212,7 +219,7 @@ A robustez de um backtest é definida pelos seus cuidados metodológicos contra 
 4. **Survivorship Bias** 
 	Evitamos Survivorship Bias fazendo webscraping de todos os tickers presentes no S&P100, mesmo os já delistados ou que passaram por fusões/divisões. Garantindo que não houve viés de escolha ou sobrevivência. 
 	
-### g) Conclusão. 
+### G) Conclusão. 
 
 **A.R.G.O.S** demonstra ser uma estratégia de investimento robusta e inovadora, validando nossa tese central. Os resultados indicam que a fusão do deep learning com teoria de portfólio gera alfa consistente. 
 
