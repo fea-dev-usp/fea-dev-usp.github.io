@@ -10,9 +10,16 @@ enableToc: false
 > Produzido pelos membros da FEA.dev, com o objetivo de divulgar parte do nosso trabalho e compartilhar conhecimento com a comunidade.
 
 ## Quem Somos Nós
-Somos a primeira entidade estudantil de programação da FEA-USP, voltada à aplicação de **Ciência de Dados** e **Inteligência Artificial**. Nosso propósito é criar a ponte **onde tecnologia e teoria se encontram**, conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de **capacitação interna**, **projetos aplicados** e **eventos** com lideranças do setor, promovendo uma formação prática que ajuda a preencher lacunas do ensino tradicional.
-### Nossa história
-Fundada em 2019, a FEA.dev nasceu da iniciativa de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário. De lá para cá, evoluímos para uma comunidade que produz, documenta e compartilha conhecimento de forma aberta, desenvolvendo competências cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
+Somos a primeira entidade estudantil de programação da FEA-USP, dedicada a **Finanças Quantitativas** e **Inteligência Artificial**.
+
+Fundada em 2019, a iniciativa nasceu de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário.
+
+Por meio de capacitação, projetos e eventos com lideranças do setor, proporcionamos aos nossos membros o desenvolvimento de competências técnicas cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
+
+•	GitHub: /fea-dev-usp
+•	Instagram: @fea.dev
+•	Email: contato.feadev@gmail.com
+
 ### O que você encontra neste Hub
 - **Guias e tutoriais práticos** (passo a passo, replicáveis).
 - **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.
