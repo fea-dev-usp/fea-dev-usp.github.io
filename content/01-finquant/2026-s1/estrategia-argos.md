@@ -44,7 +44,7 @@ _**Repositório**: [link](https://github.com/Quant-IA-2025/main)
 	*Padrões de mercado complexos são invisíveis à análise estatística tradicional. Ao converter preços em imagens, podemos usar Redes Neurais Convolucionais (CNNs) para "ver"e explorar dinâmicas dos retornos do S&P100, nosso universo de ativos.*
 
 #### 4. Fluxograma da Lógica (O Como)
-![[fluxograma-projeto-argos.jpg]]
+![[fluxograma-argos.png]]
 
 >[!info]
 >**Figura 2:** Fluxograma da lógica
@@ -72,7 +72,7 @@ A estratégia é sistematizada em um pipeline de cinco módulos, executado trime
 2. **Previsão via CNN** 
 	As imagens GAF (GASF/GADF) geradas são padronizadas e alimentadas em uma Rede Neural Convolucional. Em vez de treinar uma rede massiva do zero, aplicamos Transfer Learning: utilizamos uma arquitetura de CNN robusta (como ResNet) pré-treinada em milhões de imagens (ex: ImageNet)
 	
-	![[arquitetura-argos.jpg|653]]
+	![[arquitetura-argos.png]]
 	
 >[!info]
 > **Figura 3**: Arquitetura CNN
@@ -129,7 +129,7 @@ A combinação de min_max_scaler e cos−1 sempre gerará ao menos duas linhas b
 
 ### E) Resultados
 
-![[serie-historica.jpg]]
+![[resultados-argo.png]]
 
 >[!info]
 >**Figura 4:** Série Histórico do valor do Portfólio
@@ -159,12 +159,12 @@ Comecemos por duas visualizações que mostram como o **A.R.G.O.S** viola menos 
 Em seguida, aplicamos o *DQ-test* — um cheque rápido (e formal) de dois pontos: 
 • Calibração condicional do VaR: dado o que já sabíamos no tempo t (incl. V aRt), a chance de violação é $α$ = 1%?
 
-![[var-argos.jpg]]
+![[Retorno-vs-var-argo.png]]
 
 >[!info]
 >Figura 5: Violações do VAR no modelo A.R.G.O.S (Black-Litterman)
 
-![[var-markowitz.jpg]]
+![[retorno-vs-var-markowitz.png]]
 
 >[!info]
 >Figura 6: Violações do VAR no modelo Markowitz
