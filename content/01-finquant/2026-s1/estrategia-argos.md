@@ -12,7 +12,7 @@ _**Repositório**: [link](https://github.com/Quant-IA-2025/main)
 
                                  A.R.G.O.S.
 
-![[robo-argos.jpg|151]]
+![[robo-argos.jpg| center | 151]]
 
 >[!info]
 >**Figura 1**: Logo-argos.jpg
@@ -21,7 +21,6 @@ _**Repositório**: [link](https://github.com/Quant-IA-2025/main)
 
 
                                  A.R.G.O.S. 
-![[robo-argos.jpg]]
 
 3. Explicação do Nome: A.R.G.O.S. é um acrônimo para **Algoritmo de Reconhecimento Gráfico de Otimização de Sinais.** O nome é uma referência direta a **Argos Panoptes**, o gigante primordial da mitologia grega conhecido como "aquele que tudo vê"[2, 3], um ser com cem olhos que lhe permitia uma vigilância constante.[2, 3] Esta alegoria captura a essência da nossa estratégia. **O Reconhecimento Gráfico** refere-se à forma como reinventamos a análise técnica, permitindo que nossa abordagem de transfer learning “veja o mercado com seus cem olhos” ao analisar imagens gráficas (GAFs) dos preços, extraindo features aprendidas por backbones visuais pré-treinados e detectando padrões invisíveis à análise estatística convencional. A **Otimização de Sinais** descreve como essa “visão”, isto é, as representações extraídas via transfer learning, é tratada como um sinal, subsequentemente otimizado e ponderado contra o equilíbrio de mercado pelo modelo Black–Litterman para compor a alocação final. 
 
