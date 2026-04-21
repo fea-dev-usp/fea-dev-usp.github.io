@@ -17,7 +17,9 @@ Fundada em 2019, a iniciativa nasceu de alunos que identificaram uma lacuna no e
 Por meio de capacitação, projetos e eventos com lideranças do setor, proporcionamos aos nossos membros o desenvolvimento de competências técnicas cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
 
 •	GitHub: /fea-dev-usp
+
 •	Instagram: @fea.dev
+
 •	Email: contato.feadev@gmail.com
 
 ### O que você encontra neste Hub
