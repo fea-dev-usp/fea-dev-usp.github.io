@@ -81,31 +81,35 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
 - Painéis com gestoras e bancos  
 - Networking com alunos de várias universidades e profissionais do buy-side e sell-side
 
-<br>
 
-<div style="width:100%; margin:1rem 0;">
-  <div style="display:flex; gap:8px; overflow-x:auto;">
-    
-    <figure style="flex:0 0 100%; margin:0;">
-      <img src="imagens/quant-connect-2.jpg" style="width:100%; display:block;">
+<div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
+  <div id="qc-g1-track"
+       style="display:flex;overflow-x:auto;scroll-snap-type: x proximity;
+       scroll-behavior:smooth;
+       gap:8px;border-radius:12px;background:#000;
+       -webkit-overflow-scrolling:touch;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/quant-connect-2.jpg"
+           alt="Foto com Painel"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
-
-    <figure style="flex:0 0 100%; margin:0;">
-      <img src="imagens/quant-connect-3.jpg" style="width:100%; display:block;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/quant-connect-3.jpg"
+           alt="Foto com o Raphael Cordeiro"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
-
-    <figure style="flex:0 0 100%; margin:0;">
-      <img src="imagens/quant-connect-4.jpg" style="width:100%; display:block;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/quant-connect-4.jpg"
+           alt="Apresentação projeto Quantamental"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
-
-    <figure style="flex:0 0 100%; margin:0;">
-      <img src="imagens/quant-connect-5.jpg" style="width:100%; display:block;">
+    <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
+      <img src="imagens/quant-connect-5.jpg"
+           alt="Foto da palestra"
+           style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;">
     </figure>
-
   </div>
 </div>
-
-<br>
 
 ### Semana.dev
 Organizamos a **Semana.dev**, uma série de encontros que conectou **Ciência de Dados, IA e Finanças Quantitativas** com o que há de mais avançado no mercado. Durante a semana, recebemos a **Palver**, referência nacional no uso de dados e IA para análise política, a **Uncover** maior martech do Brasil, nascida como um protótipo de fundo quant, além de uma palestra sobre IA com **Claudio Pinhanez**, cientista-chefe da IBM, e uma conversa sobre carreiras em finanças com **Rafael Lavrado**.  
