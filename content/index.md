@@ -64,6 +64,7 @@ Por meio de capacitação, projetos e eventos com lideranças do setor, proporci
     <span style="font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
   </div>
+  
 ### Como navegar por nível
 
 - 🟢 **Iniciante**: primeiros passos e guias passo a passo  
