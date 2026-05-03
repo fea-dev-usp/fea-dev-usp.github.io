@@ -35,7 +35,7 @@ Temos 2 tipos de opções:
 
 ## 1.2 Exemplo
 
-Imagine que uma ação da Amazon custe hoje $100. Você acredita que a ação irá se valorizar no futuro, por isso compra uma Call Option por $10:
+Imagine que uma ação da Amazon custe hoje \$100. Você acredita que a ação irá se valorizar no futuro, por isso compra uma Call Option por \$10:
 
 ![[black-scholes-opcoes-1-1-exemplo.png]]
 
@@ -62,11 +62,11 @@ Imaginando que o preço de um ativo pudesse subir ou descer uma unidade a cada p
 
 Utilizando a ideia de um Movimento Browniano Padrão (B), Bachelier modelou o preço do ativo no futuro t como um Movimento Browniano Aritimético:
 
-$$\begin{align} S_t = S_0 + \mu t + \sigma B_t \implies dS_t = \mu S_t dt + \sigma dW \end{align}$$
+$$ S_t = S_0 + \mu t + \sigma B_t \implies dS_t = \mu S_t dt + \sigma dW$$
 
 A solução da equação pode ser abordada de várias formas diferentes, usando cálculo estocástico, Martingales, técnicas de Cálculo Diferencial, entre outras. Nessa apresentação consideraremos a fórmula definida por Bachelier inicialmente, sem considerar uma taxa livre de risco:
 
-$$\begin{align} C = (S - X)\Phi(D) + \sigma\sqrt{T}\phi(D) \end{align}$$
+$$ C = (S - X)\Phi(D) + \sigma\sqrt{T}\phi(D) $$
 
 Onde: $D = \frac{S - X}{\sigma\sqrt{T}}$ , $\Phi$ é a CDF e $\phi$ a PDF da Normal Padrão N(0,1).
 
@@ -86,7 +86,7 @@ Dynamic Hedging é uma estratégia que procura garantir o valor de uma carteira 
 
 Tendo uma opção V no seu portifólio e uma certa quantidade Δ do ativo S o qual ela está atrelada, podemos reduzir nossas perdas e por consequência o risco do portifólio:
 
-$$\begin{align} \Pi = V - \Delta S \implies \partial \Pi = \partial V - \Delta \partial S \end{align}$$
+$$ \Pi = V - \Delta S \implies \partial \Pi = \partial V - \Delta \partial S $$
 
 O risco do portifólio π está atrelado ao seu drift ∂: uma medida de movimento de valor, por consequência, o drift do portifólio é proporcional ao drift de cada ativo.
 
@@ -97,7 +97,7 @@ O drift de uma opção e do ativo associado a ela estão relacionados, por isso,
 ![[black-scholes-opcoes-3-3-delta.png]]
 
 
-$$\begin{align} \partial \Pi &= \partial V - \Delta \partial S \\ \to \partial \Pi &= \partial V - \frac{\partial V}{\partial S} \partial S \\ \to \partial \Pi &= \partial V - \partial V = 0 \end{align}$$
+$$ \partial \Pi &= \partial V - \Delta \partial S \\ \to \partial \Pi &= \partial V - \frac{\partial V}{\partial S} \partial S \\ \to \partial \Pi &= \partial V - \partial V = 0 $$
 
 Com o drift do portifólio nulo, π se torna determinístico e não possui mais risco!
 
@@ -109,25 +109,25 @@ Com o drift do portifólio nulo, π se torna determinístico e não possui mais 
 
 Desenvolvendo o mesmo portifólio π de Thorp e definindo dR como o retorno acumulado do portifólio, temos que:
 
-$$\begin{align} (1) \quad dR = dV - \frac{\partial V}{\partial S} dS \end{align}$$
+$$ (1) \quad dR = dV - \frac{\partial V}{\partial S} dS $$
 
 Pelo **Lema de Itô**:
 
-$$\begin{align} (2) \quad dV = \frac{\partial V}{\partial t} dt + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} dt \end{align}$$
+$$ (2) \quad dV = \frac{\partial V}{\partial t} dt + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} dt $$
 
 Substituindo (2) em (1):
 
-$$\begin{align} dR &= \frac{\partial V}{\partial t} + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - \frac{\partial V}{\partial S} dS \\ &= \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} \end{align}$$
+$$ dR &= \frac{\partial V}{\partial t} + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - \frac{\partial V}{\partial S} dS \\ &= \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} $$
 
 ## 4.2 Hipótese do Mercado Eficiente (EMH)
 
 Sob a hipótese do mercado eficiente, ou de um mercado justo, um portifólio com risco 0  teria o retorno igual a Taxa Livre de Risco r, já que sem um risco adicional para justificar o aumento do retorno, não deveria ser possível nada além de r, ou seja:
 
-$$\begin{align} dR = r\Pi \to r\Pi = \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} \end{align}$$
+$$ dR = r\Pi \to r\Pi = \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} $$
 
 Substituindo $\Pi$ (que é $V - \Delta S$, com $\Delta = \frac{\partial V}{\partial S}$), chegamos à **Equação Diferencial Parcial de Black-Scholes**:
 
-$$\begin{align} \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} - rV = 0 \end{align}$$
+$$ \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS \frac{\partial V}{\partial S} - rV = 0 $$
 
 ## 4.3 Precificação de Call e Put Option
 
@@ -135,14 +135,14 @@ A resolução da equação diferencial é complexa e demorada, por isso não ser
 
 Precificação de Call e Put Option:
 
-$$\begin{align} C = S\Phi(d1) - Xe^{-rT}\Phi(d2) \end{align}$$
+$$ C = S\Phi(d1) - Xe^{-rT}\Phi(d2) $$
 
 Precificação de Put Option:
 
-$$\begin{align} P = Xe^{-rT}\Phi(-d2) - S\Phi(-d1) \end{align}$$
+$$ P = Xe^{-rT}\Phi(-d2) - S\Phi(-d1) $$
 Onde:
 
-$$\begin{align} d1 = \frac{\ln\left(\frac{S}{X}\right) + \left(r + \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}} \quad \text{e} \quad d2 = \frac{\ln\left(\frac{S}{X}\right) + \left(r - \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}} = d1 - \sigma\sqrt{T} \end{align}$$
+$$ d1 = \frac{\ln\left(\frac{S}{X}\right) + \left(r + \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}} \quad \text{e} \quad d2 = \frac{\ln\left(\frac{S}{X}\right) + \left(r - \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}} = d1 - \sigma\sqrt{T} $$
 
 
 > [!INFO] 
@@ -157,15 +157,15 @@ $$\begin{align} d1 = \frac{\ln\left(\frac{S}{X}\right) + \left(r + \frac{\sigma^
 
 Se Ri é o log-retorno do ativo no instante i, então o valor da ação no instante T é:
 
-$$\begin{align} S_T = Se^{\sum_{i=1}^{T} R_i} \end{align}$$
+$$ S_T = Se^{\sum_{i=1}^{T} R_i} $$
 
 A suposição sobre os retornos $R_i$:
 
-$$\begin{align} R_i \sim N(\mu, \sigma^2) \implies E(R_i) = \mu \quad \text{e} \quad Var(R_i) = \sigma^2 \end{align}$$
+$$ R_i \sim N(\mu, \sigma^2) \implies E(R_i) = \mu \quad \text{e} \quad Var(R_i) = \sigma^2 $$
 
 A distribuição resultante para $S_T$:
 
-$$\begin{align} S_T \sim N\left(Se^{T\mu + \frac{T\sigma^2}{2}} ; S^2\left[e^{T\sigma^2} - 1\right]\left[e^{2T\mu + T\sigma^2}\right]\right) \end{align}$$
+$$ S_T \sim N\left(Se^{T\mu + \frac{T\sigma^2}{2}} ; S^2\left[e^{T\sigma^2} - 1\right]\left[e^{2T\mu + T\sigma^2}\right]\right) $$
 
 > [!INFO] 
 > Nota: Usaremos Estimadores de Máxima Verossimilhança para estimar os parâmetros populacionais.
@@ -180,7 +180,7 @@ Assim como para Black-Scholes, em um mercado eficiente, ou "justo", o preço C d
 
 A esperança de uma variável aleatória contínua é dada por:
 
-$$\begin{align} E(Y) = \int_{y \in \Omega} y f(y) dy \end{align}$$
+$$E(Y) = \int_{y \in \Omega} y f(y) dy $$
 
 Porém, no nosso caso, o retorno não é linear. Sendo s o valor do ativo no tempo T, X o Strike Price e C o valor pago pela opção: 
 
@@ -192,17 +192,17 @@ Graficamente:
 
 ![[black-scholes-opcoes-5-4-strike.png]]
 
-$$\begin{align} P_t = \int_{0}^{X} - C f(s) ds \end{align}$$
+$$ P_t = \int_{0}^{X} - C f(s) ds $$
 
-$$\begin{align} P_p = \int_{X}^{X+C} (s - (X + C)) f(s) ds \end{align}$$
+$$ P_p = \int_{X}^{X+C} (s - (X + C)) f(s) ds $$
 
-$$\begin{align} L = \int_{X+C}^{\infty} (s - (X + C)) f(s) ds \end{align}$$
+$$ L = \int_{X+C}^{\infty} (s - (X + C)) f(s) ds $$
 
 ## 5.4 Solução
 
 Não existe um método analítico, ou seja, exato, que nos entregue C, já que as integrais podem ser impróprias. Por isso, encontraremos C numéricamente, minimizando a função D:
 
-$$\begin{align} D(C) = |L + P_t + P_p| \end{align}$$
+$$ D(C) = |L + P_t + P_p| $$
 
 > [!INFO] 
 > Nota: Também podemos modelar o preço futuro pelos retornos brutos, os resultados são os mesmos.
