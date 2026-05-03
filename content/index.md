@@ -10,9 +10,18 @@ enableToc: false
 > Produzido pelos membros da FEA.dev, com o objetivo de divulgar parte do nosso trabalho e compartilhar conhecimento com a comunidade.
 
 ## Quem Somos Nós
-Somos a primeira entidade estudantil de programação da FEA-USP, voltada à aplicação de **Ciência de Dados** e **Inteligência Artificial**. Nosso propósito é criar a ponte **onde tecnologia e teoria se encontram**, conectando estudantes de toda a USP a empresas e a problemas reais. Fazemos isso por meio de **capacitação interna**, **projetos aplicados** e **eventos** com lideranças do setor, promovendo uma formação prática que ajuda a preencher lacunas do ensino tradicional.
-### Nossa história
-Fundada em 2019, a FEA.dev nasceu da iniciativa de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário. De lá para cá, evoluímos para uma comunidade que produz, documenta e compartilha conhecimento de forma aberta, desenvolvendo competências cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
+Somos a primeira entidade estudantil de programação da FEA-USP, dedicada a **Finanças Quantitativas** e **Inteligência Artificial**.
+
+Fundada em 2019, a iniciativa nasceu de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário.
+
+Por meio de capacitação, projetos e eventos com lideranças do setor, proporcionamos aos nossos membros o desenvolvimento de competências técnicas cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
+
+•	GitHub: /fea-dev-usp
+
+•	Instagram: @fea.dev
+
+•	Email: contato.feadev@gmail.com
+
 ### O que você encontra neste Hub
 - **Guias e tutoriais práticos** (passo a passo, replicáveis).
 - **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.
@@ -54,12 +63,16 @@ Fundada em 2019, a FEA.dev nasceu da iniciativa de alunos que identificaram uma 
     </span>
     <span style="font-weight:700;white-space:nowrap;display:block;">→ Ver materiais</span>
   </a>
+  </div>
   
 ### Como navegar por nível
+
 - 🟢 **Iniciante**: primeiros passos e guias passo a passo  
 - 🟠 **Intermediário**: já pressupõe base técnica  
 - 🔴 **Avançado**: profundidade teórica/técnica
+
 ## Projetos & Iniciativas
+
 ### Quant Connect 
 Somos **cofundadores do Quant Connect**, o **primeiro evento universitário do Brasil dedicado exclusivamente a Finanças Quantitativas**. Organizado por nós da FEA.dev juntamente com a FGV Quant, o Insper Quantitative Finance e a Poli Quant.  
 Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a profissionais que estão na linha de frente do mercado.
@@ -72,8 +85,10 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
 
 <div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
   <div id="qc-g1-track"
-       style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
-              gap:8px;border-radius:12px;background:#000;-webkit-overflow-scrolling:touch;">
+       style="display:flex;overflow-x:auto;scroll-snap-type: x proximity;
+       scroll-behavior:smooth;
+       gap:8px;border-radius:12px;background:#000;
+       -webkit-overflow-scrolling:touch;">
     <figure style="flex:0 0 100%;margin:0;scroll-snap-align:center;">
       <img src="imagens/quant-connect-2.jpg"
            alt="Foto com Painel"

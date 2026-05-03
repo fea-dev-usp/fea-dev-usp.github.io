@@ -5,7 +5,6 @@ tags:
   - trilha/finquant
 ---
 _**Autores:** Guilherme Freitas
-
 # 0. Índice
 
 1. O QUE SÃO OPÇÕES
