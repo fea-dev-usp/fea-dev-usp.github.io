@@ -97,7 +97,11 @@ O drift de uma opção e do ativo associado a ela estão relacionados, por isso,
 ![[black-scholes-opcoes-3-3-delta.png]]
 
 
-$$ \partial \Pi &= \partial V - \Delta \partial S \\ \to \partial \Pi &= \partial V - \frac{\partial V}{\partial S} \partial S \\ \to \partial \Pi &= \partial V - \partial V = 0 $$
+$$\partial \Pi = \partial V - \Delta \partial S$$
+
+$$\partial \Pi = \partial V - \frac{\partial V}{\partial S} \partial S$$
+
+$$\partial \Pi = \partial V - \partial V = 0$$
 
 Com o drift do portifólio nulo, π se torna determinístico e não possui mais risco!
 
@@ -117,7 +121,10 @@ $$ (2) \quad dV = \frac{\partial V}{\partial t} dt + \frac{\partial V}{\partial 
 
 Substituindo (2) em (1):
 
-$$ dR &= \frac{\partial V}{\partial t} + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - \frac{\partial V}{\partial S} dS \\ &= \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} $$
+$$dR = \frac{\partial V}{\partial t} + \frac{\partial V}{\partial S} dS + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} - \frac{\partial V}{\partial S} dS$$
+
+$$dR = \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2}$$
+
 
 ## 4.2 Hipótese do Mercado Eficiente (EMH)
 
