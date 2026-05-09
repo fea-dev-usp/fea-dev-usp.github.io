@@ -4,19 +4,8 @@ tags:
   - nivel/avancado
   - trilha/finquant
 ---
-_**Autores:** Guilherme Freitas
-# 0. Índice
-
-1. O QUE SÃO OPÇÕES
-2. MODELO DE BACHLIER
-3. DYNAMIC HEDGING DE THORP
-4. MODELO DE BLACK-SCHOLES
-5. MODELO DE FREITAS
-6. COMPARAÇÃO DOS MODELOS
-7. PRÓXIMOS PASSOS
-
+_**Autor:** Guilherme Freitas_
 # 1. O QUE SÃO OPÇÕES
-
 
 ## 1.1 Definição: 
 
@@ -207,7 +196,7 @@ $$ L = \int_{X+C}^{\infty} (s - (X + C)) f(s) ds $$
 
 ## 5.4 Solução
 
-Não existe um método analítico, ou seja, exato, que nos entregue C, já que as integrais podem ser impróprias. Por isso, encontraremos C numéricamente, minimizando a função D:
+Não existe um método analítico, ou seja, exato, que nos entregue C, já que as integrais podem ser impróprias. Por isso, encontraremos C numericamente, minimizando a função D:
 
 $$ D(C) = |L + P_t + P_p| $$
 
