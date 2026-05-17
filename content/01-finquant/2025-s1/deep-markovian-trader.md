@@ -4,30 +4,31 @@ tags:
   - nivel/avancado
   - trilha/finquant
 ---
-# 0. Introdução
+_**Autores:** Gabriel Navarro · Julia Cerqueira · Lorenzo Cavalcante_
 
+# Deep Markovian Trader
 
-![[deep-markovian-logo.png]]
+![[deep-markovian-logo-removebg-preview.png]]
 
-## 0.1 Explicação do Nome
+## Explicação do Nome
 
 “Deep Markovian Trader” faz referência aos elementos principais da estratégia: “Deep” refere-se ao uso de Deep Learning, “Markovian” à modelagem por cadeias de Markov, e “Trader” à natureza da estratégia, focada em operações de Long & Short.
 
-## 0.2 Explicação Lógica Estratégia
+## Explicação Lógica Estratégia
 
 A estratégia avalia, para cada período e para cada ação do S&P500, a volatilidade condicional das ações, utilizando um modelo inspirado no MSGARCH. Com base nessa métrica, seleciona-se, a cada ciclo, as 50 ações com as menores volatilidades condicionais. Em seguida, um modelo LSTM é treinado, levando em consideração indicadores técnicos, para prever os retornos das ações no próximo período. Tais previsões são ordenadas em ordem decrescente, e com base nessa classificação, as ações são distribuídas em percentis, com a compra das ações no primeiro percentil e a venda das que se encontram no último percentil.
 
-## 0.3 Características
+## Características
 
-|**Campo**|**Valor**|
-|---|---|
-|**Tipo de Estratégia:**|Trade|
-|**Classe de Ativos:**|Ações|
-|**Universo:**|S&P 500|
-|**Média Trades por Mês:**|10|
-|**Holding Period:**|30|
-|**Qual Plataforma Testou a Estratégia:**|Python|
-|**Benchmark Estratégia:**|S&P 500|
+| **Campo**                                | **Valor** |
+| ---------------------------------------- | --------- |
+| **Tipo de Estratégia:**                  | Trade     |
+| **Classe de Ativos:**                    | Ações     |
+| **Universo:**                            | S&P 500   |
+| **Média Trades por Mês:**                | 10        |
+| **Holding Period:**                      | 30        |
+| **Qual Plataforma Testou a Estratégia:** | Python    |
+| **Benchmark Estratégia:**                | S&P 500   |
 
 # 1. Introdução
 

@@ -5,7 +5,7 @@ tags:
   - trilha/finquant
 ---
 _**Autor:** Guilherme Freitas_
-# 1. O QUE SÃO OPÇÕES
+# 1. O que são Opções? 
 
 ## 1.1 Definição: 
 

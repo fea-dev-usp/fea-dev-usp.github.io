@@ -15,13 +15,6 @@ Somos a primeira entidade estudantil de programação da FEA-USP, dedicada a **F
 Fundada em 2019, a iniciativa nasceu de alunos que identificaram uma lacuna no ensino tradicional de tecnologia e decidiram agir para transformar esse cenário.
 
 Por meio de capacitação, projetos e eventos com lideranças do setor, proporcionamos aos nossos membros o desenvolvimento de competências técnicas cada vez mais valorizadas no mercado: **Ciência de Dados**, **Inteligência Artificial** e **Finanças Quantitativas**.
-
-•	GitHub: /fea-dev-usp
-
-•	Instagram: @fea.dev
-
-•	Email: contato.feadev@gmail.com
-
 ### O que você encontra neste Hub
 - **Guias e tutoriais práticos** (passo a passo, replicáveis).
 - **Projetos e estudos de caso** em **IA** e **FinQuant**, com código e dados para reprodução.
@@ -81,7 +74,6 @@ Foram dois dias de conteúdo técnico, troca de experiências e acesso direto a 
 - Palestras técnicas  
 - Painéis com gestoras e bancos  
 - Networking com alunos de várias universidades e profissionais do buy-side e sell-side
-
 
 <div id="qc-g1" style="max-width:1000px;margin:1rem auto;">
   <div id="qc-g1-track"

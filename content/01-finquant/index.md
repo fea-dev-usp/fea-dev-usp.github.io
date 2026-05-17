@@ -3,8 +3,7 @@ title: " FinQuant"
 ---
 
 >[!warning]
-> Se você é membro ou ex-membro da dev e quiser contribuir com material, por favor, entre em contato com algum membro de Tech, Governança ou com os Presidentes. 
-
+> Se você é membro ou ex-membro da dev e quiser contribuir com material, por favor, entre em contato com algum membro de Tech ou de Governança. 
 
 ## O que é a trilha de Finanças Quantitativas (FinQuant)?
 

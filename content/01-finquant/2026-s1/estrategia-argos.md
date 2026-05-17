@@ -4,51 +4,44 @@ tags:
   - nivel/avancado
   - trilha/finquant
 ---
-_**Autores**: Lorenzo Cavalcante, Gabriel Navarro, Rodrigo Catto Menin_ 
+_**Autores**: Lorenzo Cavalcante · Gabriel Navarro · Rodrigo Catto Menin_ 
 
-_**Repositório**: [link](https://github.com/Quant-IA-2025/main)
-
-1. **Design Robô A.R.G.O.S.**
-
-                                 A.R.G.O.S.
+_**Repositório**: [link](https://github.com/Quant-IA-2025/main)_
+# A.R.G.O.S
 
 ![[robo-argos.jpg| center | 151]]
+## Explicação do Nome: 
 
->[!info]
->**Figura 1**: Logo-argos.jpg
+A.R.G.O.S. é um acrônimo para **Algoritmo de Reconhecimento Gráfico de Otimização de Sinais.** O nome é uma referência direta a **Argos Panoptes**, o gigante primordial da mitologia grega conhecido como "aquele que tudo vê", um ser com cem olhos que lhe permitia uma vigilância constante. Esta alegoria captura a essência da nossa estratégia. **O Reconhecimento Gráfico** refere-se à forma como reinventamos a análise técnica, permitindo que nossa abordagem de transfer learning “veja o mercado com seus cem olhos” ao analisar imagens gráficas (GAFs) dos preços, extraindo features aprendidas por backbones visuais pré-treinados e detectando padrões invisíveis à análise estatística convencional. A **Otimização de Sinais** descreve como essa “visão”, isto é, as representações extraídas via transfer learning, é tratada como um sinal, subsequentemente otimizado e ponderado contra o equilíbrio de mercado pelo modelo Black–Litterman para compor a alocação final. 
+## Explicação da Lógica da Estratégia:
 
-2. Nome do Robô 
+A lógica do A.R.G.O.S. é uma fusão híbrida de aplicações inovadoras de deep learning e metódos clássicos robustos de teoria de portfólio. Primeiro, o robô "vê"o mercado transformando os dados de preços de 1 trimestre de cada ação em uma imagem de 2 canais (GASF/GADF), então, uma Rede Neural Convolucional (CNN), usando Transfer Learning, analisa essa imagem e a classifica imagem de acordo com a possibilidade do retorno futuros estar entre certos intervalos pré-definidos e fixos. Essa previsão não é um sinal direto de "compra", mas sim uma "visão"subjetiva. Em seguida, essa "visão"(o retorno esperado Q) e, crucialmente, a "confiança"da CNN nessa visão (Ω) são inseridas no modelo Black-Litterman. O modelo Black-Litterman combina otimamente a visão da nossa IA com o "equilíbrio"do mercado (o retorno neutro Π) e também a matriz de covariância (Σ) resolvendo o clássico problema de instabilidade dos modelos de otimização. O resultado é um portfólio robusto que pondera a previsão da IA pela sua própria confiança, gerando uma alocação de ativos confiável de forma inovadora, tal inovação evita efeitos de crowding no mercado 
 
+## Classe de Ativos:
 
-                                 A.R.G.O.S. 
+Ativos de Renda Variável (Ações) 
 
-3. Explicação do Nome: A.R.G.O.S. é um acrônimo para **Algoritmo de Reconhecimento Gráfico de Otimização de Sinais.** O nome é uma referência direta a **Argos Panoptes**, o gigante primordial da mitologia grega conhecido como "aquele que tudo vê"[2, 3], um ser com cem olhos que lhe permitia uma vigilância constante.[2, 3] Esta alegoria captura a essência da nossa estratégia. **O Reconhecimento Gráfico** refere-se à forma como reinventamos a análise técnica, permitindo que nossa abordagem de transfer learning “veja o mercado com seus cem olhos” ao analisar imagens gráficas (GAFs) dos preços, extraindo features aprendidas por backbones visuais pré-treinados e detectando padrões invisíveis à análise estatística convencional. A **Otimização de Sinais** descreve como essa “visão”, isto é, as representações extraídas via transfer learning, é tratada como um sinal, subsequentemente otimizado e ponderado contra o equilíbrio de mercado pelo modelo Black–Litterman para compor a alocação final. 
+## Universo de Investimento: 
 
-4. Explicação da Lógica da Estratégia: A lógica do A.R.G.O.S. é uma fusão híbrida de aplicações inovadoras de deep learning e metódos clássicos robustos de teoria de portfólio. Primeiro, o robô "vê"o mercado transformando os dados de preços de 1 trimestre de cada ação em uma imagem de 2 canais (GASF/GADF), então, uma Rede Neural Convolucional (CNN), usando Transfer Learning, analisa essa imagem e a classifica imagem de acordo com a possibilidade do retorno futuros estar entre certos intervalos pré-definidos e fixos. Essa previsão não é um sinal direto de "compra", mas sim uma "visão"subjetiva. Em seguida, essa "visão"(o retorno esperado Q) e, crucialmente, a "confiança"da CNN nessa visão (Ω) são inseridas no modelo Black-Litterman. O modelo Black-Litterman combina otimamente a visão da nossa IA com o "equilíbrio"do mercado (o retorno neutro Π) e também a matriz de covariância (Σ) resolvendo o clássico problema de instabilidade dos modelos de otimização. O resultado é um portfólio robusto que pondera a previsão da IA pela sua própria confiança, gerando uma alocação de ativos confiável de forma inovadora, tal inovação evita efeitos de crowding no mercado 
+S&P100 
 
-5. Classe de Ativos Ativos de Renda Variável (Ações) 
+## Frequência da Estratégia:
 
-6. Universo de Investimento S&P100 
+Trimestral (Rebalanceamento e previsão a cada 63 dias úteis) 
 
-7. Frequência da Estratégia Trimestral (Rebalanceamento e previsão a cada 63 dias úteis) 
+## Benchmark:
 
-8. Benchmark Índice S&P100 (SP100)
+Índice S&P100 (SP100)
 
+##  Tese de Investimento (O Porquê) e Universo de Ativos (Onde): 
 
-# 2. Página Factsheet 
-### 1. Identidade do Robô 
-	• Nome: A.R.G.O.S. 
-	• Slogan: "Vendo padrões além do alcance." 
-#### 2 e 3. Tese de Investimento (O Porquê) e Universo de Ativos (Onde) 
-	*Padrões de mercado complexos são invisíveis à análise estatística tradicional. Ao converter preços em imagens, podemos usar Redes Neurais Convolucionais (CNNs) para "ver"e explorar dinâmicas dos retornos do S&P100, nosso universo de ativos.*
+Padrões de mercado complexos são invisíveis à análise estatística tradicional. Ao converter preços em imagens, podemos usar Redes Neurais Convolucionais (CNNs) para "ver"e explorar dinâmicas dos retornos do S&P100, nosso universo de ativos.
 
-#### 4. Fluxograma da Lógica (O Como)
+## Fluxograma da Lógica (O Como):
+
 ![[fluxograma-argos.png]]
 
->[!info]
->**Figura 2:** Fluxograma da lógica
-
-# 3. Desenvolvimento do Trabalho
+# Desenvolvimento do Trabalho
 ### A) Ideia de Investimento 
 Nossa ideia foi, em suma, combinar visão computacional com teoria de portfólios. Para tal, fizemos com que uma CNN pre-treináda via transfer learning extraisse padrões das imagens GAF e produzisse visões de mercado (Q); Além disso, fizemos com que o Black–Litterman transformasse essas visões em alocações robustas e bem calibradas ao risco. Intuitivamente, a CNN gera o alpha ao "ver"padrões nas imagens GAF para gerar "visões"de mercado (Q). Enquanto o Black-Litterman constrói o portfólio, usando a teoria de portfólio para alocação robusta e gerenciamento de risco. 
 
@@ -60,12 +53,16 @@ Essa arquitetura resolve os dois problemas: a CNN fornece o alpha e o BL fornece
 
 ### B) Regra de Investimento 
 A estratégia é sistematizada em um pipeline de cinco módulos, executado trimestralmente (horizonte de 63 dias). 
+
 1. **Codificação em Imagem** 
 	Para cada ativo do S&P100, em cada data de rebalanceamento $(τ ),$ o script analisa a janela anterior de 63 dias (w = 63). O processo de transformação converte esta série temporal em uma imagem de 2 canais (GAF) da seguinte forma: 
+	
 	1. **Normalização e Coordenadas Polares:** A série temporal é primeiro normalizada (para valores entre -1 e 1). Em seguida, ela é representada em um sistema de coordenadas polares. O valor de cada ponto $i$ na série $(x˜i)$ é codificado como o cosseno de um ângulo $(ϕi = arccos(x˜i))$, e o carimbo de tempo ti é codificado como o raio. Esta representação preserva as relações temporais absolutas. 
+
 	2. **Cálculo das Matrizes Gramian:** Dai, o algoritmo explora a correlação temporal entre cada ponto i e cada ponto j da série, gerando duas matrizes (imagens): 
 		• **Canal 1: GASF (Gramian Angular Summation Field):** Esta é uma matriz onde cada elemento $(i, j)$ representa a correlação temporal através da soma trigonométrica. Ela é calculada como o cosseno da soma dos ângulos: GASFi,j = $cos(ϕi +ϕj )$. A matriz resultante captura a superposição de direções ao longo do tempo. 
 		• **Canal 2: GADF (Gramian Angular Difference Field):** De forma complementar, esta matriz captura correlações usando a diferença trigonométrica dos ângulos: GADFi,j = $sin(ϕi − ϕj )$. 
+		
 	Estes dois canais (GASF e GADF) são então empilhados para formar uma única imagem de 2 canais. Esta imagem unificada captura diferentes aspectos das correlações temporais e dinâmicas da série de preços, pronta para ser processada pela CNN. Tivemos o cuidado também de checar a ortogonalidade dos dois métodos. 
 	
 2. **Previsão via CNN** 
@@ -77,8 +74,8 @@ A estratégia é sistematizada em um pipeline de cinco módulos, executado trime
 > **Figura 3**: Arquitetura CNN
 
 
-**Figura 3:** Exemplo de uma codificação em imagem.
-	e realizamos um ***fine-tuning*** nela para a tarefa específica de classificar nossas imagens **GAF**. Esta abordagem é mais rápida e captura features visuais complexas de forma mais eficaz. 
+**Figura 3:** 
+Exemplo de uma codificação em imagem. Realizamos um ***fine-tuning*** nela para a tarefa específica de classificar nossas imagens **GAF**. Esta abordagem é mais rápida e captura features visuais complexas de forma mais eficaz. 
 	• **Tarefa:** A CNN *não* prevê um preço. Ela realiza uma classificação multiclasse. 
 	• **Saída:** Um vetor de probabilidade $pˆ$ de 5 dimensões, correspondendo aos 5 *bins* fixos de retorno futuro (63 dias): [<-5%], [-5%, -1%], [-1%, 1%], [1%, 5%], [>=5%]. 
 	• **Métrica de Treino:** A rede é **ajustada (fine-tuned)** usando Categorical Cross-Entropy, otimizando para a precisão da distribuição de probabilidade.
@@ -115,6 +112,7 @@ $$\max_{w} \quad w^{T} \hat{\mu}_{BL,\tau} - \frac{\gamma}{2} w^{T} \Sigma_{\tau
  A pesquisa de Wang e Oates foi a mais importante para nós, pois demonstrou que a codificação de séries temporais em Gramian Angular Fields (GAF) cria representações de imagem que (a) preservam a dependência temporal e (b) podem ser consumidas eficazmente por Redes Neurais Convolucionais para classificação. Isso nos permitiu reformular o problema de previsão de séries temporais como um problema de visão computacional com fundamentos bem robustos. 
  
 ### D) Universo de Dados
+ 
  **• Universo Investível:** Ações do S&P 100. 
  **• Fonte dos Dados:** Yahoo Finance, dados diários. 
  **• Período de Análise:** Dados de 2010-2025, com preços diários das ações do S&P100 no período, separados com proporções 70/30. 
@@ -246,9 +244,11 @@ A estratégia provou não ser apenas um exercício acadêmico; ela foi projetada
 **Design:** Criação da identidade visual do robô (A.R.G.O.S.) e desenvolvimento do acrônimo e (usando ChatGPT). 
 
 ### 3. Limitações ou Erros 
-• Como cada membro estava usando uma IA diferente, acabamos tendo problemas de compatibilidade dos arquivos .py dentro do pipeline, o que teve que ser resolvido manualmente; 
-• O texto gerado por IA é bastante genérico e repetitivo, falhando em transmitir as informações de forma concisa e coesa; 
-• Ao encontrar problemas de ausência de dados, a IA criava dados falsos para suprir sua necessidade, o mesmo ocorreu na pesquisa de artigos, quando nos deparamos com artigos que não existiam. 
 
+• Como cada membro estava usando uma IA diferente, acabamos tendo problemas de compatibilidade dos arquivos .py dentro do pipeline, o que teve que ser resolvido manualmente; 
+
+• O texto gerado por IA é bastante genérico e repetitivo, falhando em transmitir as informações de forma concisa e coesa; 
+
+• Ao encontrar problemas de ausência de dados, a IA criava dados falsos para suprir sua necessidade, o mesmo ocorreu na pesquisa de artigos, quando nos deparamos com artigos que não existiam. 
 ### 4. Reflexão Final 
 A IA generativa não pode e não deve ser utilizada como resolução "caixa-preta"para todos os problemas, todas as vezes que tentamos usá-la desse modo acabamos caindo no erro. No fim, ela não passa de um ajudante bastante prestativo e perspicaz, mas é essencial que a parte crítica e criativa humana esteja em dia para que o uso da IA seja proveitoso.
