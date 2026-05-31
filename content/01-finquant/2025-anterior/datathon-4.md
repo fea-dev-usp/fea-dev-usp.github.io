@@ -63,7 +63,7 @@ O  Prêmio  pelo  Risco  de  um  ativo  é  o  seu retorno esperado aju
 
 - A  literatura  apresenta  modelos  de  regressão com Indicadores técnicos e variáveis fundamentais (WELCH & GOYAL, 2008) para previsão do prêmio pelo risco.
 
-![[datathon-4-pr-risk.png]]
+![[dathaton-4-pr-risk-premium.png]]
 
 ### 2.1 Previsão do Prêmio de Risco de criptomoedas: 
 - literatura não considera a abordagem clássica; 
