@@ -1,7 +1,7 @@
 ---
 title: Back-da-dev
 tags:
-  - nível/capacitação
+  - nível/basico
   - trilha/finquant
 ---
 _**Autores**: Pedro Tsuchie, Rodrigo Catto Menim, Lucas Navis, Vicente_
