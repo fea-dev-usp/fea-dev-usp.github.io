@@ -1,0 +1,74 @@
+name: Setup Directory Structure
+
+on:
+  workflow_dispatch:
+    inputs:
+      commits_back:
+        description: 'Número de commits para processar (ex: 1, 5, 10)'
+        required: true
+        default: '1'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+    set-dir:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+              with:
+                  fetch-depth: 0
+            - name: Move Images
+              run: |
+                # Obtém todos os diretórios modificados em content/ (recursivamente)
+                MODIFIED_DIRS=$(git diff --name-only HEAD~${{ inputs.commits_back }} HEAD | grep '^content/' | xargs -r dirname | sort | uniq)
+                
+                for DIR in $MODIFIED_DIRS; do
+                    # Ignora imagens/
+                    if [[ "$DIR" == content/imagens* ]]; then
+                        continue
+                    fi
+                    
+                    # Procura imagense no diretório modificado
+                    if [ -d "$DIR" ]; then
+                        while IFS= read -r -d '' IMAGE; do
+                            # fix: Ignora imagens que estão em content/imagens/
+                            if [[ "$IMAGE" == content/imagens/* ]]; then
+                                echo "Ignorando (já em imagens/): $IMAGE"
+                                continue
+                            fi
+                            
+                            # Calcula o caminho relativo a partir de content/
+                            REL_PATH=${IMAGE#content/}
+                            DIR_PART=$(dirname "$REL_PATH")
+                            FILE_NAME=$(basename "$IMAGE")
+                            
+                            # Cria a estrutura de diretórios em content/imagens/
+                            mkdir -p "content/imagens/$DIR_PART"
+                            
+                            # _____________________________________________
+
+                            # Move a imagem
+                            mv "$IMAGE" "content/imagens/$DIR_PART/"
+                            echo "Movido: $IMAGE -> content/imagens/$DIR_PART/$FILE_NAME"
+                        done < <(find "$DIR" -type f \( -name '*.png' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.gif' \) -print0)
+                    fi
+                done
+
+
+            - name: Commit and push changes
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                  git fetch origin v4
+                  git merge origin/v4 --no-edit
+                  git add content
+                  if [ -n "$(git status --porcelain)" ]; then
+                      git commit -m "chore: Move images to structured folders"
+                      git push origin v4
+                  else
+                      echo "No changes to commit."
+                  fi
