@@ -6,6 +6,7 @@ tags:
   - nivel/avancado
 author: Guilherme Matos; Ana Beatriz; Jonathan Pereira; Gabriela Saito
 ---
+**Autores: Guilherme Matos; Ana Beatriz; Jonathan Pereira; Gabriela Saito**
 ## 1. Introdução
 
 
